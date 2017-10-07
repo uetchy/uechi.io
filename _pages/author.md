@@ -8,7 +8,7 @@ I'm **Yasuaki Uechi**, a graduate student studying about timeseries data analysi
 
 # Contact
 
-Reach me at `uechi@sfc.keio.ac.jp`.
+Reach me at `y@uechi.io`.
 
 # Facts
 
