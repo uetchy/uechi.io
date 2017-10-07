@@ -1,0 +1,20 @@
+{
+  "rules": {
+    "max-ten": true,
+    "no-start-duplicated-conjunction": {
+      "interval": 2
+    },
+    "no-dropping-the-ra": true,
+    "common-misspellings": true,
+    "preset-japanese": {
+      "sentence-length": false
+    }
+  },
+  "filters": {
+    "whitelist": {
+      "allow": [
+        "/{%.+?%}/"
+      ]
+    }
+  }
+}

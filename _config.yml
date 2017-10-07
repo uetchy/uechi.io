@@ -1,0 +1,45 @@
+---
+title: uechi.io
+timezone: Asia/Tokyo
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+    permalink: "/blog/:year/:month/:day/:title"
+description: Random posts from @uetchy.
+url: https://uechi.io
+email: y@uechi.io
+twitter:
+  username: uetschy
+github:
+  username: uetchy
+logo: "/images/icon.png"
+highlighter: 
+excerpt_separator: "#"
+google_analytics: UA-28919359-12
+gems:
+- jekyll-redirect-from
+- jekyll-sitemap
+- jekyll-seo-tag
+- jekyll-feed
+- jemoji
+include:
+- _pages
+exclude:
+- README.md
+- LICENSE
+- CNAME
+- Gemfile
+- Gemfile.lock
+- package.json
+- script
+- vendor

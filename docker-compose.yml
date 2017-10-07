@@ -1,0 +1,9 @@
+version: '2'
+services:
+  web:
+    build: .
+    command: jekyll serve --host 0.0.0.0 --port 4000 --baseurl '' --watch --drafts --unpublished --incremental
+    ports:
+      - 4000:4000
+    volumes:
+      - .:/usr/src/app

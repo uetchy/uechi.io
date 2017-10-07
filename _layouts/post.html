@@ -1,0 +1,56 @@
+---
+layout: default
+---
+
+<section>
+  <article class="article">
+    <hgroup class="article__metadata">
+      <h2 class="article__title">{{ page.title }}</h1>
+      <h3 class="article__pubdate"><time pubdate>{{ page.date | date: '%B %d, %Y' }}</time></h3>
+    </hgroup>
+    <div class="article__content">
+      {{ content }}
+    </div>
+
+    <!-- Social buttons -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <div class="article__social">
+      <a href="https://twitter.com/share" class="twitter-share-button" data-size="large">Tweet</a>
+      <div class="fb-like" data-layout="button" data-action="like" data-size="large" data-show-faces="false" data-share="true"></div>
+    </div>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+  </article>
+</section>
+
+<!-- Include MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$','$'], ['\\(','\\)']],
+      displayMath: [['$$','$$'], ['\[','\]']],
+      processEscapes: false,
+      processEnvironments: false,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'a']
+    }
+  });
+</script>
+<!-- <script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    // Fix <code> tags after MathJax finishes running. This is a
+    // hack to overcome a shortcoming of Markdown. Discussion at
+    // https://github.com/mojombo/jekyll/issues/199
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script> -->
+<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_SVG">
+</script>

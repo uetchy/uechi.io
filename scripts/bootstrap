@@ -1,0 +1,8 @@
+#!/bin/sh
+# usage: script/bootstrap
+#
+# Setup dev env
+
+gem install bundler
+bundle install
+npm install
