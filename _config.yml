@@ -26,20 +26,23 @@ logo: "/images/icon.png"
 highlighter: 
 excerpt_separator: "#"
 google_analytics: UA-28919359-12
-gems:
-- jekyll-redirect-from
-- jekyll-sitemap
-- jekyll-seo-tag
-- jekyll-feed
-- jemoji
+plugins:
+  - jekyll-redirect-from
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jemoji
 include:
-- _pages
+  - _pages
 exclude:
-- README.md
-- LICENSE
-- CNAME
-- Gemfile
-- Gemfile.lock
-- package.json
-- script
-- vendor
+  - README.md
+  - LICENSE
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - node_modules
+  - script
+  - vendor
+  - docker-compose.yml
+  - Dockerfile

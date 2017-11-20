@@ -1,8 +1,8 @@
-version: '2'
+version: '3'
 services:
   web:
     build: .
-    command: jekyll serve --host 0.0.0.0 --port 4000 --baseurl '' --watch --drafts --unpublished --incremental
+    command: jekyll serve --host 0.0.0.0 --port 4000 --baseurl '' --force_polling --drafts --unpublished --incremental
     ports:
       - 4000:4000
     volumes:
