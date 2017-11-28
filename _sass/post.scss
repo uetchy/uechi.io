@@ -90,13 +90,6 @@ a.article-list__item__button {
 }
 
 .article__content {
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  font-feature-settings: 'kern';
-  -webkit-font-feature-settings: 'kern';
-  -moz-font-feature-settings: 'kern';
-  -moz-font-feature-settings: 'kern=1';
-
   p {
     font-size: 20px;
     font-weight: normal;
