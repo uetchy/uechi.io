@@ -10,7 +10,7 @@ body {
   width: 800px;
   margin: 0 auto;
   padding: 0 20px;
-  font-family: 'PT Serif', "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", serif;
+  font-family: 'ten-mincho', "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", serif;
 
   @media screen and (max-width: $break-large) {
     width: auto;
@@ -129,6 +129,10 @@ hr {
       font-size: 15px;
     }
   }
+}
+
+.header, .metro {
+  font-family: "PT Serif", serif;
 }
 
 @import 'post'
