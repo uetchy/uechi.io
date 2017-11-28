@@ -13,10 +13,10 @@ body {
   font-family: 'ten-mincho', "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  font-feature-settings: 'kern', 'palt';
-  -webkit-font-feature-settings: 'kern', 'palt';
-  -moz-font-feature-settings: 'kern', 'palt';
-  -moz-font-feature-settings: 'kern=1', 'palt';
+  font-feature-settings: 'kern', 'palt', 'pwid';
+  -webkit-font-feature-settings: 'kern', 'palt', 'pwid';
+  -moz-font-feature-settings: 'kern', 'palt', 'pwid';
+  -moz-font-feature-settings: 'kern=1', 'palt', 'pwid';
 
   @media screen and (max-width: $break-large) {
     width: auto;
