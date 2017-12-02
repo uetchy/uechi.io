@@ -1,6 +1,6 @@
 ---
 title: Run dokku with Dockland
-date: 2014-05-30 00:00:00 Z
+date: 2014-05-30 09:00:00 +09:00
 ---
 
 ローカルからheroku-toolbeltライクにdokkuコマンドを叩くdockland gemをリリースした。

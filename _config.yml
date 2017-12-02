@@ -27,22 +27,22 @@ highlighter:
 excerpt_separator: "#"
 google_analytics: UA-28919359-12
 plugins:
-  - jekyll-redirect-from
-  - jekyll-sitemap
-  - jekyll-seo-tag
-  - jekyll-feed
-  - jemoji
+- jekyll-redirect-from
+- jekyll-sitemap
+- jekyll-seo-tag
+- jekyll-feed
+- jemoji
 include:
-  - _pages
+- _pages
 exclude:
-  - README.md
-  - LICENSE
-  - CNAME
-  - Gemfile
-  - Gemfile.lock
-  - package.json
-  - node_modules
-  - script
-  - vendor
-  - docker-compose.yml
-  - Dockerfile
+- README.md
+- LICENSE
+- CNAME
+- Gemfile
+- Gemfile.lock
+- package.json
+- node_modules
+- script
+- vendor
+- docker-compose.yml
+- Dockerfile

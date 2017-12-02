@@ -1,6 +1,6 @@
 ---
 title: Alfred Qiita Workflow in Go
-date: 2015-09-07 00:00:00 Z
+date: 2015-09-07 09:00:00 +09:00
 ---
 
 ![Cover](http://randompaper.co.s3.amazonaws.com/alfred-qiita-workflow/alfred-qiita-workflow.png)

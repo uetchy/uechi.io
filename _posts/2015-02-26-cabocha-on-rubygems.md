@@ -1,6 +1,6 @@
 ---
 title: CaboCha on RubyGems
-date: 2015-02-26 00:00:00 Z
+date: 2015-02-26 09:00:00 +09:00
 ---
 
 日本語係り受け解析器CaboChaのRubyバインディング [cabocha-ruby](https://github.com/uetchy/cabocha-ruby) をリリースした。とは言っても [公式](https://code.google.com/p/cabocha/) のSWIGバインディングをベースにしたものだ。

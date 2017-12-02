@@ -1,6 +1,6 @@
 ---
 title: OS Xのネットワーク環境に合わせてHTTP_PROXYを切り替えるシェルスクリプト
-date: 2013-11-05 00:00:00 Z
+date: 2013-11-05 09:00:00 +09:00
 ---
 
 ![](http://randompaper.co.s3.amazonaws.com/osx-http-proxy/s.png)

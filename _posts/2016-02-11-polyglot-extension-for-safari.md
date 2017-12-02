@@ -1,6 +1,6 @@
 ---
 title: Polyglot Extension for Safari
-date: 2016-02-11 00:00:00 Z
+date: 2016-02-11 09:00:00 +09:00
 ---
 
 ![](http://randompaper.co.s3.amazonaws.com/Polyglot/header.png)
