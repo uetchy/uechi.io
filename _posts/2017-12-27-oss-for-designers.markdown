@@ -12,7 +12,7 @@ GitHubで公開されているOSSにちょっとしたPull-requestを送るの�
 
 その後、[より詳細な検討](https://github.com/textlint/media/pull/1)を重ねた結果、私がデザインしたtextlintのロゴは無事プロジェクトに受け入れられました。
 
-このようにプロジェクトの作者がIssue等でロゴを募集することは一般的であり、WebAssemblyのロゴも[公募のコンペティション](https://github.com/WebAssembly/design/issues/112)で決まりました。
+このようにプロジェクトの作者がIssue等でロゴを募集することは一般的であり、WebAssemblyのロゴも[公募のコンペティション](https://github.com/WebAssembly/design/issues/112)で決まっています。
 
 一方で自らロゴの提案をすることもあります。
 
