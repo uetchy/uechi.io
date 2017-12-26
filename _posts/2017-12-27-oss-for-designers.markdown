@@ -19,7 +19,7 @@ GitHubで公開されているOSSにちょっとしたPull-requestを送るの�
 ## ⌘英かな
 macOSのキーバインドを変更するアプリである[⌘英かな](https://ei-kana.appspot.com/)の例では、アイコンのEnhancementを思いつき、[Pull-request](https://github.com/iMasanari/cmd-eikana/pull/5)を送ったところ、本当にすぐにマージしてくれました。
 
-他の人の例では、[Annict](https://github.com/annict/annict/issues/120)などがあります。
+他の方の例では、[Annict](https://github.com/annict/annict/issues/120)などがあります。
 
 ## 結論
 以上のように、OSSコミュニティではコードだけでなくデザインワークに対してもオープンにコミットすることが出来ます。
