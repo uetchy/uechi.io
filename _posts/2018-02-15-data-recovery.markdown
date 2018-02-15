@@ -41,8 +41,8 @@ Option `-r5` means ddrescue will try rescuing damaged area for 5 times.
 
 And `/dev/disk2s2` become `/dev/rdisk2s2` this time. `r` stand for raw so this will access the disk more direct way.
 
-> Beware: You MUST use same `hdimage.dmg` and `mapfile` between two commands. `mapfile` remembers which blocks were rescued and vise versa.
+> Beware: You MUST use same `hdimage.dmg` and `mapfile` between two commands. `mapfile` remains information of which blocks were rescued.
 
 # Aftercare
 
-Mount `hdimage.dmg` and copy files and directories to a new drive. If the image seems broken, you can recover using `testdisk`. 
+Mount `hdimage.dmg` and copy files and directories to a new drive. If the image is broken, you can recover it using `testdisk`. 
