@@ -39,7 +39,7 @@ When the first command completed, do it again with different parameters to aggre
 
 Option `-r5` means ddrescue will try rescuing damaged area for 5 times.
 
-And `/dev/disk2s2` become `/dev/__r__disk2s2` this time. `r` stand for raw so this will access the disk more direct way.
+And `/dev/disk2s2` become `/dev/rdisk2s2` this time. `r` stand for raw so this will access the disk more direct way.
 
 > Beware: You MUST use same `hdimage.dmg` and `mapfile` between two commands. `mapfile` remembers which blocks were rescued and vise versa.
 
