@@ -10,7 +10,7 @@ Suppose you are using macOS and your endangered disk is formatted with HFS+.
 # Beforehand
 
 ## Inspect
-Use `diskutil list` to verify that which drive is what you expected for.
+Use `diskutil list` to verify that which drive is damaged.
 This article assumes that `disk2` is the damaged one AND a partition `disk2s2` is what you expected to be rescued. You don't want to save `disk2s1` that is usually EFI partition.
 
 ## Damage Control
