@@ -1,5 +1,5 @@
 ---
-title: How can I rescued almost data from damaged HDD
+title: Guide to recover data from damaged HDD
 date: 2018-02-15 12:45:00 +09:00
 ---
 
