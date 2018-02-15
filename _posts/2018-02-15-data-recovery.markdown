@@ -45,4 +45,4 @@ And `/dev/disk2s2` become `/dev/__r__disk2s2` this time. `r` stand for raw so th
 
 # Aftercare
 
-Mount hdimage.dmg and copy files and directories to a new drive. If the image seems broken, you can recover using `testdisk`. 
+Mount `hdimage.dmg` and copy files and directories to a new drive. If the image seems broken, you can recover using `testdisk`. 
