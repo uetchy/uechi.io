@@ -11,7 +11,7 @@ Suppose you are using macOS and your endangered disk is formatted with HFS+.
 
 ## Inspect
 Use `diskutil list` to verify that which drive is what you expected for.
-This article assumes that `disk2` is the damaged one AND a partition `disk2s2` is what you expected to be rescued.
+This article assumes that `disk2` is the damaged one AND a partition `disk2s2` is what you expected to be rescued. You don't want to save `disk2s1` that is usually EFI partition.
 
 ## Damage Control
 To prevent extra load, unmount the damaged disk: `diskutil unmountDisk disk2`.
@@ -35,6 +35,7 @@ sudo ddrescue -r5 -v /dev/rdisk2s2 ./hdimage.dmg ./mapfile
 When the first command completed, do it again with different parameters to aggressively scrape bad area failed to access the first time.
 Option `-r5` means ddrescue will try rescuing damaged area for 5 times.
 And `/dev/disk2s2` become `/dev/__r__disk2s2` this time. `r` stand for raw so this will access the disk more direct way.
+> Beware: You MUST use same `hdimage.dmg` and `mapfile` between two commands. `mapfile` remembers which blocks were rescued and vise versa.
 
 # Aftercare
 
