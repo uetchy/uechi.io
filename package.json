@@ -6,12 +6,12 @@
     "fix-typo": "textlint _posts/*.md _pages/*.md --fix --dry-run -f diff"
   },
   "devDependencies": {
-    "textlint": "^7.1.0",
-    "textlint-filter-rule-whitelist": "^1.0.2",
+    "textlint": "^10.2.1",
+    "textlint-filter-rule-whitelist": "^1.2.3",
     "textlint-rule-common-misspellings": "^1.0.1",
     "textlint-rule-max-ten": "^2.0.3",
-    "textlint-rule-no-dropping-the-ra": "^1.0.3",
-    "textlint-rule-no-start-duplicated-conjunction": "^1.1.3",
-    "textlint-rule-preset-japanese": "^1.3.3"
+    "textlint-rule-no-dropping-the-ra": "^1.1.2",
+    "textlint-rule-no-start-duplicated-conjunction": "^2.0.2",
+    "textlint-rule-preset-japanese": "^4.0.0"
   }
 }

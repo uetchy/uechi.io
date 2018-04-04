@@ -175,3 +175,31 @@ a.article-list__item__button {
     margin: 0;
   }
 }
+
+
+// Remit
+#remit {
+  font-family: sans-serif;
+
+  pre {
+    display: inline-block;
+  }
+
+  a.button {
+    margin: 10px 0;
+    padding: 20px;
+    display: block;
+    background: black;
+    color: white;
+    text-align: center;
+    border-radius: 2px;
+  }
+
+  img {
+    margin: 10px 0;
+  }
+
+  section {
+    margin: 50px 0;
+  }
+}
