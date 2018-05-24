@@ -177,12 +177,22 @@ a.article-list__item__button {
 }
 
 
-// Remit
-#remit {
+// Pay
+#pay {
   font-family: sans-serif;
 
-  pre {
-    display: inline-block;
+  .monospace {
+    font-family: monospace;
+    font-weight: bold;
+    padding: 0 5px;
+    font-size: 12pt;
+    user-select: all;
+    -webkit-user-select: all;
+    -moz-user-select: all;
+  }
+
+  p {
+    padding: 10px 0;
   }
 
   a.button {
