@@ -3,7 +3,7 @@ title: homebrew-caskを単純なダウンローダーとして使う
 date: 2014-10-27 09:00:00 +09:00
 ---
 
-![image](http://randompaper.co.s3.amazonaws.com/brew-cask-downloader/ss3.png)
+![image](/uploads/brew-cask-downloader.png)
 
 homebrew-cask を単純なダウンローダーとして使う。
 

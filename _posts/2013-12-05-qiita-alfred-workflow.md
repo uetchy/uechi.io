@@ -7,7 +7,7 @@ date: 2013-12-05 09:00:00 +09:00
 
 そこで、以前作った[Qiitaの記事をインクリメンタルサーチするAlfred 2 Workflow](http://qiita.com/o_ame/items/f23e75bfc11e9e7b3a08)に、ストックした投稿を検索するコマンドを追加した。
 
-![s1.png](https://raw.githubusercontent.com/uetchy/alfred-qiita-workflow/master/screenshots/qiita-workflow.png)
+![s1.png](/uploads/alfred-qiita-workflow.png)
 
 > [Githubリポジトリ](https://github.com/uetchy/alfred-qiita-workflow)から[ダウンロード](https://github.com/uetchy/alfred-qiita-workflow/archive/master.zip)
 

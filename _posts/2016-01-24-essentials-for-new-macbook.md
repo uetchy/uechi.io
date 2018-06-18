@@ -3,7 +3,7 @@ title: Essentials for New MacBook
 date: 2016-01-24 09:00:00 +09:00
 ---
 
-![](http://randompaper.co.s3.amazonaws.com/essentials-for-new-macbook/spec.png)
+![](/uploads/essentials-for-new-macbook-spec.png)
 
 新しいMacBookを買ったので、普段使っているアプリの整理も兼ねて、幾つかポリシーを決めてセットアップすることにしました。
 
@@ -35,7 +35,7 @@ Sublime Textも良いのですが、やはりターミナルやGitが一画面�
 
 ## [Typora](http://www.typora.io)
 
-![](http://randompaper.co.s3.amazonaws.com/essentials-for-new-macbook/typora.png)
+![](/uploads/essentials-for-new-macbook-typora.png)
 
 これまで様々な Markdown エディタを試してきましたが、どれもエディタとプレビューが分離しているUIを採用しており、それが私には不合理に思えて仕方がありませんでした。
 

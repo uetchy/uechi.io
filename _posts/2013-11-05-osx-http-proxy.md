@@ -3,7 +3,7 @@ title: OS Xのネットワーク環境に合わせてHTTP_PROXYを切り替え�
 date: 2013-11-05 09:00:00 +09:00
 ---
 
-![](http://randompaper.co.s3.amazonaws.com/osx-http-proxy/s.png)
+![](/uploads/osx-http-proxy.png)
 
 大学のネットワークに接続している時だけプロキシを設定したい時がある。
 

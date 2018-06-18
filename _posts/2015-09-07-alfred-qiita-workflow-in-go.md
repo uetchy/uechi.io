@@ -3,7 +3,7 @@ title: Alfred Qiita Workflow in Go
 date: 2015-09-07 09:00:00 +09:00
 ---
 
-![Cover](http://randompaper.co.s3.amazonaws.com/alfred-qiita-workflow/alfred-qiita-workflow.png)
+![Cover](/uploads/alfred-qiita-workflow.png)
 
 Rubyで書かれている [Alfred Qiita Workflow](https://github.com/uetchy/alfred-qiita-workflow) を[バグ修正](https://github.com/uetchy/alfred-qiita-workflow/issues/3)のついでにGoで書き直した。
 

@@ -3,7 +3,7 @@ title: Create .icns from .sketch
 date: 2015-03-10 09:00:00 +09:00
 ---
 
-![](http://randompaper.co.s3.amazonaws.com/create-icns-from-sketch/intro.png)
+![](/uploads/create-icns-from-sketch/intro.png)
 
 Gulpをつかって .sketch から .icns を生成するために、[gulp-sketch](https://github.com/cognitom/gulp-sketch) の出力結果を.icnsへ変換する [gulp-iconutil](https://github.com/uetchy/gulp-iconutil) というプラグインを作りました。
 
@@ -21,7 +21,7 @@ iconset の作成には16×16 ... 512×512の6種類のサイズのアイコン�
 
 Sketch上に512×512サイズのアートボードを作成し、アプリのアイコンをデザインします。
 
-![](http://randompaper.co.s3.amazonaws.com/create-icns-from-sketch/dock.png)
+![](/uploads/create-icns-from-sketch/dock.png)
 
 > Dock上でアイコンの見栄えをチェックするために、[sketch-dockpreview](https://github.com/fnky/sketch-dockpreview)を使っています。これは本当に便利なプラグインです。
 
@@ -48,7 +48,7 @@ gulp.task 'icons', ->
 
 iconsタスクを実行すると、iconsフォルダの中に__app.icns__が生成されます。
 
-![](http://randompaper.co.s3.amazonaws.com/create-icns-from-sketch/result.png)
+![](/uploads/create-icns-from-sketch/result.png)
 
 Electronアプリ開発者はこのアイコンファイルをOS X向けビルドにそのまま使えます。
 

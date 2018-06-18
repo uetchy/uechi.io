@@ -63,4 +63,4 @@ $ open `brew --prefix julius-dictation-kit`/share/doc
 
 ### 実行中の様子
 
-![s1.png](https://qiita-image-store.s3.amazonaws.com/0/19622/b3a55a4b-f3cb-5772-541b-00606c286a4d.png "s1.png")
+![install-julius-with-homebrew](/uploads/install-julius-with-homebrew.png)
