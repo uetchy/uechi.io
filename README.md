@@ -1,6 +1,6 @@
 # uechi.io
 
-[![Build Status](https://travis-ci.org/uetchy/uetchy.github.io.svg?branch=master)](https://travis-ci.org/uetchy/uetchy.github.io)
+[![Build Status](https://travis-ci.org/uetchy/uechi.io.svg?branch=master)](https://travis-ci.org/uetchy/uetchy.github.io)
 
 ## Build
 
