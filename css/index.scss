@@ -1,7 +1,7 @@
 ---
 ---
 
-@import url(https://fonts.googleapis.com/css?family=PT+Serif:400, 700);
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:400,700');
 $break-small: 500px;
 $break-large: 840px;
 body {
@@ -19,8 +19,7 @@ body {
     width: auto;
     margin: 0;
   }
-}
-// MathJax
+} // MathJax
 #MathJax_Message {
   display: none;
 } // Highlight.js
