@@ -42,4 +42,4 @@ python3 -m venv venv
 source ./venv/bin/activate
 ```
 
-then `venv` will creates virtual envs on __./venv__ folder on the root of your project.
+then `venv` will creates virtual envs on **./venv** folder on the root of your project.

@@ -3,7 +3,7 @@ title: Run dokku with Dockland
 date: 2014-05-30 09:00:00 +09:00
 ---
 
-ローカルからheroku-toolbeltライクにdokkuコマンドを叩くdockland gemをリリースした。
+ローカルから heroku-toolbelt ライクに dokku コマンドを叩く dockland gem をリリースした。
 
 Github: [uetchy/dockland](https://github.com/uetchy/dockland)
 
@@ -17,9 +17,9 @@ gem install dockland
 
 ### 普通のやり方
 
-まずは普通にdokkuコマンドを叩く。
+まずは普通に dokku コマンドを叩く。
 
-`ssh -t dokku@example.com <command> <app-name> <options>`でリモートのdokkuコマンドを直接叩ける。
+`ssh -t dokku@example.com <command> <app-name> <options>`でリモートの dokku コマンドを直接叩ける。
 
 ```bash
 $ ssh -t dokku@example.com config:set sushi-app KEY1=VALUE
@@ -33,9 +33,9 @@ KEY1: VALUE
 
 しかしこれではホスト名やアプリ名を毎回打ち込む羽目になって大変だ。
 
-### docklandのやり方
+### dockland のやり方
 
-docklandで同じことをやる。
+dockland で同じことをやる。
 
 ```bash
 $ cd sushi-app # ローカルのプロジェクトリポジトリに移動
@@ -64,7 +64,7 @@ KEY1: VALUE
 alias dokku='dockland'
 ```
 
-という具合にaliasを張っておけば、まるでリモートで`dokku`を実行している感覚でローカルから`dokku`コマンドを触ることが出来る。
+という具合に alias を張っておけば、まるでリモートで`dokku`を実行している感覚でローカルから`dokku`コマンドを触ることが出来る。
 
 ```bash
 $ cd rails-app
@@ -76,9 +76,10 @@ $ dokku logs
 ```
 
 ## 結論
+
 ### 良い所
 
-- リモートのdokkuコマンドを叩きたい時はプロジェクトのGitリポジトリに入ってdocklandコマンドを叩くだけで良い
+- リモートの dokku コマンドを叩きたい時はプロジェクトの Git リポジトリに入って dockland コマンドを叩くだけで良い
 
 ### 悪いところ
 

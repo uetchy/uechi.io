@@ -9,11 +9,11 @@ date: 2016-02-11 09:00:00 +09:00
 
 ![](http://randompaper.co.s3.amazonaws.com/Polyglot/screencast1.gif)
 
-この Extension は __Google Translate API__ を使っている。だからこれを Safari で使うためには、まず Google Cloud Platform から APIキーを手に入れなくてはならない。その手続きは少しばかり面倒なので、[スクリーンショット付きのガイド](https://github.com/uetchy/Polyglot/wiki/How-to-obtain-Google-Cloud-Platform-API-key)を作った。
+この Extension は **Google Translate API** を使っている。だからこれを Safari で使うためには、まず Google Cloud Platform から API キーを手に入れなくてはならない。その手続きは少しばかり面倒なので、[スクリーンショット付きのガイド](https://github.com/uetchy/Polyglot/wiki/How-to-obtain-Google-Cloud-Platform-API-key)を作った。
 
 ## Inside Safari Extension
 
-技術的に特段おもしろいことをしているわけではない。ES2015 でコードを書き、webpack と babel を使って Extension向けにトランスパイルしている。意外だったのは、Safari Extension の構造が Google Chrome 拡張機能のそれとよく似ていたことだ。これならば Chrome 開発者でも容易に Safari Extension を作れるだろう。
+技術的に特段おもしろいことをしているわけではない。ES2015 でコードを書き、webpack と babel を使って Extension 向けにトランスパイルしている。意外だったのは、Safari Extension の構造が Google Chrome 拡張機能のそれとよく似ていたことだ。これならば Chrome 開発者でも容易に Safari Extension を作れるだろう。
 
 ## プラットフォーム間の差異を無くすには
 

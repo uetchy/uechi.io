@@ -3,7 +3,7 @@ title: CaboCha on RubyGems
 date: 2015-02-26 09:00:00 +09:00
 ---
 
-日本語係り受け解析器CaboChaのRubyバインディング [cabocha-ruby](https://github.com/uetchy/cabocha-ruby) をリリースした。とは言っても [公式](https://code.google.com/p/cabocha/) のSWIGバインディングをベースにしたものだ。
+日本語係り受け解析器 CaboCha の Ruby バインディング [cabocha-ruby](https://github.com/uetchy/cabocha-ruby) をリリースした。とは言っても [公式](https://code.google.com/p/cabocha/) の SWIG バインディングをベースにしたものだ。
 
 ## 導入
 
@@ -12,11 +12,12 @@ gem install cabocha
 ```
 
 でインストール出来る。
-> cabocha-ruby をインストールする前に、CaboCha を`brew install cabocha`かなんかでインストールしておかないとmakeが失敗するので注意すること。
+
+> cabocha-ruby をインストールする前に、CaboCha を`brew install cabocha`かなんかでインストールしておかないと make が失敗するので注意すること。
 
 ## 使う
 
-requireする時は`require "cabocha"`と`require "CaboCha"`、どちらを使っても正しい。
+require する時は`require "cabocha"`と`require "CaboCha"`、どちらを使っても正しい。
 
 ```ruby
 require "cabocha"

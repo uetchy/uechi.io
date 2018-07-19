@@ -3,19 +3,19 @@ title: Gluing Installed Atom Packages and apm Stars Together
 date: 2015-12-16 09:00:00 +09:00
 ---
 
-Atomにインストールしているパッケージと[Atom.io](https://atom.io/packages)上のスターを同期するCLIツール [Atom Package Diff](https://www.npmjs.com/package/atom-package-diff) を公開した。
+Atom にインストールしているパッケージと[Atom.io](https://atom.io/packages)上のスターを同期する CLI ツール [Atom Package Diff](https://www.npmjs.com/package/atom-package-diff) を公開した。
 
 # 導入
 
-npm経由でインストールする。
+npm 経由でインストールする。
 
 ```bash
 $ npm install -g atom-package-diff
 ```
 
-# インストール済みパッケージとスターのdiff
+# インストール済みパッケージとスターの diff
 
-`apd status`コマンドでインストール済みパッケージとスターしているパッケージのdiffを見ることができる。
+`apd status`コマンドでインストール済みパッケージとスターしているパッケージの diff を見ることができる。
 
 ```bash
 $ apd status

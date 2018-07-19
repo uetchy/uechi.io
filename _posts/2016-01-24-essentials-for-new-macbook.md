@@ -5,7 +5,7 @@ date: 2016-01-24 09:00:00 +09:00
 
 ![](/uploads/essentials-for-new-macbook-spec.png)
 
-新しいMacBookを買ったので、普段使っているアプリの整理も兼ねて、幾つかポリシーを決めてセットアップすることにしました。
+新しい MacBook を買ったので、普段使っているアプリの整理も兼ねて、幾つかポリシーを決めてセットアップすることにしました。
 
 ## 1. シンプル
 
@@ -13,21 +13,21 @@ date: 2016-01-24 09:00:00 +09:00
 
 ## 2. デフォルト重視
 
-なるべくデフォルトで用意されているものを使います。カスタマイズもOS X標準機能の範囲内で行います。
+なるべくデフォルトで用意されているものを使います。カスタマイズも OS X 標準機能の範囲内で行います。
 
 # 使っているアプリ
 
 ## [Homebrew](http://brew.sh)
 
-OS X向けのパッケージマネージャーです。
+OS X 向けのパッケージマネージャーです。
 
 ## Atom
 
-Sublime Textも良いのですが、やはりターミナルやGitが一画面で使えるのはMacBookのフルスクリーンアプリに合っています。
+Sublime Text も良いのですが、やはりターミナルや Git が一画面で使えるのは MacBook のフルスクリーンアプリに合っています。
 
 ## LaunchControl
 
-`launchctl`のGUI版です。変なAgentが差し込まれていることがあるので、たまにチェックしています。
+`launchctl`の GUI 版です。変な Agent が差し込まれていることがあるので、たまにチェックしています。
 
 ## [Papers](http://papersapp.com/mac/)
 
@@ -37,23 +37,23 @@ Sublime Textも良いのですが、やはりターミナルやGitが一画面�
 
 ![](/uploads/essentials-for-new-macbook-typora.png)
 
-これまで様々な Markdown エディタを試してきましたが、どれもエディタとプレビューが分離しているUIを採用しており、それが私には不合理に思えて仕方がありませんでした。
+これまで様々な Markdown エディタを試してきましたが、どれもエディタとプレビューが分離している UI を採用しており、それが私には不合理に思えて仕方がありませんでした。
 
-Typora は入力した記法がリアルタイムに反映されるので直感的に文章を書くことが出来ます。 加えてGithub Flavored Markdown、MathJax、Mermaidなどのシーケンス図に対応しており、何気にニッチな需要を攻めている、小粋なアプリです。
+Typora は入力した記法がリアルタイムに反映されるので直感的に文章を書くことが出来ます。 加えて Github Flavored Markdown、MathJax、Mermaid などのシーケンス図に対応しており、何気にニッチな需要を攻めている、小粋なアプリです。
 
-## [⌘英かな](https://ei-kana.appspot.com)
+## [⌘ 英かな](https://ei-kana.appspot.com)
 
-US配列キーボードの左右⌘を英かなに割り振ることが出来るアプリです。実装がシンプルで軽量です。アイコンをデザインしてPull-requestを送ったらマージしてくれました。
+US 配列キーボードの左右 ⌘ を英かなに割り振ることが出来るアプリです。実装がシンプルで軽量です。アイコンをデザインして Pull-request を送ったらマージしてくれました。
 
 ## [Paw](https://paw.cloud/)
 
-Web APIを作りたい時に使えます。無くても困りませんが、あると便利です。
+Web API を作りたい時に使えます。無くても困りませんが、あると便利です。
 
 ## [Dash](https://kapeli.com/dash)
 
 API ドキュメントを素早く検索出来るアプリです。
 
-無いと困るようなアプリではありませんが、遅いWi-Fiに繋いでいる場合でも素早くドキュメントを閲覧できるので外で作業するならあると便利でしょう。
+無いと困るようなアプリではありませんが、遅い Wi-Fi に繋いでいる場合でも素早くドキュメントを閲覧できるので外で作業するならあると便利でしょう。
 
 ## [Tower](http://www.git-tower.com)
 
@@ -63,33 +63,33 @@ Git の GUI クライアントです。
 
 ## [Google Chrome](https://www.google.com/chrome/browser/desktop/index.html)
 
-普段はSafariを使っていますが、Chromeでしか動かない前時代的なWebサービスを使う時や、Webアプリケーションをデバッグする時のために入れました。
+普段は Safari を使っていますが、Chrome でしか動かない前時代的な Web サービスを使う時や、Web アプリケーションをデバッグする時のために入れました。
 
 ## Xcode
 
-iOSアプリを作るときに必要なので入れました。
+iOS アプリを作るときに必要なので入れました。
 
-gccやGitなど、基本的なビルドツールチェインが必要な場合、Xcodeをインストールする代わりに `sudo xcode-select —install` でそれらを導入できます。
+gcc や Git など、基本的なビルドツールチェインが必要な場合、Xcode をインストールする代わりに `sudo xcode-select —install` でそれらを導入できます。
 
-## [ForkLift 3] (http://www.binarynights.com/forklift/)
+## [ForkLift 3](http://www.binarynights.com/forklift/)
 
-SFTPサーバーやS3に接続するためのアプリです。接続したサーバーのディレクトリをFinderにマウントする機能があるので、ローカルで普通にファイルを扱う感覚でリモートのファイルをやりとり出来ます。Transmitから乗り換えました。
+SFTP サーバーや S3 に接続するためのアプリです。接続したサーバーのディレクトリを Finder にマウントする機能があるので、ローカルで普通にファイルを扱う感覚でリモートのファイルをやりとり出来ます。Transmit から乗り換えました。
 
 ## [Kaleidoscope](http://www.kaleidoscopeapp.com)
 
-さすがに標準のFileMergeだと機能不足が否めないので。
+さすがに標準の FileMerge だと機能不足が否めないので。
 
 ## [Sketch](https://www.sketchapp.com)
 
-Bohemian Coding が開発しているベクターデザインツールです。アイコンやUIをデザインする時に使っています。
+Bohemian Coding が開発しているベクターデザインツールです。アイコンや UI をデザインする時に使っています。
 
 ## RightFont
 
-フォント管理アプリです。FontCase、FontExplorer X Proなどを使ってきましたが、今はこれに落ち着いています。Google FontsやTypeKitに対応しており、またアイコンフォントを一覧できる機能が便利です。
+フォント管理アプリです。FontCase、FontExplorer X Pro などを使ってきましたが、今はこれに落ち着いています。Google Fonts や TypeKit に対応しており、またアイコンフォントを一覧できる機能が便利です。
 
 ## Adobe Creative Cloud
 
-Affinityシリーズに乗り換えたので、今はIllustratorとTypeKitを使うために入れています。
+Affinity シリーズに乗り換えたので、今は Illustrator と TypeKit を使うために入れています。
 
 ## [Dropbox](https://www.dropbox.com)
 
@@ -97,15 +97,15 @@ Affinityシリーズに乗り換えたので、今はIllustratorとTypeKitを使
 
 ## 1Password
 
-パスワードマネージャーです。2要素認証のトークンもまとめて管理できます。
+パスワードマネージャーです。2 要素認証のトークンもまとめて管理できます。
 
 ## f.lux
 
-iOSのNight ShiftをmacOSに持ってきたようなアプリです。長時間の作業でも目が痛くなりません。
+iOS の Night Shift を macOS に持ってきたようなアプリです。長時間の作業でも目が痛くなりません。
 
 ## Reeder
 
-RSSリーダーです。Feedly Web版でも良いですが、Readability機能が便利なので使っています。
+RSS リーダーです。Feedly Web 版でも良いですが、Readability 機能が便利なので使っています。
 
 ## [AppCleaner](https://freemacsoft.net/appcleaner/)
 
@@ -113,11 +113,11 @@ RSSリーダーです。Feedly Web版でも良いですが、Readability機能�
 
 ## [Pocket](https://getpocket.com)
 
-「あとで読む」を管理するためのアプリです。Reading Listでもいいと思うので好みですね。
+「あとで読む」を管理するためのアプリです。Reading List でもいいと思うので好みですね。
 
 ## [TripMode](https://www.tripmode.ch)
 
-通信出来るアプリを個別に許可できます。外出先でテザリングをする際にTripModeがあれば、データ制限を気にせずインターネット接続ができるので便利です。
+通信出来るアプリを個別に許可できます。外出先でテザリングをする際に TripMode があれば、データ制限を気にせずインターネット接続ができるので便利です。
 
 # 導入を見送ったもの
 
@@ -127,28 +127,28 @@ RSSリーダーです。Feedly Web版でも良いですが、Readability機能�
 
 ## [Evernote](https://evernote.com/intl/jp/)
 
-Notes.appに移行しました。
+Notes.app に移行しました。
 
 ## Flash
 
-ニコニコ動画が見れなくなるので泣く泣く導入していましたが、公式でHTML5に対応したので不要になりました。
+ニコニコ動画が見れなくなるので泣く泣く導入していましたが、公式で HTML5 に対応したので不要になりました。
 
 ## [VirtualBox](https://www.virtualbox.org)
 
-仮想環境を構築するためのアプリです。[Docker Machine](https://docs.docker.com/machine/)と組み合わせていましたが、Docker for Macの登場によって不要になりました。
+仮想環境を構築するためのアプリです。[Docker Machine](https://docs.docker.com/machine/)と組み合わせていましたが、Docker for Mac の登場によって不要になりました。
 
 ## Karabiner
 
-US配列キーボードのCommandキーを英かなに振り分けるため、Karabinerを使っていましたが、よりシンプルで軽量な[⌘英かな](https://ei-kana.appspot.com)に移行しました。
+US 配列キーボードの Command キーを英かなに振り分けるため、Karabiner を使っていましたが、よりシンプルで軽量な[⌘ 英かな](https://ei-kana.appspot.com)に移行しました。
 
 ## Seil
 
-US配列のcaps lockキーをCtrlキーへ変更するために使っていましたが、いつからかmacOS標準で出来るようになっていたので不要になりました。
+US 配列の caps lock キーを Ctrl キーへ変更するために使っていましたが、いつからか macOS 標準で出来るようになっていたので不要になりました。
 
 ## Google 日本語入力
 
-最近のOS標準のIMに搭載されているライブ変換機能が優秀なので、あえてサードパーティのIMを入れる必要性がなくなりました。
+最近の OS 標準の IM に搭載されているライブ変換機能が優秀なので、あえてサードパーティの IM を入れる必要性がなくなりました。
 
 ## Alfred
 
-便利そうなワークフローを色々入れても、実際に使う頻度はあまり高くないことに気がつき、この際なのでSpotlightに切り替えました。
+便利そうなワークフローを色々入れても、実際に使う頻度はあまり高くないことに気がつき、この際なので Spotlight に切り替えました。

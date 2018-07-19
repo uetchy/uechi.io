@@ -9,9 +9,11 @@ layout: post
 </div>
 
 ## Handwriting Typeface Template for Alphabet A-Z
+
 [Download (.pdf)]({{ site.baseurl }}/images/typeface/Typeface_A-Z.pdf)
 
 ## Handwriting Typeface Template for Hiragana (ひらがな)
+
 [Download (.pdf)]({{ site.baseurl }}/images/typeface/Typeface_Hiragana.pdf)
 
 ## Typeface Design Kit (.sketch)

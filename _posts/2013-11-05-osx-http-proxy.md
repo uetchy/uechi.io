@@ -7,9 +7,9 @@ date: 2013-11-05 09:00:00 +09:00
 
 大学のネットワークに接続している時だけプロキシを設定したい時がある。
 
-Macのネットワーク環境は`networksetup -getcurrentlocation`コマンドで取得することが出来るので、
+Mac のネットワーク環境は`networksetup -getcurrentlocation`コマンドで取得することが出来るので、
 
-__.zshrc__ 辺りに以下のシェルスクリプトを書いておけばTerminalで新しいタブを開いた時に自動でプロキシを設定してくれるはずである。
+**.zshrc** 辺りに以下のシェルスクリプトを書いておけば Terminal で新しいタブを開いた時に自動でプロキシを設定してくれるはずである。
 
 ```bash
 proxy=proxy.hogehoge.ac.jp
@@ -22,11 +22,11 @@ if [ "`networksetup -getcurrentlocation`" = "$switch_trigger" ]; then
 fi
 ```
 
-## Gitのプロキシ設定も書き換えたい
+## Git のプロキシ設定も書き換えたい
 
-Gitはhttp_proxyを見てくれないのでリモートリポジトリにpush出来なくて困ることがあった。そこでhttp_proxyと一緒にGitのプロキシ設定も書き換えるようにしたい。
+Git は http_proxy を見てくれないのでリモートリポジトリに push 出来なくて困ることがあった。そこで http_proxy と一緒に Git のプロキシ設定も書き換えるようにしたい。
 
-Gitのプロキシは以下のコマンドで設定出来る。`--global`の代わりに`--system`を使っても良い。
+Git のプロキシは以下のコマンドで設定出来る。`--global`の代わりに`--system`を使っても良い。
 
 ```bash
 git config --global http.proxy $proxy
@@ -80,14 +80,15 @@ else
 fi
 ```
 
-このコードを __.zshrc__ に保存して適当なターミナルで新しいセッションを開くと、`switch_trigger`で指定されたネットワーク環境下にいる時だけプロキシを通すことが出来る。
+このコードを **.zshrc** に保存して適当なターミナルで新しいセッションを開くと、`switch_trigger`で指定されたネットワーク環境下にいる時だけプロキシを通すことが出来る。
 
 既に開いているセッションに対してプロキシを適用する方法がわからなかった。
 
-Workaroundとして、コードを __~/.switch_proxy__ 辺りに置いて、
+Workaround として、コードを **~/.switch_proxy** 辺りに置いて、
 
 ```bash:~/.zshrc
 alias nswitch=~/.switch_proxy
-```
 
+```
 と`.zshrc`に書いておくことで、`nswitch`とタイプしてプロキシを切り替えられるようになる。
+```

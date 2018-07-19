@@ -3,36 +3,35 @@ title: HomebrewでmacOSに構文解析システムKNPを入れる
 date: 2014-09-23 09:00:00 +09:00
 ---
 
-HomebrewでmacOSに構文解析システムKNPをインストールします。
+Homebrew で macOS に構文解析システム KNP をインストールします。
 
 # 前提
 
-OS X用のパッケージ管理ツール Homebrew がインストールされている必要がある。
+OS X 用のパッケージ管理ツール Homebrew がインストールされている必要がある。
 
 インストール方法は[こちら](http://www.engineyard.co.jp/blog/2012/homebrew-os-xs-missing-package-manager/)
 
 # インストール
 
-デフォルトのHomebrewリポジトリにKNPは含まれていないので [homebrew-nlp](https://github.com/uetchy/homebrew-nlp) をtapする。
-
+デフォルトの Homebrew リポジトリに KNP は含まれていないので [homebrew-nlp](https://github.com/uetchy/homebrew-nlp) を tap する。
 
 ```bash
 brew tap uetchy/nlp
 ```
 
-Tapし終わったら、`knp`をインストールする。knpが依存している形態素解析システム`juman`とデータベース`tinycdb`はHomebrewによって自動でインストールされる。その内の`juman`は上記の __oame/nlp__ Tapによって提供されている。
+Tap し終わったら、`knp`をインストールする。knp が依存している形態素解析システム`juman`とデータベース`tinycdb`は Homebrew によって自動でインストールされる。その内の`juman`は上記の **oame/nlp** Tap によって提供されている。
 
 ```bash
 brew install knp
 ```
 
-固有表現解析を行いたい場合は __--with-crf++__ オプションを付けてインストールする。このオプションを付けると、依存解決のために`crf++`も同時にインストールされる。
+固有表現解析を行いたい場合は **--with-crf++** オプションを付けてインストールする。このオプションを付けると、依存解決のために`crf++`も同時にインストールされる。
 
 ```bash
 brew install knp --with-crf++
 ```
 
-KNPのインストールにはありえないくらい時間が掛かる。
+KNP のインストールにはありえないくらい時間が掛かる。
 
 # チェック
 

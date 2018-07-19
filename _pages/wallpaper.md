@@ -4,7 +4,7 @@ permalink: "/wallpaper"
 layout: post
 ---
 
-Right-click and choose __Save Image__ to download wallpapers designed for OS X.
+Right-click and choose **Save Image** to download wallpapers designed for OS X.
 
 ![Ridge]({{ site.baseurl }}/images/wallpaper/ridge.png)
 
