@@ -1,10 +1,12 @@
 ---
-title: Wallpaper
+title: Wallpaper Gallery
 permalink: "/wallpaper"
 layout: post
 ---
 
-Right-click and choose **Save Image** to download wallpapers designed for OS X.
+Right-click and choose **Save Image** to download my wallpapers.
+
+![Sunrise]({{ site.baseurl }}/images/wallpaper/sunrise.png)
 
 ![Ridge]({{ site.baseurl }}/images/wallpaper/ridge.png)
 
