@@ -4,7 +4,7 @@ permalink: "/wallpaper"
 layout: post
 ---
 
-Right-click and choose **Save Image** to download my wallpapers. All following pictures are my own work and published on Creative Commons BY-NC-SA.
+Right-click and choose **Save Image** to download my wallpapers. All following pictures are my own work and are published on Creative Commons BY-NC-SA.
 
 ![Sunrise]({{ site.baseurl }}/images/wallpaper/sunrise.png)
 
