@@ -14,7 +14,7 @@ defaults:
     type: posts
   values:
     layout: post
-    permalink: "/blog/:year/:month/:day/:title"
+    permalink: "/blog/:title"
 description: Random posts from @uetchy.
 url: https://uechi.io
 email: y@uechi.io
