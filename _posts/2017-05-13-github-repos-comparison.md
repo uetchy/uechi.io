@@ -4,13 +4,13 @@ date: 2017-05-13 12:00:00 +09:00
 image: http://randompaper.co.s3.amazonaws.com/gh-compare.gif
 ---
 
-# GitHubリポジトリの比較表を gh-compare で作る
+# GitHub リポジトリの比較表を gh-compare で作る
 
 ![](http://randompaper.co.s3.amazonaws.com/gh-compare.gif)
 
 [gh-compare](https://github.com/uetchy/gh-compare) を作りました。この小さなツールを使って、導入を検討しているライブラリ群の比較表をコマンド１つで作ることが出来ます。
 
-ライブラリのリポジトリがGitHubにあることが前提になりますが、プロジェクトの勢いからサイズまで俯瞰することが出来ます。
+ライブラリのリポジトリが GitHub にあることが前提になりますが、プロジェクトの勢いからサイズまで俯瞰することが出来ます。
 
 最高と最悪の値はそれぞれ緑色と赤色に着色されるので、違いが一目瞭然でわかります。
 
