@@ -23,7 +23,11 @@ twitter:
 github:
   username: uetchy
 logo: "/images/icon.png"
-highlighter: 
+highlighter: none
+markdown: kramdown
+kramdown:
+  syntax_highlighter_opts:
+    disable : true
 excerpt_separator: "#"
 google_analytics: UA-28919359-12
 plugins:
@@ -32,7 +36,6 @@ plugins:
 - jekyll-seo-tag
 - jekyll-feed
 - jemoji
-- jekyll-redirect-from
 include:
 - _pages
 exclude:

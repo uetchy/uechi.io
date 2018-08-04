@@ -8,8 +8,8 @@ $m\times n$の複素行列の転置を取り、複素共軛をとった$n\times 
 $$
 \begin{align}
 A &=\begin{pmatrix} 1 & -1-i \\ 1+i & i \end{pmatrix} \\
-A^_ &=\begin{pmatrix} 1 & 1-i \\ -1+i & -i \end{pmatrix} \\
-A^_ &= \bar{A}^T
+A^{\_} &=\begin{pmatrix} 1 & 1-i \\ -1+i & -i \end{pmatrix} \\
+A^{\_} &= \bar{A}^T
 \end{align}
 $$
 
