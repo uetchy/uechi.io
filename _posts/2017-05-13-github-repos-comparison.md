@@ -1,12 +1,12 @@
 ---
 title: GitHubリポジトリの比較表を gh-compare で作る
 date: 2017-05-13 12:00:00 +09:00
-image: http://randompaper.co.s3.amazonaws.com/gh-compare.gif
+image: http://uechi-public.s3.amazonaws.com/github/gh-compare.gif
 ---
 
 # GitHub リポジトリの比較表を gh-compare で作る
 
-![](http://randompaper.co.s3.amazonaws.com/gh-compare.gif)
+![](http://uechi-public.s3.amazonaws.com/github/gh-compare.gif)
 
 [gh-compare](https://github.com/uetchy/gh-compare) を作りました。この小さなツールを使って、導入を検討しているライブラリ群の比較表をコマンド１つで作ることが出来ます。
 
