@@ -5,11 +5,9 @@ date: 2014-12-03 09:00:00 +09:00
 
 For practicing Sketch plugin development, I created **StickyGrid** to let shape points sticked with grids.
 
-![](http://randompaper.co.s3.amazonaws.com/Sketch-StickyGrid/stickygrid.gif)
+![](http://uechi-public.s3.amazonaws.com/github/sketch-stickygrid.png)
 
 Draw something in rough and apply this plugin then you'll get geometric shapes at ease.
-
-![](http://randompaper.co.s3.amazonaws.com/Sketch-StickyGrid/tf1.png)
 
 # How to install
 
@@ -29,8 +27,6 @@ At first, selecting **`ctrl` + `⌘` + `G`** を押すと、パスがグリッ�
 ショートカット以外にも、メニューから**Plugins > Sketch-StickyGrid > Snap to Grid**を選んでも良い。
 
 シェイプはもちろん、グルーピングされたシェイプも、逆にシェイプポイントだけでも吸い付く。
-
-![](http://randompaper.co.s3.amazonaws.com/Sketch-StickyGrid/stickygrid_2.gif)
 
 # プラグインの開発にあたって
 
