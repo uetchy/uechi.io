@@ -3,11 +3,11 @@ title: Polyglot Extension for Safari
 date: 2016-02-11 09:00:00 +09:00
 ---
 
-![](http://uechi-public.s3.amazonaws.com/Polyglot/header.png)
+![](http://uechi-public.s3.amazonaws.com/github/Polyglot/header.png)
 
 選択したテキストを翻訳できる Safari Extension を作った。[Polyglot](https://github.com/uetchy/Polyglot) を使えば、選択した文章や、フォームに入力したテキストをその場で好きな言語に翻訳してみせることが出来る。
 
-![](http://uechi-public.s3.amazonaws.com/Polyglot/screencast1.gif)
+![](http://uechi-public.s3.amazonaws.com/github/Polyglot/screencast1.gif)
 
 この Extension は **Google Translate API** を使っている。だからこれを Safari で使うためには、まず Google Cloud Platform から API キーを手に入れなくてはならない。その手続きは少しばかり面倒なので、[スクリーンショット付きのガイド](https://github.com/uetchy/Polyglot/wiki/How-to-obtain-Google-Cloud-Platform-API-key)を作った。
 
