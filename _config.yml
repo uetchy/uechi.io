@@ -27,7 +27,7 @@ highlighter: none
 markdown: kramdown
 kramdown:
   syntax_highlighter_opts:
-    disable : true
+    disable: true
 excerpt_separator: "#"
 google_analytics: UA-28919359-12
 plugins:
