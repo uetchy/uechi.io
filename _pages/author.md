@@ -14,9 +14,9 @@ Reach me at `y@uechi.io`.
 
 - Irish music enthusiast: good at playing tin whistle, fiddle and bodhrán.
 - Typefaceholic.
-- Good at TypeScript, Python and Go.
-- Have experience in C++, C#, Ruby.
-- Chinese learner.
+- Good at writing TypeScript, Python and Go.
+- Have experience in C++, C# and Ruby.
+- Learning Chinese.
 - TOEIC 915 / TOEFL 78
 
 # External Profile
