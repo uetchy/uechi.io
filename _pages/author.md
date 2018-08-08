@@ -12,10 +12,12 @@ Reach me at `y@uechi.io`.
 
 # Facts
 
-- Irish music addict: playing tin whistle, fiddle and bodhrán.
-- Photograph: taking a photograph while traveling around the globe.
-- Typeface enthusiast
-- Chinese learner
+- Irish music enthusiast: good at playing tin whistle, fiddle and bodhrán.
+- Typefaceholic.
+- Good at TypeScript, Python and Go.
+- Have experience in C++, C#, Ruby.
+- Chinese learner.
+- TOEIC 915 / TOEFL 78
 
 # External Profile
 
