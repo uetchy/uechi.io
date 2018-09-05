@@ -16,7 +16,7 @@ Reach me at `y@uechi.io`.
 - Typefaceholic.
 - Good at writing TypeScript, Python and Go.
 - Have experience in C++, C# and Ruby.
-- Learning Chinese.
+- Chinese Learner
 - TOEIC 915 / TOEFL 78
 
 # External Profile
