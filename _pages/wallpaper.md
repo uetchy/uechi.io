@@ -1,6 +1,6 @@
 ---
-title: Wallpaper Gallery
-permalink: "/wallpaper"
+title: Wallpapers
+permalink: '/wallpaper'
 layout: post
 ---
 
