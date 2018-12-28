@@ -5,7 +5,7 @@
 $break-small: 500px;
 $break-large: 840px;
 body {
-  width: 800px;
+  width: 900px;
   margin: 0 auto;
   padding: 0 20px;
   font-family: 'PT Serif', 'ヒラギノ明朝 ProN', 'Hiragino Mincho ProN', serif;
@@ -19,10 +19,14 @@ body {
     width: auto;
     margin: 0;
   }
-} // MathJax
+}
+
+// MathJax
 #MathJax_Message {
   display: none;
-} // Highlight.js
+}
+
+// Highlight.js
 .hljs {
   border: 1px solid #d7d7d7;
   border-radius: 3px;
@@ -71,7 +75,7 @@ hr {
   justify-content: space-between;
   align-items: center;
   padding: 5px 0;
-  border-bottom: 1px solid #efefef;
+  // border-bottom: 1px solid #efefef;
   @media screen and (max-width: $break-small) {
     justify-content: center;
   }
@@ -90,7 +94,7 @@ hr {
     }
     @media screen and (max-width: $break-small) {
       padding: 0;
-      margin: 10px 0;
+      margin: 5px 0;
     }
   }
 }
