@@ -6,14 +6,17 @@ date: 2019-01-17 19:31:00 +09:00
 # 構文
 
 too much to take - 手に負えない
+
 is de rigueur - 慣習上必要不可欠
+
 utterly - 完全に
 
 make sure you know what the author expects you to know.
 
 The doom-laden feeling that this creates in us is then intensified by our inability to remember the past;
-smoke-laden 煙が立ち込めた
-doom-laden 厭世観で満ちた
+
+- smoke-laden 煙が立ち込めた
+- doom-laden 厭世観で満ちた
 
 Thanks to his help, we managed to finish the work in time. 彼のおかげでなんとか時間内に仕事を終えることできた
 
