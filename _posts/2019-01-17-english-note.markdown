@@ -26,9 +26,8 @@ Owing to the rise in oil prices, people are forced to use public transportation.
 
 The balloon is likely to burst at any time その風船は今にも爆発しそうだ
 
-It is because the air was polluted that the experiment was a failure.
-
-The experiment was a failure because the air was polluted.
+1. It is because the air was polluted that the experiment was a failure.
+1. The experiment was a failure because the air was polluted.
 
 Thesis. Remote companies have less of an echo chamber since they are distributed. Thoughts?
 
