@@ -3,51 +3,53 @@ title: 英語メモ
 date: 2019-01-17 19:31:00 +09:00
 ---
 
-# 構文
+頻用するけど忘れがちな語彙や便利イディオムをつらつら書きためた雑記です。
 
 too much to take - 手に負えない
 
-is de rigueur - 慣習上必要不可欠
+de rigueur - 慣習上必要不可欠; 
 
-utterly - 完全に
+utterly - 完全に（否定的用法）
 
-make sure you know what the author expects you to know.
+make sure you know what the author expects you to know. — 著者が読者に知って位おいてほしい知識を知っておこう
 
-The doom-laden feeling that this creates in us is then intensified by our inability to remember the past;
+The doom-laden feeling that this creates in us is then intensified by our inability to remember the past; 我々の心に生み出される厭世観は、過去を忘れる能力のおかげで激しくなりがちだ。
 
 - smoke-laden 煙が立ち込めた
 - doom-laden 厭世観で満ちた
 
+## 〜のおかげで
+
+- Thanks to A — （肯定的に）Aのおかげで
+- Thanks to A — （皮肉を込めて；無論否定的に）Aのおかげで
+- Owing to A — （否定的に）Aのおかげで
+
 Thanks to his help, we managed to finish the work in time. 彼のおかげでなんとか時間内に仕事を終えることできた
 
-Thanks to the development of medicine, people have been able to live longer.
+Thanks to the development of medicine, people have been able to live longer. 薬の発明のおかげで人々は長生きできるようになった。
 
-Owing to the rise in oil prices, people are forced to use public transportation.
+Owing to the rise in oil prices, people are forced to use public transportation. オイル価格上昇のおかげで人々は公共交通機関を使わざるを得なくなっている。
 
 The balloon is likely to burst at any time その風船は今にも爆発しそうだ
 
-1. It is because the air was polluted that the experiment was a failure.
-1. The experiment was a failure because the air was polluted.
+1. It is **because** the air was polluted **that** the experiment was a failure.
+1. The experiment was a failure **because** the air was polluted.
 
-Thesis. Remote companies have less of an echo chamber since they are distributed. Thoughts?
+## Twitter構文
 
-Obviously they should A, and B when C. Not D forever.
-
-Still - there is no A, just B.
+Thesis. Remote companies have less of an echo chamber since they are distributed. Thoughts? — 仮説: リモートワークは人が分散しているからエコーチェンバーが起こりにくい。どう思う？
 
 I think people are angry because Slack A, B and is C. No D, no E.
 
-Because he's the kind of person who likes helping others and is always gentle and kind as you described
+Because he's the kind of person who likes helping others and is always gentle and kind as you described. あなたが言ったように、彼は人助けが好きで常に紳士的で親切な人だからですよ
 
-it was more difficult to get it wrong than guess it right! XD
+it was more difficult to get it wrong than guess it right! XD 正解を当てるよりもこれを間違える方が難しいよ！
 
-I'm pretty sure there was a lot of uproar about the Equifax thing
+I'm pretty sure there was a lot of uproar about the Equifax thing Equifaxの件について批判が巻き起こっていたのは間違いない
 
-# イディオム
+Don’t make me blush XD — めっちゃ恥ずかしい
 
-Don’t make me blush XD — 恥ずかしい XD
-
-Think before you speak next time — 次からは考えてから話せ
+Think before you speak next time — 次からは考えてから話せや
 
 just a citation of the law they're overcompensating for — 彼らは濫用している法律の引用ただそれだけしか示してない
 
@@ -59,7 +61,7 @@ be now going the A route — 今度はA作戦ときた
 
 in a blunt fashion — 露骨なやり方で
 
-"DM us, we'll take a look!" faux-friendly route — 偽りの友情作戦「DMで詳しく話を聞かせて！」
+"DM us, we'll take a look!" faux-friendly route — 「DMで詳しく話を聞かせて！」偽フレンドリー作戦だ
 
 reinstate — （アカウントを）復活させる
 
@@ -67,7 +69,7 @@ shut the whole thing down — 全てを終わらせる
 
 as if, as though — 後者は話者の疑いが現れている. 仮定法過去を取る. It's as if I were a movie star.
 
-predominatly — 大抵は. Your costs are predominantly human labor.
+predominatly — 大抵は; Your costs are predominantly human labor. かかる費用のほとんどは人件費だ
 
 a myriad of A — 無数のA
 
@@ -97,11 +99,11 @@ clench my teeth — 歯を食いしばる（って耐える）
 
 Hello, I just came across this wonderful library and was really intrigued by it :)
 
-When teaching, be careful not to mix up "" and "".
+When teaching, be careful not to mix up Aand B.
 
 life saver under this condition
 
-It turned to be such great experience, I couldn’t miss opportunity to share it
+It turned out to be such great experience, I couldn’t miss an opportunity to share it
 
 I like Makefiles, they are simple and yet very powerful.
 
@@ -121,9 +123,9 @@ in that — という点において
 
 Iconoclast — 因襲打破主義者
 
-Researchers spend a great deal of time doing something — 研究者は多くの時間を～するのに割いています。
+Researchers spend a great deal of time doing A — 研究者は多くの時間をAするのに割いています。
 
-~ upon demand for ~ — ~の要請に応じて~
+A upon demand for B — Bの要請に応じてA
 
 Granularity — 粒度
 
@@ -147,13 +149,13 @@ appropriate, proper, reasonable — 妥当な
 
 barely — かろうじて、ほとんど～ない
 
-The iPad already has external keyboard support and an external trackpad support would go a long way to making the iPad a Mac replacement.
+The iPad already has external keyboard support and external trackpad support would go a long way to making the iPad a Mac replacement.
 
-Countless wrong inferences could be drawn from those observation.
+Countless wrong inferences could be drawn from those observations. 無数の誤った推論がこの観測（この場合の観測は表面上の特徴など多義的）から導き出せるだろう。
 
 it drives me crazy [nuts] — イライラさせられる
 
-describes the steps that are involved in ~ — ~に関する手順について説明する
+describes the steps that are involved in A — Aに関する手順について説明する
 
 前置詞inは特徴の違いを、ofは程度の違いを表す
 
@@ -165,7 +167,7 @@ A is out of proportion to B — AはBに反比例している
 
 be collectively known as A — Aと総称されている
 
-Any links to this, as to be honest nobody is providing evidence, just lip-service relying on the ignorance of most readers
+Any links to this, as to be honest nobody is providing evidence, just lip-service relying on the ignorance of most readers そのリンク先の記事は、正直に言わせてもらえばどれも証拠を示していない。読者の無知につけこんだ上っ面だけの内容でしかない。
 
 in a great hurry - 大急ぎで
 
@@ -177,7 +179,7 @@ throw A away — Aを捨てる、Aを無駄にする
 
 throw A up — 急にやめる
 
-be quick to — すぐ～する。(People are quick to alienate outsiders 人々はすぐよそ者を阻害する)
+be quick to — すぐ～する; People are quick to alienate outsiders 人々はすぐよそ者を阻害する)
 
 incredulous at — ～を容易に信じない
 
@@ -221,11 +223,11 @@ a man who's nice to be around — そばに居てくれると助かる親切な�
 
 His generosity knows no bounds — 彼の寛大さには限りが無い
 
-borad-minded — 心が広い
+broad-minded — 心が広い
 
-in one way or the other — どのみち、ある意味 e.g. This inspired you in one way or the other これはある意味あなたをインスピレートした
+in one way or the other — どのみち、ある意味; This inspired you in one way or the other これはある意味あなたをインスピレートした
 
-to some extent — ある程度は、e.g. Travelling only helps to some extent 旅行はある程度それを助ける
+to some extent — ある程度は; Travelling only helps to some extent 旅行はある程度それを助ける
 
 close-knit — 密接に関係している
 
@@ -233,7 +235,7 @@ hot take — 走り書き
 
 cost an arm and a leg — 大変な金がかかる
 
-person with a forgiving nature — 寛大な心の持ち主
+a person with a forgiving nature — 寛大な心の持ち主
 
 we are on the same page — これで我々の認識が一致しましたね
 
@@ -241,13 +243,11 @@ in that — という点で。 Man differ from animals in that they can think an
 
 That said, — とは言え。ですから。
 
-# 文法
-
-p.p. the present progressive form, 現在進行系
+p.p. the present progressive form — 現在進行系
 
 There have long been allegations that という噂がある
 
-The antisocial behaviour you are naturing あなたが心に抱いている反社会的行動
+The antisocial behavior you are naturing あなたが心に抱いている反社会的行動
 
 have a lot to do with ～によるところが大きい
 
@@ -255,11 +255,9 @@ have a lot to do with ～によるところが大きい
 
  This is sure to satisfy those who are into computers. これはコンピュータにはまっている人をきっと満足させるだろう
 
-I've always wanted to study abroad someday but I haven't been able to yet.
+I've always wanted to study abroad someday but I haven't been able to yet. いつか留学したいと思ってるけどまだ出来てない。
 
-
-
-# 複文と分詞構文
+## 複文と分詞構文
 
 A typhoon hit the city, causing big destruction.
 
@@ -277,9 +275,7 @@ and そうすれば or 然もなくば but けれども so だから、それで
 
 She is not a politician, nor is she a diplomat.
 
-
-
-# when
+## when
 
 未来の**条件**を表す場合は**現在形**を使う When I arrive at the station, I'll call you.
 
@@ -287,31 +283,16 @@ She is not a politician, nor is she a diplomat.
 
 未来の**可能性**を話す場合は**未来形** I don't know when he will come.
 
-
-
 happened to — たまたま、偶然、もしかして
 
 Do you happen to know if she has a boyfriend? — あの子に彼氏いるのかな？
 
-
-
 不定詞は名詞・形容詞・副詞的働きをする動詞ベースの詞のこと
 
-to不定詞がunrealized(未実現)、-ingがrealized(実現)
+- to不定詞がunrealized(未実現)
+- -ingがrealized(実現)
 
 I want (to eat an apple)←名詞的
-
-Thank you for playing the game
-
-
-
-She is studying English hard to study abroad.
-
-She study English hard to study abroad.
-
-違いは？
-
-
 
 only to A — 思わぬ悲観的な事実を説明するclause
 
@@ -321,7 +302,7 @@ I **tore** open the box, **only to discover** that some of the parts were missin
 
 I **arrived** **only to find** that the others had already left.
 
-# 倒置法
+## 倒置法
 
 So do I — 私も！(I like appleに対して)
 
@@ -346,7 +327,5 @@ Hard though she tried, she couldn't make the deadline. — 頑張ったが間に
 Do what you will, I won't give up — 何をされようとも諦めない
 
 Walk as he would, he couldn't get to the station. — どんなに歩いても駅にたどり着けなかった
-
-["We live in a world of churn, but we do not have to accept high churn rates as the only reality." from "Subscription Marketing: Strategies for Nurturing Customers in a World of Churn (English Edition)" by Anne Janzer](http://a.co/bda7A29)
 
 [45 Ways To Avoid Using The Word 'Very' - Writers Write](http://writerswrite.co.za/45-ways-to-avoid-using-the-word-very/)
