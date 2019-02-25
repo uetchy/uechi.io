@@ -8,27 +8,26 @@ I'm **Yasuaki Uechi**, a graduate student studying about recurrent neural networ
 
 # Contact
 
-Reach me at `y@uechi.io`.
+Reach me at `y@uechi.io` or [@uetschy](https://twitter.com/uetschy) on Twitter.
 
 # Facts
 
-- Irish instruments player: tin whistle and bodhrán.
-- Typeface design enthusiast
-- UI / UX Designer
-- Frontend dev: React, Redux
-- Backend dev: NodeJS, Rails
-- Have experience in NodeJS / TypeScript, Python, Go, C++, and Ruby
-- Know little: C#, PHP, Java 
-- TOEIC 915, TOEFL 78
-- Chinese learner
+- Play violin, tin whistle and bodhrán.
+- Typeface fanatic.
+- UI / UX design.
+- Fontend interests: React, Redux
+- Backend interests: NodeJS, Go
+- Much experience in JavaScript (NodeJS, TypeScript), Python, Go, C++, and Ruby
+- Little experience in Swift, C#, PHP and Java.
+- 915 in TOEIC, 78 in TOEFL.
+- Chinese learner.
 
-# External Resources
+# Publishing
 
 - [Open Source @ GitHub](https://github.com/uetchy)
-- [Technical Note @ dev.to](https://dev.to/uetchy)
+- [Technical Note (English) @ dev.to](https://dev.to/uetchy)
 - [Design Portfolio @ Behance](https://www.behance.net/uechi)
-- [Academic Profile](https://web.sfc.keio.ac.jp/~uechi/)
 
-# Current activity
+# Current Activity
 
 - Master student @ Graduate school of Keio University
