@@ -4,13 +4,13 @@ permalink: "/author-ja"
 layout: post
 ---
 
-私の名前は**上地 泰彰**です。回帰ニューラルネットワークの研究をしている大学院生です。1994年に沖縄で生まれ、神奈川に住んでいます。
+私の名前は **上地 泰彰** です。回帰ニューラルネットワークの研究をしている大学院生です。1994年に沖縄で生まれ、神奈川に住んでいます。
 
 # 連絡
 
- `y@uechi.io` 宛にメールを送るか、Twitterで [@uetschy](https://twitter.com/uetschy) をフォローしてください。
+`y@uechi.io` 宛にメールを送るか、Twitterで [@uetschy](https://twitter.com/uetschy) をフォローしてください。
 
-# 事実
+# こんな人
 
 - バイオリン、ティンホイッスル、バウロンを演奏します
 - フォントが好きです
@@ -24,10 +24,10 @@ layout: post
 
 # 記事
 
-- [Open Source @ GitHub](https://github.com/uetchy)
-- [Technical Note (English) @ dev.to](https://dev.to/uetchy)
-- [Design Portfolio @ Behance](https://www.behance.net/uechi)
+- [オープンソースプロジェクト @ GitHub](https://github.com/uetchy)
+- [テクニカルノート (英語) @ dev.to](https://dev.to/uetchy)
+- [デザインポートフォリオ @ Behance](https://www.behance.net/uechi)
 
 # 現在の活動
 
-- 修士 @ 慶應義塾大学大学院
+- 修士課程 @ 慶應義塾大学大学院
