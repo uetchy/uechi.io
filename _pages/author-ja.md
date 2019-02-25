@@ -1,6 +1,6 @@
 ---
-title: Author
-permalink: "/author"
+title: 私について
+permalink: "/author-ja"
 layout: post
 ---
 
