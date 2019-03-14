@@ -1,6 +1,6 @@
 ---
 title: Me
-permalink: '/me'
+permalink: "/me"
 layout: post
 ---
 
