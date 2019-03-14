@@ -1,6 +1,6 @@
 ---
-title: Author
-permalink: "/author"
+title: Me
+permalink: '/me'
 layout: post
 ---
 

@@ -1,6 +1,6 @@
 ---
-permalink: "/"
-layout: 
+permalink: '/'
+layout:
 ---
 
 <!DOCTYPE html>
@@ -8,33 +8,45 @@ layout:
   {% include head.html %}
 
   <body>
-  	<div class="metro">
-	  	<h1><a class="logo" href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
-	  	<nav>
-  	    <ul class="menu">
-  	      <li class="menu__item">
-  	        <a href="/author">Author</a>
-  	      </li>
-  	      <li class="menu__item">
-  	        <a href="/wallpaper">Wallpaper</a>
-  	      </li>
-  	      <li class="menu__item">
-  	        <a href="https://twitter.com/{{ site.twitter.username }}">Twitter</a>
-  	      </li>
-  	      <li class="menu__item">
-  	        <a href="https://github.com/{{ site.github.username }}">GitHub</a>
-  	      </li>
-  	    </ul>
-  	  </nav>
-	  </div>
+    <div class="metro">
+      <h1>
+        <img src="{{ site.baseurl }}/images/logo.svg" style="height: 50px" />
+      </h1>
+      <nav>
+        <ul class="menu">
+          <li class="menu__item">
+            <a href="/me">Me</a>
+          </li>
+          <li class="menu__item">
+            <a href="https://github.com/{{ site.github.username }}">GitHub</a>
+          </li>
+          <li class="menu__item">
+            <a href="https://twitter.com/{{ site.twitter.username }}"
+              >Twitter</a
+            >
+          </li>
+          <li class="menu__item">
+            <a href="/wallpaper">Wallpaper</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <section>
       {% for post in site.posts %}
-        <article class="article-list__item">
-          <h2 class="article-list__item__title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-          <!-- <time class="article-list__item__pubdate" pubdate>{{ post.date | date: '%B %d, %Y' }}</time> -->
-          <article class="article-list__item__excerpt">{{ post.excerpt | strip_html | truncate: 140, "..." }}</article>
-          <a class="article-list__item__button" href="{{ post.url | prepend: site.baseurl }}">Read more</a>
+      <article class="article-list__item">
+        <h2 class="article-list__item__title">
+          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+        <!-- <time class="article-list__item__pubdate" pubdate>{{ post.date | date: '%B %d, %Y' }}</time> -->
+        <article class="article-list__item__excerpt">
+          {{ post.excerpt | strip_html | truncate: 140, "..." }}
         </article>
+        <a
+          class="article-list__item__button"
+          href="{{ post.url | prepend: site.baseurl }}"
+          >Read more</a
+        >
+      </article>
       {% endfor %}
     </section>
     {% include footer.html %}

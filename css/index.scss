@@ -1,20 +1,23 @@
 ---
 ---
 
-@import url('https://fonts.googleapis.com/css?family=PT+Serif:400,700');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+
 $break-small: 500px;
 $break-large: 840px;
+
 body {
   width: 900px;
   margin: 0 auto;
   padding: 0 20px;
-  font-family: 'PT Serif', 'ヒラギノ明朝 ProN', 'Hiragino Mincho ProN', serif;
+  font-family: 'PT Sans', 'Hiragino Sans', 'Hiragino Mincho ProN', serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   font-feature-settings: 'kern', 'palt', 'pwid';
   -webkit-font-feature-settings: 'kern', 'palt', 'pwid';
   -moz-font-feature-settings: 'kern', 'palt', 'pwid';
   -moz-font-feature-settings: 'kern=1', 'palt', 'pwid';
+
   @media screen and (max-width: $break-large) {
     width: auto;
     margin: 0;
@@ -69,55 +72,69 @@ hr {
   border: 0;
   margin: 40px 0;
 }
+
 .header {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  // justify-content: space-between;
   align-items: center;
-  padding: 5px 0;
+  margin-top: 50px;
+  padding: 15px 0;
   // border-bottom: 1px solid #efefef;
+
   @media screen and (max-width: $break-small) {
     justify-content: center;
+    flex-direction: column;
   }
+
   .logo {
-    font-size: 24px;
-    font-weight: bold;
     margin: 10px 0 10px;
   }
+
   .menu {
     list-style: none;
+    margin-left: 40px;
     padding: 8px 0;
     display: flex;
     flex-flow: row wrap;
+    text-transform: uppercase;
+    font-weight: bold;
+
     .menu__item:not(:last-child) {
-      margin-right: 20px;
+      margin-right: 30px;
+
+      @media screen and (max-width: $break-small) {
+        margin-right: 20px;
+      }
     }
+
     @media screen and (max-width: $break-small) {
       padding: 0;
       margin: 5px 0;
     }
   }
 }
+
 .metro {
-  text-align: center;
-  padding: 80px 0 40px;
-  .logo {
-    font-size: 60px;
-  }
+  // text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 75px 0 100px;
+
   .menu {
+    margin: 15px 0 0 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
     list-style: none;
-    padding: 8px 0;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    margin-top: 20px;
-    font-size: 20px;
     .menu__item:not(:last-child) {
-      margin-right: 20px;
+      margin-bottom: 12px;
     }
   }
+
   @media screen and (max-width: $break-small) {
-    padding: 50px 0 40px;
+    margin: 40px 0 40px;
     .menu {
       font-size: 15px;
     }
