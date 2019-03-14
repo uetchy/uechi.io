@@ -1,9 +1,10 @@
 {
-  "private": true,
+  "name": "uechi.io",
   "scripts": {
-    "start": "script/server",
-    "test": "textlint _posts/*.md _pages/*.md -f pretty-error",
-    "fix-typo": "textlint _posts/*.md _pages/*.md --fix --dry-run -f diff"
+    "fix-typo": "textlint _posts/*.md _pages/*.md --fix --dry-run -f diff",
+    "build": "bundle exec jekyll build",
+    "start": "bundle exec jekyll serve --host 0.0.0.0 --port 4000 --baseurl '' --force_polling --drafts --unpublished --incremental",
+    "test": "textlint _posts/*.md _pages/*.md -f pretty-error"
   },
   "devDependencies": {
     "textlint": "^11.0.2",
@@ -13,5 +14,6 @@
     "textlint-rule-no-dropping-the-ra": "^1.1.2",
     "textlint-rule-no-start-duplicated-conjunction": "^2.0.2",
     "textlint-rule-preset-japanese": "^4.0.0"
-  }
+  },
+  "private": true
 }
