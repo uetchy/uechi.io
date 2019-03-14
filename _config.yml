@@ -9,12 +9,12 @@ collections:
     title: Uploads
     output: true
 defaults:
-  - scope:
-      path: ''
-      type: posts
-    values:
-      layout: post
-      permalink: '/blog/:title'
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+    permalink: "/blog/:title"
 description: Random posts from @uetchy.
 url: https://uechi.io
 email: y@uechi.io
@@ -22,26 +22,26 @@ twitter:
   username: uetschy
 github:
   username: uetchy
-logo: '/images/icon.png'
-excerpt_separator: '#'
+logo: "/images/icon.png"
+excerpt_separator: "#"
 google_analytics: UA-28919359-12
 plugins:
-  - jekyll-redirect-from
-  - jekyll-sitemap
-  - jekyll-seo-tag
-  - jekyll-feed
-  - jemoji
+- jekyll-redirect-from
+- jekyll-sitemap
+- jekyll-seo-tag
+- jekyll-feed
+- jemoji
 include:
-  - _pages
+- _pages
 exclude:
-  - README.md
-  - LICENSE
-  - CNAME
-  - Gemfile
-  - Gemfile.lock
-  - package.json
-  - node_modules
-  - script
-  - vendor
-  - docker-compose.yml
-  - Dockerfile
+- README.md
+- LICENSE
+- CNAME
+- Gemfile
+- Gemfile.lock
+- package.json
+- node_modules
+- script
+- vendor
+- docker-compose.yml
+- Dockerfile
