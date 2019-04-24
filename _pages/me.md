@@ -1,6 +1,6 @@
 ---
 title: Yasuaki Uechi
-permalink: '/me'
+permalink: "/me"
 layout: article
 ---
 
