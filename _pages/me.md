@@ -1,16 +1,37 @@
 ---
-title: Me
-permalink: "/me"
-layout: post
+title: Yasuaki Uechi
+permalink: '/me'
+layout: article
 ---
 
-I'm **Yasuaki Uechi**, a graduate student studying about recurrent neural networks. I was born in Okinawa, Japan in 1994 and have been living in Kanagawa.
+<style>
+img {
+  width: auto !important;
+}
+</style>
+
+# README
+
+![](https://img.shields.io/badge/born-1994-green.svg)
+[![](https://img.shields.io/badge/github-active-green.svg)](https://github.com/uetchy)
+
+> I'm **Yasuaki Uechi**, a graduate student studying about recurrent neural networks. I was born in Okinawa, Japan in 1994 and have been living in Kanagawa.
 
 [日本語](/author-ja)
 
 # Contact
 
 Reach me at `y@uechi.io` or [@uetschy](https://twitter.com/uetschy) on Twitter.
+
+## Public Key
+
+```
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAING7EWpaWSNsbWrfOQaTq5Vl2Tn8nHlAnoEEpgjH7prA
+```
+
+## GPG Key
+
+Get [GPG Key](https://github.com/uetchy.gpg) on GitHub.
 
 # Facts
 

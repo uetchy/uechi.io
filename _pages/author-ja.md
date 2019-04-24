@@ -1,7 +1,7 @@
 ---
 title: 私について
 permalink: "/author-ja"
-layout: post
+layout: article
 ---
 
 私の名前は **上地 泰彰** です。回帰ニューラルネットワークの研究をしている大学院生です。1994年に沖縄で生まれ、神奈川に住んでいます。
