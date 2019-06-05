@@ -3,19 +3,19 @@ title: Electronアプリをコード署名してApple 公証 (Notary) を通過�
 date: 2019-06-05 00:00:00 +09:00
 ---
 
-electron-builderを利用してmacOS向けElectronアプリをコード署名し、公証を通過させます。
+electron-builder を利用して macOS 向け Electron アプリをコード署名し、公証を通過させます。
 
-## Code Sign
+# Code Sign
 
 アプリのコード署名は`electron-builder`によって自動で行われます。内部的には[electron-osx-sign](https://github.com/electron-userland/electron-osx-sign)が使用されます。
 
-リリース用のアプリにコード署名をするには、Keychainに有効なDeveloper ID Certificateが格納されている必要があります。macOS Developer Certificateは開発用のコード署名のみ可能なので、アプリを配布する場合には必ずDeveloper ID Certificateが必要です。
+リリース用のアプリにコード署名をするには、Keychain に有効な Developer ID Certificate が格納されている必要があります。macOS Developer Certificate は開発用のコード署名のみ可能なので、アプリを配布する場合には必ず Developer ID Certificate が必要です。
 
-まだ証明書を発行していない場合は、[Apple Developer](https://developer.apple.com/account/resources/certificates/list)で証明書の追加ウィザードに進み、**Developer ID Application**を選択して証明書を発行しKeychainに追加してください。
+まだ証明書を発行していない場合は、[Apple Developer](https://developer.apple.com/account/resources/certificates/list)で証明書の追加ウィザードに進み、**Developer ID Application**を選択して証明書を発行してください。
 
-## Notarize
+# Notarize
 
-コード署名済みのアプリを[electron-notarize](https://github.com/electron-userland/electron-notarize)を使用してApple Notary Serviceに提出します。
+コード署名済みのアプリを[electron-notarize](https://github.com/electron-userland/electron-notarize)を使用して Apple Notary Service に提出します。
 
 ```js
 const { notarize } = require('electron-notarize')
@@ -28,15 +28,15 @@ notarize({
 })
 ```
 
-- **appBundleId**: アプリのBundle IDです。`package.json`の`build.appId`と同じものを使います。
+- **appBundleId**: アプリの Bundle ID です。`package.json`の`build.appId`と同じものを使います。
 - **appPath**: `.app`の絶対パスを指定します。
-- **appleId**: Apple Developerとして登録しているApple IDを指定します。
-- **appleIdPassword**: Apple IDのパスワードです。2要素認証を必要としないパスワードが必要なので、[Apple ID](https://appleid.apple.com/#!&page=signin)にアクセスして**App-specific Password**を発行してください。
-- **ascProvider**: Apple DeveloperのMembershipに記載されている**Team ID**を指定します。
+- **appleId**: Apple Developer として登録している Apple ID を指定します。
+- **appleIdPassword**: Apple ID のパスワードです。2 要素認証を必要としないパスワードが必要なので、[Apple ID](https://appleid.apple.com/#!&page=signin)にアクセスして**App-specific Password**を発行してください。
+- **ascProvider**: Apple Developer の Membership に記載されている**Team ID**を指定します。
 
-### electron-builderのafterSignフック
+## electron-builder の afterSign フック
 
-electron-builderのafterSignフックを使用して、コード署名が済んだアプリを自動でNotaryに提出します。
+electron-builder の afterSign フックを使用して、コード署名が済んだアプリを自動で Notary に提出します。
 
 フックスクリプトを`./scripts/after-sign-mac.js`に置きます。
 
@@ -78,13 +78,12 @@ exports.default = async () => {
 }
 ```
 
-### Enable Hardened Runtime
+## Enable Hardened Runtime
 
 このままでは公証に失敗します。デフォルトで書き出されるバイナリでは、セキュリティの強化された[Hardened Runtime](https://developer.apple.com/documentation/security/hardened_runtime_entitlements)が有効になっていないためです。以下のようなエラーメッセージを貰います。
 
-```jsonc
+```json
 {
-  // ...
   "status": "Invalid",
   "statusSummary": "Archive contains critical validation errors",
   "statusCode": 4000,
@@ -101,7 +100,7 @@ exports.default = async () => {
 }
 ```
 
-`package.json`の`build.mac.hardenedRuntime`を`true`にしてHardened Runtimeを有効にすることでこの問題を解決します。
+`package.json`の`build.mac.hardenedRuntime`を`true`にして Hardened Runtime を有効にすることでこの問題を解決します。
 
 ```json
 "build": {
@@ -111,12 +110,12 @@ exports.default = async () => {
 }
 ```
 
-### 詳細
+## 詳細
 
 - https://developer.apple.com/documentation/security/notarizing_your_app_before_distribution/resolving_common_notarization_issues
 - https://github.com/electron-userland/electron-builder/issues/3383
 
-## Verify Notary Status
+# Verify Notary Status
 
 ただしく公証を得られたかどうかは`altool`で調べることができます。
 
@@ -135,7 +134,7 @@ Best Regards,
 Apple Developer Relations
 ```
 
-`xcrun altool --notarization-info`コマンドにUUIDとApple ID、パスワードを指定して公証ステータスを確認します。
+`xcrun altool --notarization-info`コマンドに UUID と Apple ID、パスワードを指定して公証ステータスを確認します。
 
 ```
 xcrun altool --notarization-info <UUID> -u $APPLE_ID -p $APPLE_PASSWORD
@@ -153,4 +152,3 @@ xcrun altool --notarization-info <UUID> -u $APPLE_ID -p $APPLE_PASSWORD
    Status Code: 0
 Status Message: Package Approved
 ```
-
