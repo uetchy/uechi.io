@@ -1,9 +1,11 @@
 ---
-title: Electronアプリをコード署名してApple 公証 (Notary) を通過する手順
+title: Electronアプリをコード署名してApple 公証 (Notary) を通過させる方法
 date: 2019-06-05 00:00:00 +09:00
 ---
 
 electron-builder を利用して macOS 向け Electron アプリをコード署名し、公証を通過させます。
+
+> **tl;dr**: コード署名と公証に対応した macOS アプリ Juno のリポジトリを[GitHub で公開](https://github.com/uetchy/juno)しています
 
 # Code Sign
 
@@ -74,7 +76,7 @@ exports.default = async () => {
 
 ```json
 "build": {
-	"afterSign": "./scripts/after-sign-mac.js"
+  "afterSign": "./scripts/after-sign-mac.js"
 }
 ```
 
@@ -112,8 +114,8 @@ exports.default = async () => {
 
 ## 詳細
 
-- https://developer.apple.com/documentation/security/notarizing_your_app_before_distribution/resolving_common_notarization_issues
-- https://github.com/electron-userland/electron-builder/issues/3383
+- [Resolving Common Notarization Issues](https://developer.apple.com/documentation/security/notarizing_your_app_before_distribution/resolving_common_notarization_issues)
+- [Feature request: Enable hardened runtime for macOS #3383](https://github.com/electron-userland/electron-builder/issues/3383)
 
 # Verify Notary Status
 
