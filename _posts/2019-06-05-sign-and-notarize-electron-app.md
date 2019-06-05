@@ -11,7 +11,7 @@ electron-builder を利用して macOS 向け Electron アプリをコード署�
 
 アプリのコード署名は`electron-builder`によって自動で行われます。内部的には[electron-osx-sign](https://github.com/electron-userland/electron-osx-sign)が使用されます。
 
-リリース用のアプリにコード署名をするには、Keychain に有効な Developer ID Certificate が格納されている必要があります。macOS Developer Certificate は開発用のコード署名のみ可能なので、アプリを配布する場合には必ず Developer ID Certificate が必要です。
+リリース用のアプリにコード署名をするには、Keychain に有効な Developer ID Certificate が格納されている必要があります。macOS Developer Certificate は開発用のコード署名のみ可能なので、リリース用としては不十分です。
 
 まだ証明書を発行していない場合は、[Apple Developer](https://developer.apple.com/account/resources/certificates/list)で証明書の追加ウィザードに進み、**Developer ID Application**を選択して証明書を発行してください。
 
@@ -80,7 +80,7 @@ exports.default = async () => {
 }
 ```
 
-## Enable Hardened Runtime
+## Hardened Runtime and Entitlements
 
 このままでは公証に失敗します。デフォルトで書き出されるバイナリでは、セキュリティの強化された[Hardened Runtime](https://developer.apple.com/documentation/security/hardened_runtime_entitlements)が有効になっていないためです。以下のようなエラーメッセージを貰います。
 
@@ -102,7 +102,7 @@ exports.default = async () => {
 }
 ```
 
-`package.json`の`build.mac.hardenedRuntime`を`true`にして Hardened Runtime を有効にすることでこの問題を解決します。
+`package.json`の`build.mac.hardenedRuntime`を`true`にして Hardened Runtime を有効にします。
 
 ```json
 "build": {
@@ -112,10 +112,34 @@ exports.default = async () => {
 }
 ```
 
-## 詳細
+Hardened Runtime 下では、必要に応じて Entitlement を指定しなくてはなりません。Electron の実行には`allow-unsigned-executable-memory`という Entitlement が必要なので、`entitlement.plist`ファイルを`build`フォルダに作成し、以下のような plist を記述します。
 
-- [Resolving Common Notarization Issues](https://developer.apple.com/documentation/security/notarizing_your_app_before_distribution/resolving_common_notarization_issues)
-- [Feature request: Enable hardened runtime for macOS #3383](https://github.com/electron-userland/electron-builder/issues/3383)
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>com.apple.security.cs.allow-unsigned-executable-memory</key>
+    <true/>
+  </dict>
+</plist>
+```
+
+`package.json`の`entitlements`及び`entitlementsInherit`に Entitlment が記述された plist のファイルパスを指定します。
+
+```json
+"build": {
+  "mac": {
+    "hardenedRuntime": true,
+    "entitlements": "./src/build/entitlement.plist",
+    "entitlementsInherit": "./src/build/entitlement.plist"
+  }
+}
+```
+
+Hardened Runtime で Electron を実行することができるようになったので、Notary を通過できる状態になりました。
+
+実際に`electron-builder`を実行してすべてのプロセスが上手く動作することを確かめてください。
 
 # Verify Notary Status
 
@@ -154,3 +178,9 @@ xcrun altool --notarization-info <UUID> -u $APPLE_ID -p $APPLE_PASSWORD
    Status Code: 0
 Status Message: Package Approved
 ```
+
+## 参考文献
+
+- [Resolving Common Notarization Issues](https://developer.apple.com/documentation/security/notarizing_your_app_before_distribution/resolving_common_notarization_issues)
+- [Notarizing your Electron application](https://kilianvalkhof.com/2019/electron/notarizing-your-electron-application/)
+- [Feature request: Enable hardened runtime for macOS #3383](https://github.com/electron-userland/electron-builder/issues/3383)
