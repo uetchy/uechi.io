@@ -1,6 +1,6 @@
 ---
 title: Yasuaki Uechi
-permalink: "/me"
+permalink: '/me'
 layout: article
 ---
 
@@ -30,9 +30,9 @@ Get [GPG Key](https://github.com/uetchy.gpg) on GitHub.
 - Interests: Web dev, OSS governance, Global growth management
 - Fontend interests: React, Redux, Atomic Design, a11y, I18n
 - Backend interests: NodeJS, Go, MongoDB, Lambda functions, Docker, Automated deployments
-- Much experience in JavaScript (NodeJS, TypeScript), Python, C++, and Ruby
-- Some experience in Swift, Go and Java
-- 940 in TOEIC
+- Much experience in JavaScript (Node.js, TypeScript), Python, C++, and Ruby
+- Some experience in Swift, Go, and Java
+- TOEIC 940
 - Chinese learner
 
 # Publishing
