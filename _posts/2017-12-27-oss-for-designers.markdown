@@ -1,7 +1,7 @@
 ---
 title: OSSに貢献しているのはコーダーだけじゃない
 date: 2017-12-27 00:24:00 +09:00
-redirect_from: /blog/2017/12/27/oss-for-designers
+redirect_from: "/blog/2017/12/27/oss-for-designers"
 ---
 
 GitHub で公開されている OSS にちょっとした Pull-request を送るのが私の趣味です。

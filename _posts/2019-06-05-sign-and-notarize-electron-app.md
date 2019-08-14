@@ -1,7 +1,7 @@
 ---
 title: Electronアプリをコード署名してApple 公証 (Notary) を通過させる方法
 date: 2019-06-05 00:00:00 +09:00
-redirect_from: /blog/2019/06/05/sign-and-notarize-electron-app
+redirect_from: "/blog/2019/06/05/sign-and-notarize-electron-app"
 ---
 
 electron-builder を利用して macOS 向け Electron アプリをコード署名し、公証を通過させます。

@@ -1,7 +1,7 @@
 ---
 title: Definitive Guide to Install OpenCV 3 and its Python 3 bindings
 date: 2017-03-23 15:10:00 +09:00
-redirect_from: /blog/2017/03/23/install-opencv3-and-python3-bindings
+redirect_from: "/blog/2017/03/23/install-opencv3-and-python3-bindings"
 ---
 
 This article describes how to install OpenCV 3 and its Python 3 bindings on macOS and Ubuntu.

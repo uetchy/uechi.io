@@ -1,7 +1,7 @@
 ---
 title: 今年の抱負
 date: 2019-01-01 17:29:00 +09:00
-redirect_from: /blog/2019/01/01/years-resolution-2019
+redirect_from: "/blog/2019/01/01/years-resolution-2019"
 ---
 
 - 国際会議に論文通す

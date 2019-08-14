@@ -1,7 +1,7 @@
 ---
 title: Guide to recover data from damaged HDD
 date: 2018-02-15 12:45:00 +09:00
-redirect_from: /blog/2018/02/15/data-recovery
+redirect_from: "/blog/2018/02/15/data-recovery"
 ---
 
 This is a complete guide describes how to rescue your data from old and wrecked HDD.

@@ -1,7 +1,7 @@
 ---
 title: ステアラボ人工知能セミナー#2 メモ
 date: 2016-05-26 09:00:00 +09:00
-redirect_from: /blog/2016/05/26/stairlab-aiseminar-2-memo
+redirect_from: "/blog/2016/05/26/stairlab-aiseminar-2-memo"
 ---
 
 走り書きです。

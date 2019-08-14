@@ -1,7 +1,7 @@
 ---
 title: Gluing Installed Atom Packages and apm Stars Together
 date: 2015-12-16 09:00:00 +09:00
-redirect_from: /blog/2015/12/16/atom-package-diff
+redirect_from: "/blog/2015/12/16/atom-package-diff"
 ---
 
 Atom にインストールしているパッケージと[Atom.io](https://atom.io/packages)上のスターを同期する CLI ツール [Atom Package Diff](https://www.npmjs.com/package/atom-package-diff) を公開した。

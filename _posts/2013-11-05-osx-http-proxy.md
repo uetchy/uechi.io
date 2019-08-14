@@ -1,7 +1,7 @@
 ---
 title: OS Xのネットワーク環境に合わせてHTTP_PROXYを切り替えるシェルスクリプト
 date: 2013-11-05 09:00:00 +09:00
-redirect_from: /blog/2013/11/05/osx-http-proxy
+redirect_from: "/blog/2013/11/05/osx-http-proxy"
 ---
 
 ![](/uploads/osx-http-proxy.png)

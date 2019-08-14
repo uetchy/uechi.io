@@ -1,7 +1,7 @@
 ---
 title: Run dokku with Dockland
 date: 2014-05-30 09:00:00 +09:00
-redirect_from: /blog/2014/05/30/dokku-with-dockland
+redirect_from: "/blog/2014/05/30/dokku-with-dockland"
 ---
 
 ローカルから heroku-toolbelt ライクに dokku コマンドを叩く dockland gem をリリースした。

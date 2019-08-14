@@ -1,7 +1,7 @@
 ---
 title: Qiitaでストックした記事をインクリメンタルサーチするAlfred 2 Workflow
 date: 2013-12-05 09:00:00 +09:00
-redirect_from: /blog/2013/12/05/qiita-alfred-workflow
+redirect_from: "/blog/2013/12/05/qiita-alfred-workflow"
 ---
 
 コードを書いている時に、ストックしておいた Qiita の記事を検索したくなるシーンが最近増えてきた気がする。

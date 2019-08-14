@@ -1,7 +1,7 @@
 ---
 title: 生活の自動化
 date: 2018-08-05 00:00:00 +09:00
-redirect_from: /blog/2018/08/05/life-automation
+redirect_from: "/blog/2018/08/05/life-automation"
 ---
 
 生活にオートメーションを上手く取り入れ、本当にやりたいことや、やるべきことに集中できる環境をつくろう。

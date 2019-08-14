@@ -1,7 +1,7 @@
 ---
 title: Install NVIDIA GeForce GTX TITAN X in MacPro Early 2008
 date: 2017-02-13 14:20:00 +09:00
-redirect_from: /blog/2017/02/13/nvidia-titan-x-macpro-early-2008
+redirect_from: "/blog/2017/02/13/nvidia-titan-x-macpro-early-2008"
 ---
 
 MacPro Early 2008 という骨董品に NVIDIA Titan X (Maxwell)を積んだところ、いくつかの問題にぶつかりました。この記事でそれらの問題と解決策について書きます。

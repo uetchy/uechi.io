@@ -1,7 +1,7 @@
 ---
 title: EARIN M-2 所見
 date: 2018-03-24 12:56:00 +09:00
-redirect_from: /blog/2018/03/24/earin-m2-first-look
+redirect_from: "/blog/2018/03/24/earin-m2-first-look"
 ---
 
 EARIN M-2 は全体的に見て EARIN の正統進化系と言って良い。

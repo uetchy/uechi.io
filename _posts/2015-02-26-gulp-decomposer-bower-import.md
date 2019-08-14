@@ -1,7 +1,7 @@
 ---
 title: 'gulp + decomposer: Best way to sassy-@import bower components'
 date: 2015-02-26 09:00:00 +09:00
-redirect_from: /blog/2015/02/26/gulp-decomposer-bower-import
+redirect_from: "/blog/2015/02/26/gulp-decomposer-bower-import"
 ---
 
 gulp + Browserify(+ debowerify)という構成で Web サイトを作っていると、SASS にも debowerify 相当のものが欲しくなってくる。

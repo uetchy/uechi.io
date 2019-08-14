@@ -1,7 +1,7 @@
 ---
 title: OSXに音声解析エンジンJuliusを入れる with Homebrew
 date: 2013-07-07 09:00:00 +09:00
-redirect_from: /blog/2013/07/07/install-julius-with-homebrew
+redirect_from: "/blog/2013/07/07/install-julius-with-homebrew"
 ---
 
 Homebrew を使って macOS に音声解析エンジン Julius をインストールします。

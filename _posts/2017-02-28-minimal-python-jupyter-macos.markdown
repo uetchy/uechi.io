@@ -1,7 +1,7 @@
 ---
 title: Install Python and Jupyter on macOS with Minimal Effort
 date: 2017-02-28 11:14:00 +09:00
-redirect_from: /blog/2017/02/28/minimal-python-jupyter-macos
+redirect_from: "/blog/2017/02/28/minimal-python-jupyter-macos"
 ---
 
 Maybe you don't need `pyenv` and/or `virtualenv` in most cases.

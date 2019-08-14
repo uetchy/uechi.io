@@ -1,7 +1,7 @@
 ---
 title: 英語メモ
 date: 2019-01-17 19:31:00 +09:00
-redirect_from: /blog/2019/01/17/english-note
+redirect_from: "/blog/2019/01/17/english-note"
 ---
 
 頻用するけど忘れがちな語彙や便利イディオムをつらつら書きためた雑記です。

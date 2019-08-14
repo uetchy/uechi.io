@@ -1,7 +1,7 @@
 ---
 title: Alfred Qiita Workflow in Go
 date: 2015-09-07 09:00:00 +09:00
-redirect_from: /blog/2015/09/07/alfred-qiita-workflow-in-go
+redirect_from: "/blog/2015/09/07/alfred-qiita-workflow-in-go"
 ---
 
 ![Cover](/uploads/alfred-qiita-workflow.png)

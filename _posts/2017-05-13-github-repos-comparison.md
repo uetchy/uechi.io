@@ -1,7 +1,7 @@
 ---
 title: GitHubリポジトリの比較表を gh-compare で作る
 date: 2017-05-13 12:00:00 +09:00
-redirect_from: /blog/2017/05/13/github-repos-comparison
+redirect_from: "/blog/2017/05/13/github-repos-comparison"
 image: http://uechi-public.s3.amazonaws.com/github/gh-compare.gif
 ---
 

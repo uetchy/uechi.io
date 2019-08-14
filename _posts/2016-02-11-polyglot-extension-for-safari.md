@@ -1,7 +1,7 @@
 ---
 title: Polyglot Extension for Safari
 date: 2016-02-11 09:00:00 +09:00
-redirect_from: /blog/2016/02/11/polyglot-extension-for-safari
+redirect_from: "/blog/2016/02/11/polyglot-extension-for-safari"
 ---
 
 ![](http://uechi-public.s3.amazonaws.com/github/Polyglot/header.png)

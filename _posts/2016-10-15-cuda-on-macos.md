@@ -1,7 +1,7 @@
 ---
 title: CUDA on macOS
 date: 2016-10-15 09:00:00 +09:00
-redirect_from: /blog/2016/10/15/cuda-on-macos
+redirect_from: "/blog/2016/10/15/cuda-on-macos"
 ---
 
 Install TensorFlow with CUDA 8.0 + cuDNN 5.1 support on macOS.
