@@ -1,6 +1,7 @@
 ---
 title: Markdownフレンドリーなノートアプリ
 date: 2017-02-13 21:52:00 +09:00
+redirect_from: /blog/2017/02/13/markdown-friendly-note-taking-apps
 ---
 
 UI が秀逸な Markdown ノートアプリを紹介します。

@@ -1,6 +1,7 @@
 ---
 title: Building TensorFlow from Source
 date: 2018-04-10 09:41:00 +09:00
+redirect_from: /blog/2018/04/10/building-tensorflow-from-source
 ---
 
 As you may notice lines of snippet showed on [dockerfile-machinelearning](https://github.com/uetchy/dockerfile-machinelearning/blob/ffc2cadaf192b19509df0f4b87bc9d427aa30966/Dockerfile#L54-L86), TensorFlow can be non-interactively installed from source.

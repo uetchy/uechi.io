@@ -1,6 +1,7 @@
 ---
 title: Essentials for New MacBook
 date: 2016-01-24 09:00:00 +09:00
+redirect_from: /blog/2016/01/24/essentials-for-new-macbook
 ---
 
 ![](/uploads/essentials-for-new-macbook-spec.png)

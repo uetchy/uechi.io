@@ -1,6 +1,7 @@
 ---
 title: Take control of Chrome with Myo Armband
 date: 2014-12-16 09:00:00 +09:00
+redirect_from: /blog/2014/12/16/myo-armband
 ---
 
 Thalmic Labs の MYO アームバンドが届いたので Google Chrome をマイノリティ・リポートっぽいジェスチャーで操作する Myo Scripts を書いてみる。

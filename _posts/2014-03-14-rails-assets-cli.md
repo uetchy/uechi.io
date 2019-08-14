@@ -1,6 +1,7 @@
 ---
 title: Rails Assetsのパッケージをコマンドラインから検索する
 date: 2014-03-14 09:00:00 +09:00
+redirect_from: /blog/2014/03/14/rails-assets-cli
 ---
 
 [Rails Assets](https://rails-assets.org/) は Bower パッケージを Bundler で管理出

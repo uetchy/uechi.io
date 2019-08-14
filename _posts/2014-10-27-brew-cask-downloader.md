@@ -1,6 +1,7 @@
 ---
 title: homebrew-caskを単純なダウンローダーとして使う
 date: 2014-10-27 09:00:00 +09:00
+redirect_from: /blog/2014/10/27/brew-cask-downloader
 ---
 
 ![image](/uploads/brew-cask-downloader.png)

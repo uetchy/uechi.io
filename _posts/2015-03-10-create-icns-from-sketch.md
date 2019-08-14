@@ -1,6 +1,7 @@
 ---
 title: Create .icns from .sketch
 date: 2015-03-10 09:00:00 +09:00
+redirect_from: /blog/2015/03/10/create-icns-from-sketch
 ---
 
 ![](/uploads/create-icns-from-sketch/intro.png)

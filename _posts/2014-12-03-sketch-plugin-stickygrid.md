@@ -1,6 +1,7 @@
 ---
 title: Sketch 3 plugin 'StickyGrid'
 date: 2014-12-03 09:00:00 +09:00
+redirect_from: /blog/2014/12/03/sketch-plugin-stickygrid
 ---
 
 For practicing Sketch plugin development, I created **StickyGrid** to let shape points sticked with grids.

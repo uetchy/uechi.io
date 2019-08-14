@@ -1,7 +1,9 @@
 ---
 title: 普段使いしているもの
 date: 2018-03-29 22:33:00 +09:00
+redirect_from: /blog/2018/03/29/products-guide
 updated: 2018-08-03 09:00:00 +09:00
+redirect_from: /blog/2018/03/29/products-guide
 ---
 
 普段使いしているプロダクトを紹介する。

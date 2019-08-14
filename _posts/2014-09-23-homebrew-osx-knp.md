@@ -1,6 +1,7 @@
 ---
 title: HomebrewでmacOSに構文解析システムKNPを入れる
 date: 2014-09-23 09:00:00 +09:00
+redirect_from: /blog/2014/09/23/homebrew-osx-knp
 ---
 
 Homebrew で macOS に構文解析システム KNP をインストールします。

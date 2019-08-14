@@ -1,9 +1,10 @@
 ---
 title: アップルパイ
 date: 2017-04-23 14:48:00 +09:00
+redirect_from: /blog/2017/04/23/apple-pie
 categories:
-- recipe
-image: "/uploads/apple-pie.jpg"
+  - recipe
+image: '/uploads/apple-pie.jpg'
 ---
 
 ![apple-pie.jpg](/uploads/apple-pie.jpg)
@@ -18,7 +19,7 @@ image: "/uploads/apple-pie.jpg"
 
 # 手順
 
-1.  **富士りんご(直径 8cm)**3 個の皮を剥いて 2-3 ㎠に切って鍋に入れる
+1.  **富士りんご(直径 8cm)**3 個の皮を剥いて 2-3 ㎠ に切って鍋に入れる
 1.  **砂糖**60g・**レモン汁**2tbsp を鍋に入れて、汁気が無くなるまで中火で 10-15 分煮る
 1.  火を止めて、**切れてるバター**2 個・**シナモン**を好きなだけ混ぜる
 1.  **冷凍パイシート**を冷蔵庫に移動し 30 分おく

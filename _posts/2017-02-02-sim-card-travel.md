@@ -1,6 +1,7 @@
 ---
 title: 海外旅行におけるSIMカードの選択
 date: 2017-02-02 00:20:00 +09:00
+redirect_from: /blog/2017/02/02/sim-card-travel
 ---
 
 世界中で 3G 通信が出来る[GigSky](http://www.gigsky.jp)の SIM を 3 日間の台湾旅行で使ってみました。

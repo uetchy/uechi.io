@@ -1,13 +1,14 @@
 ---
 title: 英語メモ
 date: 2019-01-17 19:31:00 +09:00
+redirect_from: /blog/2019/01/17/english-note
 ---
 
 頻用するけど忘れがちな語彙や便利イディオムをつらつら書きためた雑記です。
 
 too much to take - 手に負えない
 
-de rigueur - 慣習上必要不可欠; 
+de rigueur - 慣習上必要不可欠;
 
 utterly - 完全に（否定的用法）
 
@@ -20,9 +21,9 @@ The doom-laden feeling that this creates in us is then intensified by our inabil
 
 ## 〜のおかげで
 
-- Thanks to A — （肯定的に）Aのおかげで
-- Thanks to A — （皮肉を込めて；無論否定的に）Aのおかげで
-- Owing to A — （否定的に）Aのおかげで
+- Thanks to A — （肯定的に）A のおかげで
+- Thanks to A — （皮肉を込めて；無論否定的に）A のおかげで
+- Owing to A — （否定的に）A のおかげで
 
 Thanks to his help, we managed to finish the work in time. 彼のおかげでなんとか時間内に仕事を終えることできた
 
@@ -35,7 +36,7 @@ The balloon is likely to burst at any time その風船は今にも爆発しそ�
 1. It is **because** the air was polluted **that** the experiment was a failure.
 1. The experiment was a failure **because** the air was polluted.
 
-## Twitter構文
+## Twitter 構文
 
 Thesis. Remote companies have less of an echo chamber since they are distributed. Thoughts? — 仮説: リモートワークは人が分散しているからエコーチェンバーが起こりにくい。どう思う？
 
@@ -45,7 +46,7 @@ Because he's the kind of person who likes helping others and is always gentle an
 
 it was more difficult to get it wrong than guess it right! XD 正解を当てるよりもこれを間違える方が難しいよ！
 
-I'm pretty sure there was a lot of uproar about the Equifax thing Equifaxの件について批判が巻き起こっていたのは間違いない
+I'm pretty sure there was a lot of uproar about the Equifax thing Equifax の件について批判が巻き起こっていたのは間違いない
 
 Don’t make me blush XD — めっちゃ恥ずかしい
 
@@ -57,11 +58,11 @@ repeal — 撤回する
 
 no respect for their users — ユーザーに対する敬意がない
 
-be now going the A route — 今度はA作戦ときた
+be now going the A route — 今度は A 作戦ときた
 
 in a blunt fashion — 露骨なやり方で
 
-"DM us, we'll take a look!" faux-friendly route — 「DMで詳しく話を聞かせて！」偽フレンドリー作戦だ
+"DM us, we'll take a look!" faux-friendly route — 「DM で詳しく話を聞かせて！」偽フレンドリー作戦だ
 
 reinstate — （アカウントを）復活させる
 
@@ -71,7 +72,7 @@ as if, as though — 後者は話者の疑いが現れている. 仮定法過去
 
 predominatly — 大抵は; Your costs are predominantly human labor. かかる費用のほとんどは人件費だ
 
-a myriad of A — 無数のA
+a myriad of A — 無数の A
 
 funnel toward 狭いところを前へと通る
 
@@ -109,7 +110,7 @@ I like Makefiles, they are simple and yet very powerful.
 
 To my surprise — 驚くべきことに
 
-I did it *out of* curiosity — 興味本位でやった
+I did it _out of_ curiosity — 興味本位でやった
 
 If you're of the **belt-and-suspenders mindset**, consider setting UsePAM to 'no' as well. — 心配性な性格のこと
 
@@ -117,15 +118,15 @@ you can cancel it **as long as it has not been matched** — ～されていな�
 
 By definition — 定義によると
 
-A found B C — AはBがCだと思った
+A found B C — A は B が C だと思った
 
 in that — という点において
 
 Iconoclast — 因襲打破主義者
 
-Researchers spend a great deal of time doing A — 研究者は多くの時間をAするのに割いています。
+Researchers spend a great deal of time doing A — 研究者は多くの時間を A するのに割いています。
 
-A upon demand for B — Bの要請に応じてA
+A upon demand for B — B の要請に応じて A
 
 Granularity — 粒度
 
@@ -155,17 +156,17 @@ Countless wrong inferences could be drawn from those observations. 無数の誤�
 
 it drives me crazy [nuts] — イライラさせられる
 
-describes the steps that are involved in A — Aに関する手順について説明する
+describes the steps that are involved in A — A に関する手順について説明する
 
-前置詞inは特徴の違いを、ofは程度の違いを表す
+前置詞 in は特徴の違いを、of は程度の違いを表す
 
-A is in proportion to B — AはBに比例している
+A is in proportion to B — A は B に比例している
 
-A is out of proportion to B — AはBに反比例している
+A is out of proportion to B — A は B に反比例している
 
-受動態は不自然に手を加えられて発生した結果に付随する、能動態は自然に発生した場合に付随する — our profits were increasedは不正があったかのような表現、our profits increasedが正しい
+受動態は不自然に手を加えられて発生した結果に付随する、能動態は自然に発生した場合に付随する — our profits were increased は不正があったかのような表現、our profits increased が正しい
 
-be collectively known as A — Aと総称されている
+be collectively known as A — A と総称されている
 
 Any links to this, as to be honest nobody is providing evidence, just lip-service relying on the ignorance of most readers そのリンク先の記事は、正直に言わせてもらえばどれも証拠を示していない。読者の無知につけこんだ上っ面だけの内容でしかない。
 
@@ -173,9 +174,9 @@ in a great hurry - 大急ぎで
 
 gross 名詞 — 明らかな～, a gross oversimplification - 明らかに過度な簡略化
 
-among — ～の間で — in, throughで代替可能
+among — ～の間で — in, through で代替可能
 
-throw A away — Aを捨てる、Aを無駄にする
+throw A away — A を捨てる、A を無駄にする
 
 throw A up — 急にやめる
 
@@ -189,35 +190,35 @@ ludicrous, ridiculous — 馬鹿げた
 
 derogatory — 差別的な
 
-A that it was B — Aだったので、B , 便利な接続詞
+A that it was B — A だったので、B , 便利な接続詞
 
 After (p.p.), He (p.) — ～の後、彼は～した
 
 vicious — 凶悪な
 
-relentless, ruthless — しつこく、inの時は徹底的な
+relentless, ruthless — しつこく、in の時は徹底的な
 
 mercilessly — 無慈悲に
 
 reckless — 無謀な
 
-profound — 心理的影響が重大な、深刻な(物理的にはdeepが適切)
+profound — 心理的影響が重大な、深刻な(物理的には deep が適切)
 
 I felt like a coward hiding this from people — それを隠すことで自分が臆病者に思えた
 
 While training for the marathon, she was relentless in following the same schedule — マラソンの練習の間、彼女は同じスケジュールをしつこいほど守った。
 
-His history of A led to  B — 彼がAを繰り返したせいでBを招いた。
+His history of A led to B — 彼が A を繰り返したせいで B を招いた。
 
 hatred — 憎悪
 
 coarse — 粗い
 
-B with A everywhere — Aがいたるところに散乱しているB
+B with A everywhere — A がいたるところに散乱している B
 
 people, all, the crowd — 人々
 
-A was quick to spot the potential of the Internet — Aはインターネットの可能性をいち早く見出した
+A was quick to spot the potential of the Internet — A はインターネットの可能性をいち早く見出した
 
 a man who's nice to be around — そばに居てくれると助かる親切な人
 
@@ -251,9 +252,9 @@ The antisocial behavior you are naturing あなたが心に抱いている反社
 
 have a lot to do with ～によるところが大きい
 
-一般に前置詞＋who(m)は既知の情報を確認する際に, who＋前置詞は新しい情報を求める際に好まれる
+一般に前置詞＋ who(m)は既知の情報を確認する際に, who ＋前置詞は新しい情報を求める際に好まれる
 
- This is sure to satisfy those who are into computers. これはコンピュータにはまっている人をきっと満足させるだろう
+This is sure to satisfy those who are into computers. これはコンピュータにはまっている人をきっと満足させるだろう
 
 I've always wanted to study abroad someday but I haven't been able to yet. いつか留学したいと思ってるけどまだ出来てない。
 
@@ -289,24 +290,24 @@ Do you happen to know if she has a boyfriend? — あの子に彼氏いるのか
 
 不定詞は名詞・形容詞・副詞的働きをする動詞ベースの詞のこと
 
-- to不定詞がunrealized(未実現)
-- -ingがrealized(実現)
+- to 不定詞が unrealized(未実現)
+- -ing が realized(実現)
 
-I want (to eat an apple)←名詞的
+I want (to eat an apple)← 名詞的
 
-only to A — 思わぬ悲観的な事実を説明するclause
+only to A — 思わぬ悲観的な事実を説明する clause
 
 He **returned** after the war **only to be told** that his wife had left him.
 
-I **tore** open the box, **only to discover** that some of the parts were missing. 
+I **tore** open the box, **only to discover** that some of the parts were missing.
 
 I **arrived** **only to find** that the others had already left.
 
 ## 倒置法
 
-So do I — 私も！(I like appleに対して)
+So do I — 私も！(I like apple に対して)
 
-So am I — 私も！(I'm twenty years oldに対して)
+So am I — 私も！(I'm twenty years old に対して)
 
 Here comes bus — もうバス来たよ
 
@@ -320,7 +321,7 @@ How beautiful (that is) — なんて綺麗なの
 
 "I'm fine", said he — 大丈夫だと彼は言った
 
-Dark as(though) it was, I found the footprints.  — 暗かったが、なんとか足跡を見つけた
+Dark as(though) it was, I found the footprints. — 暗かったが、なんとか足跡を見つけた
 
 Hard though she tried, she couldn't make the deadline. — 頑張ったが間に合わなかった
 

@@ -1,6 +1,7 @@
 ---
 title: Sketch 3 plugin 'StickyGrid'
 date: 2014-12-03 09:00:00 +09:00
+redirect_from: /blog/2014/12/03/sketch-plugin-stickygrid-ja
 ---
 
 選択したシェイプのポイントをグリッドに吸い付かせるプラグイン StickyGrid を作りました。
