@@ -4,7 +4,7 @@ date: 2019-01-17 19:31:00 +09:00
 redirect_from: "/blog/2019/01/17/english-note"
 ---
 
-頻用するけど忘れがちな語彙や便利イディオムをつらつら書きためた雑記です。
+頻用するけど忘れがちな語彙や便利イディオム、その他良いなあと思った表現をつらつら書きためた雑記です。
 
 too much to take - 手に負えない
 
@@ -32,9 +32,6 @@ Thanks to the development of medicine, people have been able to live longer. 薬
 Owing to the rise in oil prices, people are forced to use public transportation. オイル価格上昇のおかげで人々は公共交通機関を使わざるを得なくなっている。
 
 The balloon is likely to burst at any time その風船は今にも爆発しそうだ
-
-1. It is **because** the air was polluted **that** the experiment was a failure.
-1. The experiment was a failure **because** the air was polluted.
 
 ## Twitter 構文
 
@@ -70,7 +67,7 @@ shut the whole thing down — 全てを終わらせる
 
 as if, as though — 後者は話者の疑いが現れている. 仮定法過去を取る. It's as if I were a movie star.
 
-predominatly — 大抵は; Your costs are predominantly human labor. かかる費用のほとんどは人件費だ
+predominantly — 大抵は; Your costs are predominantly human labor. かかる費用のほとんどは人件費だ
 
 a myriad of A — 無数の A
 
@@ -102,9 +99,9 @@ Hello, I just came across this wonderful library and was really intrigued by it 
 
 When teaching, be careful not to mix up Aand B.
 
-life saver under this condition
+lifesaver under this condition
 
-It turned out to be such great experience, I couldn’t miss an opportunity to share it
+It turned out to be such a great experience, I couldn’t miss an opportunity to share it
 
 I like Makefiles, they are simple and yet very powerful.
 
@@ -126,7 +123,7 @@ Iconoclast — 因襲打破主義者
 
 Researchers spend a great deal of time doing A — 研究者は多くの時間を A するのに割いています。
 
-A upon demand for B — B の要請に応じて A
+An upon demand for B — B の要請に応じて A
 
 Granularity — 粒度
 
