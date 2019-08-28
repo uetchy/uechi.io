@@ -56,4 +56,4 @@ namae is completely open-sourced and the entire source code is available at [Git
 
 namae saves your time searching for a universally available name around a set of hosting providers and package registries.
 
-Go to [namae.dev](https://namae.dev/) and grab a report for the availability of your future product name. If you have any suggestion, please leave a comment or poke me on Twitter ([@uetschy](https://twitter.com/uetschy)).
+Go to [namae.dev](https://namae.dev/) and grab a report for the availability of your future product name. If you have any suggestion, poke me on Twitter ([@uetschy](https://twitter.com/uetschy)).
