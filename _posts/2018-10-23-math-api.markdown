@@ -1,6 +1,6 @@
 ---
 title: 'Math API: LaTeX Math as SVG image'
-date: 2019-08-29 03:19:00 +09:00
+date: 2018-10-23 03:19:00 +09:00
 ---
 
 I've always wanted to put LaTeX Math equations on a web page where MathJax is not allowed to run inside it.
