@@ -5,7 +5,7 @@ date: 2019-08-29 03:12:00 +09:00
 
 Have you ever struggled with naming your new OSS project or web app? While hoping no one claimed your desired one in GitHub, npm, Homebrew, PyPI, Domains, etcetera, choosing the best name is weary work.
 
-That's why [namae](https://namae.dev) is here for you.
+That's why I created [namae](https://namae.dev).
 
 # namae
 
