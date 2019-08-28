@@ -1,6 +1,6 @@
 ---
 title: Comparing OSS on GitHub
-date: 2019-08-29 03:21:00 +09:00
+date: 2018-09-23 03:21:00 +09:00
 ---
 
 You are making a decision on which open source project you would adopt for your newly developing application.
