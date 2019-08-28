@@ -1,0 +1,47 @@
+---
+title: 'Math API: LaTeX Math as SVG image'
+date: 2019-08-29 03:19:00 +09:00
+---
+
+I've always wanted to put LaTeX Math equations on a web page where MathJax is not allowed to run inside it.
+
+Spending some time, I made [Math API](https://math.now.sh), that renders LaTeX Math markup into an SVG image.
+
+So you can place your equation on almost everywhere on which you could put `<img>` or Markdown (`![]()`), such as GitHub, Jupyter Notebook or dev.to (here!).
+
+
+```markdown
+![](https://math.now.sh?from=\\LaTeX)
+```
+
+![](https://math.now.sh?from=\\LaTeX)
+
+
+```markdown
+![](https://math.now.sh?from=\\log\\prod^N_{i}x_{i}=\\sum^N_i\\log{x_i})
+```
+
+![](https://math.now.sh?from=\\log\\prod^N_{i}x_{i}=\\sum^N_i\\log{x_i})
+
+
+# Inline image
+
+![fqea9nq2wv9in15lqlf3.png.jpeg](/uploads/fqea9nq2wv9in15lqlf3.png.jpeg)
+![43slt0h6dfhox1xwmuti.png.jpeg](/uploads/43slt0h6dfhox1xwmuti.png.jpeg)
+
+It is possible to generate an inline equation by changing the query from `from` to `inline`.
+
+```markdown
+<img src="https://math.now.sh?inline=\\LaTeX" />
+```
+
+# Online Editor
+
+Also, there is the online editor available at https://math.now.sh.
+
+![gg2wil3exu9lyj7ppuoy.png](/uploads/gg2wil3exu9lyj7ppuoy.png)
+
+# Conclusion
+
+The source code is available on [GitHub](https://github.com/uetchy/math-api).
+Give it a try and leave a comment/idea for a new feature.
