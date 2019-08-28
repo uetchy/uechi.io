@@ -11,17 +11,17 @@ So you can place your equation on almost everywhere on which you could put `<img
 
 
 ```markdown
-![](https://math.now.sh?from=\\LaTeX)
+![](https://math.now.sh?from=\LaTeX)
 ```
 
-![](https://math.now.sh?from=\\LaTeX)
+![Equation](https://math.now.sh?from=%5CLaTeX)
 
 
 ```markdown
-![](https://math.now.sh?from=\\log\\prod^N_{i}x_{i}=\\sum^N_i\\log{x_i})
+![](https://math.now.sh?from=\log\prod^N_{i}x_{i}=\sum^N_i\log{x_i})
 ```
 
-![](https://math.now.sh?from=\\log\\prod^N_{i}x_{i}=\\sum^N_i\\log{x_i})
+![Equation](https://math.now.sh?from=%5Clog%5Cprod%5EN_%7Bi%7Dx_%7Bi%7D%3D%5Csum%5EN_i%5Clog%7Bx_i%7D)
 
 
 # Inline image
