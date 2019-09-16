@@ -1,6 +1,6 @@
 ---
 title: Wallpapers
-permalink: "/wallpaper"
+permalink: '/wallpaper'
 layout: post
 ---
 
@@ -10,6 +10,12 @@ Right-click and choose **Save Image** to download my wallpapers. All following p
   <div><img src="{{ site.baseurl }}/images/wallpaper/vertex.png" /></div>
   <div style="margin-left: 20px"><img src="{{ site.baseurl }}/images/wallpaper/vertex2.png" /></div>
 </div>
+
+![Black Matter]({{ site.baseurl }}/images/wallpaper/blackmatter.png)
+
+![Rockstar]({{ site.baseurl }}/images/wallpaper/rockstar.png)
+
+![Rock Mountain]({{ site.baseurl }}/images/wallpaper/rockmountain.png)
 
 ![Sunrise]({{ site.baseurl }}/images/wallpaper/sunrise.png)
 
