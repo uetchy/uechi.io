@@ -37,7 +37,7 @@ b();
 hyperfine 'ts-node a.ts' 'ts-node b.ts' -r 50 --warmup 3 --export-json ab.json 
 ```
 
-`result.json`の中身以下のようになります。t検定はサンプルが正規分布に従っているという仮定を置いているので、大数の法則から本当はもっと試行回数を増やした方が良いです。
+`result.json`の中身以下のようになります。
 
 ```json
 {
@@ -81,6 +81,8 @@ hyperfine 'ts-node a.ts' 'ts-node b.ts' -r 50 --warmup 3 --export-json ab.json
   ]
 }
 ```
+
+> t検定はサンプルが正規分布に従っているという仮定を置いているので、大数の法則から本当はもっと試行回数を増やした方が良いです。
 
 この`result.json`の`times`配列を受け取り、2 つの分布間に有意差があるかどうかを判定します。
 
@@ -129,13 +131,16 @@ log(p < 0.05 ? 'Possibly some difference there' : 'No difference');
 ```
 
 ここで`X_mu`は分布Xの平均、`X_sigma`は分布Xの不偏分散です。
+
 $$
 \begin{eqnarray}
 \mu_X &=& \frac{1}{n_X} \sum^{n_X}_i X_i\\
 \sigma_X &=& \frac{1}{n_X-1}\sum^{n_X}_i (X_i - \mu_X)^2
 \end{eqnarray}
 $$
+
 これをXとY両方に対して求めます。さらに以下のようにしてtを求めます。
+
 $$
 t = \frac{\mu_X - \mu_Y}{\sqrt{\frac{\sigma_X}{n_X} + \frac{\sigma_Y}{n_Y}}}
 $$
@@ -147,11 +152,14 @@ $$
 $$
 
 CDFを用いてp値を求めます。両側検定をするので2を掛けます。t分布の自由度 (degree of freedom; df) は$n-1$なので、両分布の自由度を$n_X+n_Y-2$で与えます。本当は
+
 $$
 \text{df} = \frac{(\sigma_X + \sigma_Y)^2}{
     \frac{\sigma_X^2}{n_X - 1} + \frac{\sigma_Y^2}{n_Y - 1}}
 $$
+
 で求める必要がありますが、さぼって近似しました。
+
 $$
 p = \text{CDF}(-|t|, n_X+n_Y-2) \times2
 $$
