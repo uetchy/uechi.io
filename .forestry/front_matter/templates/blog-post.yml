@@ -1,17 +1,18 @@
+---
 label: Blog post
 hide_body: false
 fields:
-  - type: text
-    name: title
-    label: title
-    config:
-      required: false
-  - type: datetime
-    name: date
-    label: date
-    default: now
-    config:
-      required: true
-  - type: text
-    name: redirect_from
-    label: redirect_from
+- type: text
+  name: title
+  label: title
+  config:
+    required: false
+- type: datetime
+  name: date
+  label: date
+  default: now
+  config:
+    required: true
+- type: text
+  name: redirect_from
+  label: redirect_from
