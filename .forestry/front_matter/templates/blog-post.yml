@@ -16,3 +16,5 @@ fields:
 - type: text
   name: redirect_from
   label: redirect_from
+pages:
+- _posts/bose-noise-cancelling-headphones-700レビュー.md
