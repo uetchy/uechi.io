@@ -1,8 +1,6 @@
 ---
 date: 2019-10-25 19:49:01 +0900
 title: Bose Noise Cancelling Headphones 700レビュー
-redirect_from: ''
-
 ---
 Bose Noise Cancelling Headphones 700を使い始めて一ヶ月が経ったので、現時点での印象をまとめる。
 
