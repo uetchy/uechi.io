@@ -8,17 +8,13 @@ redirect_from: "/blog/2019/01/17/english-note"
 - woe - 悲しみ
 - a little too - 少し〜すぎる
 - all that much - それほど（否定形で）
-  
   - family doesn't mean all that much to you.
 - articulate - 考えをはっきり述べられる
 - concordant - 調和した
 - ergo - それ故に
-  
   - かたい ergo - thus - therefore - so やわらかい
 - endeavor - 努力
-  
   - I myself struggle with the endeavor of mastering the English language
-
 - vis-à-vis - 〜と向かい合って、〜と比較して
 - takeaway - 要点
 - thoroughly - 徹底的に
@@ -31,7 +27,6 @@ redirect_from: "/blog/2019/01/17/english-note"
 - three-fold — 三倍
 - evade — 避ける = avoid
   - a word that evades definition — 定義しにくい言葉
-
 - don't be fooled by A — Aに惑わされるな
 - thrice — とても
   - Circuit Judge Joseph Bulone called 49-year-old Michael Drejka a “wanna-be” law enforcement officer and a self-appointed “handicapped parking space monitor.”
@@ -60,18 +55,27 @@ redirect_from: "/blog/2019/01/17/english-note"
 > Have you thought of what you’ll do after you retire? — 引退したらやりたいことについて考えたことある？
 
 - any of those — これらどれでも (all of, everyと交換可能 | 肯定文)
+
 - there aren't any apples on the floor (否定の場合はanyの後に複数形)
+
 - you will likely do A — あなたはAすることだろう 
+
 - 99% of the time this is what you want to use — 99%これを使えば良い
+
 - The one catch is that — 例外は、
+
 - I ended up settling for this which looks incredibly anti-pattern-y but was the only option that wouldn’t explode on me — 最終的にこれに落ち着いた。アンチパターンっぽいけど僕にとっては一番安定している
+
 - Why was that even created? — まずなぜこれが作られたの？
+
 - Putting the main code in another function serves two purposes:
+
 - one week cannot and should not define any team
 
 - it go to show that A — Aということの証明となる
+
 - A is to not have B — 「A」とは、Bを持たないことである
-  
+
   > wireless charging is kinda funny because it really goes to show that the only way to get the tech industry to agree on a unified connector is to not have a connector
 
 > me: it’s not that I mind freelancing, I love it. It’s just that the social interaction is pretty minimal and extremely uneven day-to-day and sometimes I wonder how that will affect me long term, you know? 
@@ -82,9 +86,7 @@ redirect_from: "/blog/2019/01/17/english-note"
 > glad you’re happily situated elsewhere now. — あなたが他の場所で活躍しているようで嬉しい
 
 - My dA account turned 10yo. In fact, I had spent 99% of the time as a lurker and six months ago finally started drawing and posting art.
-
 - A conditional request is one that triggers if something happens, like: "If you don't quit talking, I am gonna have to ask you to leave." In this case, you can't really say, "If you don't quit talking, I have to ask you to leave." So even though it's not really conditional, using a conditional form is more polite because it's less direct.
-
 - come to pass
 - come across
 
@@ -104,7 +106,6 @@ redirect_from: "/blog/2019/01/17/english-note"
 - for asking — 望むなら
 - fuck A up — Aをボコボコにする
 - friendly reminder - a euphemism for "this is the last warning"
-
 - I feel attached
 - I feel called out
 
@@ -117,7 +118,6 @@ redirect_from: "/blog/2019/01/17/english-note"
 - A teenager not old to buy a six-pack — ビールも買えない年頃の子供
 - It is likely that 未来形 — 〜になるだろう
   - It's likely that the affair will come to nothing — どうやら無事に治まりそうだ
-
 - We will most likely do A — 我々は必ずAをするでしょう
 - chirring - 虫が鳴く; bugs chirring
 - what are you waiting for
@@ -157,7 +157,6 @@ redirect_from: "/blog/2019/01/17/english-note"
 - adherence — 執着 one's adherence to A
 - belief — 信念
 - on principle — 道徳的見地から
-
 - in set terms — 決まり文句で
 - (Evening|Cold weather) has set in — (夜に|寒く)なった
 
@@ -169,18 +168,19 @@ redirect_from: "/blog/2019/01/17/english-note"
 - in term of A — Aの観点から
 
 ## Go
+
 - go into 何かを始める；状態に入る；費やされる
 - go down 降りる；落ちる；低下する; go down on all fours — 四つん這いになる
 - go easy on fellow insiders 身内に甘い；身内に手加減する
 - go easy with her 彼女に優しくしろよ
 
 ## Get
+
 - get over it （障害を）乗り越えろ
 - get out 出て行く
 - get down on A for B — Bしたことに大してAを批判し続ける
 - get down to [verb.] — やっと始める。
 - get in — 乗り込む
-
 - too much to take - 手に負えない
 - de rigueur - 慣習上必要不可欠
 - utterly - 完全に
@@ -200,7 +200,7 @@ redirect_from: "/blog/2019/01/17/english-note"
 > The balloon is likely to burst at any time その風船は今にも爆発しそうだ
 
 > It is because the air was polluted that the experiment was a failure.
-The experiment was a failure because the air was polluted.
+> The experiment was a failure because the air was polluted.
 
 > Thesis. Remote companies have less of an echo chamber since they are distributed. Thoughts?
 
@@ -213,7 +213,7 @@ The experiment was a failure because the air was polluted.
 > Because he's the kind of person who likes helping others and is always gentle and kind as you described
 
 > it was more difficult to get it wrong than guess it right!
- XD
+>  XD
 
 > I'm pretty sure there was a lot of uproar about the Equifax thing
 
@@ -351,15 +351,14 @@ p.p. the present progressive form, 現在進行系
 - Seeing me, the man ran away. ←→ As the man saw me, he ran away.
 - Written in simple English, this book is easy to understand. ←→ Since this book is written in simple English, it is easy to understand.
 - Walking along the beach, I found a beautiful shell. ←→ When I was walking along the beach, I found a beautiful shell.
-
 - and そうすれば or 然もなくば but けれども so だから、それで for というのも nor 〜もまた、〜ではない
 - She is not a politician, nor is she a diplomat.
 
 ## when
 
 1. 未来の条件を表す場合は現在形を使う When I arrive at the station, I'll call you.
-1. 過去の時を表す場合は過去形 When I was a child, I used to like soccer.
-1. 未来の可能性を話す場合は未来形 I don't know when he will come.
+2. 過去の時を表す場合は過去形 When I was a child, I used to like soccer.
+3. 未来の可能性を話す場合は未来形 I don't know when he will come.
 
 - happened to — たまたま、偶然、もしかして
 - Do you happen to know if she has a boyfriend? — あの子に彼氏いるのかな？
@@ -372,7 +371,7 @@ to不定詞がunrealized(未実現)、-ingがrealized(実現)
 - Thank you for playing the game
 
 1. She is studying English hard to study abroad.
-1. She study English hard to study abroad.
+2. She study English hard to study abroad.
 
 違いは？
 
@@ -417,44 +416,44 @@ to不定詞がunrealized(未実現)、-ingがrealized(実現)
 
 > Universities are filled with people who feel like they are competing against their colleagues. When you do this, you end up constantly looking in front of you, feeling bitter. Or looking behind you, becoming arrogant. Run your own race.
 > — Marc Lamont Hill
->  https://twitter.com/marclamonthill/status/1109500482500939776?s=12
+> https://twitter.com/marclamonthill/status/1109500482500939776?s=12
 
 > Much discussion about bias in ML due to the training dataset - this has been an active area of study for a long time in population genetics, and is still not fully resolved
 > — Miriam Huntley
->  https://twitter.com/iam_mir_iam/status/1108819635959418881?s=12
+> https://twitter.com/iam_mir_iam/status/1108819635959418881?s=12
 
 > Welcome to the FGO NA Twitter. If you look to your left, you'll see the salty people club that are currently sulling about not pulling Okita. If you look to your right, you'll see the angry weeb club still screeching about Emiya Alter. Please enjoy your stay.… 
 > — ℭ𝔦𝔫𝔡𝔢𝔯 𝔉𝔞𝔩𝔩
->  https://twitter.com/zettainverse/status/1109231751019278337?s=12
+> https://twitter.com/zettainverse/status/1109231751019278337?s=12
 
 > Probably one of the most auto-bookmarkable post I've seen in a while, regardless of skill level with git: 
 > — Ben Halpern 🤗
->  https://twitter.com/bendhalpern/status/1135319291568562176?s=12
+> https://twitter.com/bendhalpern/status/1135319291568562176?s=12
 
 > Now announcing tsconfig-api 🎉 An experimental microservice for retrieving @typescript compiler option details 🔎 100% open source and hosted by @zeithq Now 
 > — Matterhorn
->  https://twitter.com/matterhorndev/status/1138610398159147008?s=12
+> https://twitter.com/matterhorndev/status/1138610398159147008?s=12
 
 > Amid all of the chaos, an answer could be found.
 > There’s a special kind of joy in UI libraries when you see small primitives working. Like maybe it’s a two rectangle demo. But you’ve already learned that thanks to composition, if it worked for two rectangles, you can make it work for a whole FB/Twitter-level app.
 > — Dan Abramov
->  https://twitter.com/dan_abramov/status/1143911059717263360?s=12
+> https://twitter.com/dan_abramov/status/1143911059717263360?s=12
 
 > Yes, assuming something will work like literally every other software that has ever been created will work is subjective.
 > Super annoying that these people are so insecure about themselves that they have to do that kind of thing.… 
 > — Kent C. Dodds
->  https://twitter.com/kentcdodds/status/1147142716280602629?s=12
+> https://twitter.com/kentcdodds/status/1147142716280602629?s=12
 
 > Honest question: how does banning people from an opportunity to build a professional presence and potentially escape an oppressive regime advance human rights?… 
 > — Dan Abramov
->  https://twitter.com/dan_abramov/status/1154871232459956224?s=12
+> https://twitter.com/dan_abramov/status/1154871232459956224?s=12
 
 > The national flag of Japan is a rectangular white banner bearing a crimson-red disc at its center. This flag is officially called Nisshōki (日章旗, the "sun-mark flag"), but is more commonly known in Japan as Hinomaru (日の丸, the "circle of the sun"). It embodies the country's sobriquet: Land of the Rising Sun.
 > reading this tweet is weird because at first you're like "hahaha they're not used to how gacha works" then you realize you've just been conditioned into being ok with predatory game models
 > You're offering subjective value assessments, not facts.… 
 > — Levi Roach
->  https://twitter.com/DrLRoach/status/1172907254892421120?s=17
+> https://twitter.com/DrLRoach/status/1172907254892421120?s=17
 
 > My takeaway is that I'm starting a support group for design systems engineers across the world. 😛 We're all going through different versions of the same challenges at each of our companies and it's always encouraging to share information about where we are in this journey.
 > — Maja Wichrowska
->  https://twitter.com/majapw/status/1187891828189589504?s=17
+> https://twitter.com/majapw/status/1187891828189589504?s=17
