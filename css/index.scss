@@ -142,6 +142,12 @@ hr {
   flex-direction: column;
   margin: 75px 0 100px;
 
+  .logo {
+    @media (prefers-color-scheme: dark) {
+      filter: invert(1);
+    }
+  }
+
   .menu {
     margin: 15px 0 0 0;
     padding: 0;
@@ -151,12 +157,6 @@ hr {
     list-style: none;
     .menu__item:not(:last-child) {
       margin-bottom: 12px;
-    }
-  }
-
-  @media (prefers-color-scheme: dark) {
-    img {
-      filter: invert(1);
     }
   }
 
