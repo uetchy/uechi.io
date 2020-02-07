@@ -7,14 +7,14 @@ Sometimes you want to interact with a local webserver with https support because
 
 You can easily create a self-signed TLS cert for development purposes with [`mkcert`](https://github.com/FiloSottile/mkcert).
 
-```shell
+```bash
 brew install mkcert
 mkcert -install # Install the local CA in the OS keychain
 ```
 
 After installing `mkcert` and generating system-wide local CA cert, you can create a certificate for each project.
 
-```
+```bash
 cd awesome-website
 mkcert localhost # this will generate ./localhost.pem and ./localhost-key.pem
 npm install -g serve

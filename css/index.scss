@@ -1,7 +1,7 @@
 ---
 ---
 
-@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700");
 
 $break-small: 500px;
 $break-large: 840px;
@@ -10,13 +10,13 @@ body {
   width: 900px;
   margin: 0 auto;
   padding: 0 20px;
-  font-family: 'PT Sans', 'Hiragino Sans', 'Hiragino Mincho ProN', serif;
+  font-family: "PT Sans", "Hiragino Sans", "Hiragino Mincho ProN", serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  font-feature-settings: 'kern', 'palt', 'pwid';
-  -webkit-font-feature-settings: 'kern', 'palt', 'pwid';
-  -moz-font-feature-settings: 'kern', 'palt', 'pwid';
-  -moz-font-feature-settings: 'kern=1', 'palt', 'pwid';
+  font-feature-settings: "kern", "palt", "pwid";
+  -webkit-font-feature-settings: "kern", "palt", "pwid";
+  -moz-font-feature-settings: "kern", "palt", "pwid";
+  -moz-font-feature-settings: "kern=1", "palt", "pwid";
 
   @media screen and (max-width: $break-large) {
     width: auto;
@@ -31,13 +31,11 @@ body {
 
 // Highlight.js
 .hljs {
-  border: 1px solid #d7d7d7;
   border-radius: 3px;
-  background-color: #fff;
-  font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
-  font-size: 14px;
-  padding: 12px 16px;
-  line-height: 1.8em;
+  // font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  // font-size: 14px;
+  padding: 12px 18px !important;
+  line-height: 1.6em !important;
 }
 code {
   padding: 0 12px;
@@ -76,13 +74,12 @@ hr {
 .header {
   display: flex;
   flex-wrap: wrap;
-  // justify-content: space-between;
   align-items: center;
   margin-top: 50px;
   padding: 15px 0;
-  // border-bottom: 1px solid #efefef;
 
   @media screen and (max-width: $break-small) {
+    margin-top: 0px;
     justify-content: center;
     flex-direction: column;
   }
@@ -141,4 +138,4 @@ hr {
   }
 }
 
-@import './post';
+@import "./post";

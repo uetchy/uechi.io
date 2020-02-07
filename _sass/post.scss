@@ -23,7 +23,7 @@ a.article-list__item__button {
   border: 1px solid #989898;
   border-radius: 3px;
   color: #989898;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   display: inline-block;
   margin: 10px 0;
@@ -73,7 +73,7 @@ a.article-list__item__button {
 }
 
 .article__title {
-  font-size: 80px;
+  font-size: 70px;
   letter-spacing: -0.5px;
 
   @media screen and (max-width: $break-small) {
@@ -87,7 +87,7 @@ a.article-list__item__button {
   font-size: 14px;
   font-weight: normal;
   font-family: sans-serif;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   border: 1px solid #989898;
   display: inline-block;
   padding: 5px 20px;
@@ -103,7 +103,7 @@ a.article-list__item__button {
     font-size: 20px;
     font-weight: normal;
     line-height: 1.666em;
-    margin: 35px 0;
+    margin: 25px 0;
 
     @media screen and (max-width: $break-small) {
       font-size: 20px;
