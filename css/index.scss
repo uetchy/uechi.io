@@ -154,6 +154,12 @@ hr {
     }
   }
 
+  img {
+    @media (prefers-color-scheme: dark) {
+      filter: invert(1);
+    }
+  }
+
   @media screen and (max-width: $break-small) {
     margin: 40px 0 40px;
     .menu {
