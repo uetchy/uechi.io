@@ -1,7 +1,8 @@
 ---
 title: Securing Local Dev Server
----
+date: 2020-02-07 00:00:00 +0900
 
+---
 Sometimes you want to interact with a local webserver with https support because of some browser APIs that are only available in an https environment.
 
 You can easily create a self-signed TLS cert for development purposes with [`mkcert`](https://github.com/FiloSottile/mkcert).
