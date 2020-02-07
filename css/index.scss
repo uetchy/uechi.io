@@ -154,8 +154,8 @@ hr {
     }
   }
 
-  img {
-    @media (prefers-color-scheme: dark) {
+  @media (prefers-color-scheme: dark) {
+    img {
       filter: invert(1);
     }
   }
