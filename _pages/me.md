@@ -16,7 +16,7 @@ img {
 
 # Contact
 
-Reach me at `y@uechi.io` or [@uetschy](https://twitter.com/uetschy) on Twitter.
+Reach me at `y@uechi.io` or [@uechz](https://twitter.com/uechz) on Twitter.
 
 ## GPG Key
 
