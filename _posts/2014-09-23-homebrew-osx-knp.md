@@ -20,7 +20,7 @@ OS X 用のパッケージ管理ツール Homebrew がインストールされ�
 brew tap uetchy/nlp
 ```
 
-Tap し終わったら、`knp`をインストールする。knp が依存している形態素解析システム`juman`とデータベース`tinycdb`は Homebrew によって自動でインストールされる。その内の`juman`は上記の **oame/nlp** Tap によって提供されている。
+Tap し終わったら、`knp`をインストールする。knp が依存している形態素解析システム`juman`とデータベース`tinycdb`は Homebrew によって自動でインストールされる。その内の`juman`は上記の **uetchy/nlp** Tap によって提供されている。
 
 ```bash
 brew install knp
