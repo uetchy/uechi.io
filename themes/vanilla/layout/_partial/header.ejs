@@ -1,0 +1,24 @@
+<header class="header">
+  <a class="logo" href="<%- config.root %>"
+    ><img src="<%- url_for('/images/logo.svg') %>" style="height: 50px"
+  /></a>
+  <nav>
+    <ul class="menu">
+      <li class="menu__item">
+        <a href="/me">Me</a>
+      </li>
+      <li class="menu__item">
+        <a href="https://github.com/<%- config.github.username %>">GitHub</a>
+      </li>
+      <li class="menu__item">
+        <a href="https://twitter.com/<%- config.twitter.username %>">Twitter</a>
+      </li>
+      <li class="menu__item">
+        <a href="/wallpaper">Wallpaper</a>
+      </li>
+      <li class="menu__item">
+        <a href="/pay">Pay</a>
+      </li>
+    </ul>
+  </nav>
+</header>

@@ -7,3 +7,11 @@
 /images/crushed
 /.bundle
 /vendor/bundle/
+
+.DS_Store
+Thumbs.db
+db.json
+*.log
+public/
+.deploy*/
+yarn.lock

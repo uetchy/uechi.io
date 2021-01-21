@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="254px" height="433px" viewBox="0 0 254 433" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>Artboard Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M254,267.220847 C254,315.224014 239.107687,350.825679 210.763391,373.605273 L209.900357,374.291639 C206.991512,376.58088 179.37875,396.150334 127.062073,433 L86.3988611,404.305579 C60.0424939,385.681667 45.9841368,375.67702 44.2237896,374.291639 C15.3188342,351.54364 0.124146603,315.708895 0.124146603,267.220847 L0.123154724,230.288122 C0.0695211447,228.80793 0.0332464874,227.313667 0.0146431467,225.805279 L0,223.422706 L0,0 L0.00840441176,0.013118731 L0.00902782822,0 L126.614331,82.0333902 L253.990915,0 L253.990662,0.0140557832 L254,0 L254,267.220847 Z" id="path-1"></path>
+    </defs>
+    <g id="Artboard-Copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Path-Copy-2" fill="#000000" xlink:href="#path-1"></use>
+    </g>
+</svg>

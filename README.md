@@ -5,15 +5,13 @@
 ## Build
 
 ```
-docker-compose run web bundle install
-docker-compose up --build
+yarn build
 ```
 
-## Test
+## Proofread
 
 ```
-npm install
-npm test
+yarn test
 ```
 
 ## Publish

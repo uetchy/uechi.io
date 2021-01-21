@@ -1,31 +1,28 @@
 ---
 new_page_extension: md
 auto_deploy: false
-admin_path: ''
-webhook_url: 
+admin_path: ""
+webhook_url:
 sections:
-- type: jekyll-posts
-  label: Posts
-  create: documents
-  templates:
-  - blog-post
-- type: directory
-  path: _pages
-  label: Pages
-  create: documents
-  match: "**/*"
-upload_dir: _uploads
+  - type: directory
+    path: source/_posts
+    label: Posts
+    create: documents
+    match: "**/*"
+  - type: directory
+    path: source/_pages
+    label: Pages
+    create: documents
+    match: "**/*"
+upload_dir: source/uploads
 public_path: "/uploads"
-front_matter_path: ''
+front_matter_path: ""
 use_front_matter_path: false
 file_template: ":filename:"
 build:
-  preview_env:
-  - JEKYLL_ENV=staging
-  preview_output_directory: _site
-  install_dependencies_command: bundle install --path vendor/bundle
+  preview_output_directory: public
+  install_dependencies_command: npm i
   preview_docker_image: forestryio/ruby:2.6
   mount_path: "/srv"
   working_dir: "/srv"
-  instant_preview_command: bundle exec jekyll serve --drafts --unpublished --future
-    --port 8080 --host 0.0.0.0 -d _site
+  instant_preview_command: yarn server

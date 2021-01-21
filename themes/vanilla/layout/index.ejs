@@ -1,0 +1,35 @@
+<section>
+  <% page.posts.each(function (post) { %>
+  <article class="article-list__item">
+    <h2 class="article-list__item__title">
+      <a href="<%- url_for(post.path) %>"><%= post.title %></a>
+    </h2>
+    <!-- <time class="article-list__item__pubdate" pubdate><%- date(post.date, "YYYY-MM-DD") %></time> -->
+    <% if (theme.menu.tags && post.tags && post.tags.length) { %>
+      <%- list_tags(post.tags, {
+        show_count: false,
+        class: 'article-tag',
+        style: 'span',
+        separator: ', '
+      }) %>
+    <% } %>
+    <% if (theme.menu.categories && post.categories && post.categories.length) { %>
+      <%- list_categories(post.categories, {
+        show_count: false,
+        class: 'article-tag',
+        style: 'span',
+        separator: ', '
+      }) %>
+    <% } %>
+    <article class="article-list__item__excerpt">
+      <%- strip_html(post.excerpt) %>
+    </article>
+    <a
+      class="article-list__item__button"
+      href="<%- url_for(post.path) %>"
+      ><%- __('continue') %></a
+    >
+  </article>
+  <% }) %>
+  <%- partial('_partial/paginator') %>
+</section>

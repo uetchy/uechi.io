@@ -1,19 +1,30 @@
 {
-  "name": "uechi.io",
+  "name": "hexo-site",
+  "version": "0.0.0",
   "scripts": {
-    "fix-typo": "textlint _posts/*.md _pages/*.md --fix --dry-run -f diff",
-    "build": "bundle exec jekyll build",
-    "start": "bundle exec jekyll serve --host 0.0.0.0 --port 4000 --baseurl '' --force_polling --drafts --unpublished --incremental",
-    "test": "textlint _posts/*.md _pages/*.md -f pretty-error"
+    "build": "hexo generate",
+    "clean": "hexo clean",
+    "deploy": "hexo deploy",
+    "start": "yarn clean && hexo server --debug"
   },
-  "devDependencies": {
-    "textlint": "^11.7.6",
-    "textlint-filter-rule-whitelist": "^2.0.0",
-    "textlint-rule-common-misspellings": "^1.0.1",
-    "textlint-rule-max-ten": "^2.0.4",
-    "textlint-rule-no-dropping-the-ra": "^1.1.3",
-    "textlint-rule-no-start-duplicated-conjunction": "^2.0.2",
-    "textlint-rule-preset-japanese": "^5.0.0"
+  "dependencies": {
+    "hexo": "^5.0.0",
+    "hexo-excerpt": "^1.1.6",
+    "hexo-filter-mathjax": "^0.6.3",
+    "hexo-generator-archive": "^1.0.0",
+    "hexo-generator-category": "^1.0.0",
+    "hexo-generator-feed": "^3.0.0",
+    "hexo-generator-index": "^2.0.0",
+    "hexo-generator-tag": "^1.0.0",
+    "hexo-renderer-ejs": "^1.0.0",
+    "hexo-renderer-pandoc": "^0.3.0",
+    "hexo-renderer-sass": "^0.4.0",
+    "hexo-renderer-stylus": "^2.0.0",
+    "hexo-server": "^2.0.0",
+    "hexo-theme-landscape": "^0.0.3"
+  },
+  "hexo": {
+    "version": "5.3.0"
   },
   "private": true
 }
