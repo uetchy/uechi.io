@@ -16,7 +16,7 @@ img {
 
 # Contact
 
-Reach me at `y@uechi.io` or [@uechz](https://twitter.com/uechz) on Twitter.
+Reach me at `y@uechi.io` (recommended) or [@uechz](https://twitter.com/uechz) on Twitter. Beware that I'm not a person of quick reply so if you are in urgent need of a lightning response better bomb my inbox with reminders so I can prioritize your email other than any other emails.
 
 ## GPG Key
 
@@ -24,16 +24,17 @@ Get [GPG Key](https://github.com/uetchy.gpg) on GitHub.
 
 # Facts
 
-- Play violin, tin whistle and bodhrán
-- Typeface fanatic
-- UI / UX design, logo design, graphic design.
-- Interests: Web dev, OSS governance, Global growth management
-- Fontend interests: React, Redux, Atomic Design, a11y, I18n
-- Backend interests: NodeJS, Go, MongoDB, Lambda functions, Docker, Automated deployments
-- Much experience in JavaScript (Node.js, TypeScript), Python, C++, and Ruby
-- Some experience in Swift, Go, and Java
-- TOEIC 940
-- Chinese learner
+- play violin, tin whistle, piano, and bodhrán. Logic Pro user.
+- overall interests: ux/graphic design, webdev, machine learning (maily nlp and generative design), behavioral economics, organization government, irish music, coffee, puzzle game
+- dev interests: react, nodejs, rust, docker
+- have confidence in: javascript (incl. nodejs and typescript), python, ux design, baremetal server, english
+- have no confidence in: normal life stuff
+- have some experience in: swift, go, ruby, rust, c++, pytorch
+- language skills:
+  - Japanese: native
+  - English: TOEIC 940, TOEFL 78
+  - Chinese, Korean, Indonesian, German, Russian: current objectives still n00b though
+- typeface fanatic
 
 # Publishing
 
@@ -44,5 +45,4 @@ Get [GPG Key](https://github.com/uetchy.gpg) on GitHub.
 
 # Current Activity
 
-- Seeking for a job!
-- Master student @ Graduate school of Keio University
+- Seeking for a job
