@@ -1,17 +1,11 @@
 # uechi.io
 
-[![Build Status](https://travis-ci.com/uetchy/uechi.io.svg?branch=master)](https://travis-ci.org/uetchy/uechi.io)
+[![Actions Status: pages](https://github.com/uetchy/uechi.io/workflows/Pages/badge.svg)](https://github.com/uetchy/uechi.io/actions?query=pages)
 
 ## Build
 
 ```
 yarn build
-```
-
-## Proofread
-
-```
-yarn test
 ```
 
 ## Publish

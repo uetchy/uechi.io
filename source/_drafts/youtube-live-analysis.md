@@ -2,15 +2,16 @@
 title: Toxicity Analysis in Vtuber Live Chat
 ---
 
-A little experiment on classifying toxic comments, and how I ended up from GBDT to Transformer-based model.
+A little exploration and experiment on classifying toxic comments.
 
 # Why
 
-The motivation is simple; I just feel sad when they look suffered from toxic comments in live chats. The goal is also simple: design an automated system to spot toxic comments and quarantine them.
+The motivation is simple; I just feel sad when they look suffered from toxic comments in live chats. The goal is also simple: design an automated system to spot toxic comments and destroy them.
 
 # Data Data Data
 
 > I can't make bricks without clay.
+> — Sherlock Holmes
 
 I need a myriad of live chat comments and moderation events for analysis and future use.
 
@@ -86,13 +87,13 @@ Here's a [t-SNE](https://en.wikipedia.org/wiki/T-distributed_stochastic_neighbor
 
 # Omake
 
-## Hololive-10M Dataset
+## Hololive Dataset
 
 I made collected chat events publicly available for those interested in further research.
 
 The dataset contains:
 
-- Chats - 10 million
+- Chats
 - Superchats (amount, currency)
 - Retraction events
 - Moderation events (ban, delete)

@@ -1,13 +1,7 @@
 /.vscode
-/_site
 /.sass-cache
 /node_modules/
 /npm-debug.log
-/.jekyll-metadata
-/images/crushed
-/.bundle
-/vendor/bundle/
-
 .DS_Store
 Thumbs.db
 db.json
