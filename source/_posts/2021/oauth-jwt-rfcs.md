@@ -99,4 +99,4 @@ JWT は JSON を利用して Assertion を生成するための仕様。
 
 2019 年 7 月
 
-リソースサーバーに渡す Access Token に JWT を使用することを定めている。
+リソースサーバーへ渡す Access Token に JWT を使用することを定めている。

@@ -3,7 +3,7 @@ title: パケットキャプチャリング
 ---
 
 - macOS Mojave では、Wi-Fi をオフにしていないと Monitor モードでスキャンしてもパケットが受信できない。
-- Preferences > Protocols > IEEE 802.11 で Decrypt Keys を保存する。wpa-psk でハッシュ化された値を保存したほうが安全である。保存先は`.config/wireshark`
+- Preferences > Protocols > IEEE 802.11 で Decrypt Keys を保存する。しかし wpa-psk でハッシュ化された値を保存したほうが安全だ。保存先は`.config/wireshark`
 - 暗号化された 802.11 通信を覗くには 4-ways handshake (EAPOL)を観測する必要がある。そのためには対象デバイスの Wi-Fi をトグルすれば良い。
 
 ## コマンド

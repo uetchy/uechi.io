@@ -5,7 +5,8 @@
     "build": "hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
-    "start": "yarn clean && hexo server --debug"
+    "start": "yarn clean && hexo server --debug",
+    "test": "lint-staged"
   },
   "dependencies": {
     "hexo": "^5.0.0",
@@ -22,6 +23,17 @@
     "hexo-renderer-stylus": "^2.0.0",
     "hexo-server": "^2.0.0",
     "hexo-theme-landscape": "^0.0.3"
+  },
+  "devDependencies": {
+    "lint-staged": "^10.5.4",
+    "textlint": "^11.8.2",
+    "textlint-filter-rule-whitelist": "^2.0.0",
+    "textlint-rule-common-misspellings": "^1.0.1",
+    "textlint-rule-no-start-duplicated-conjunction": "^2.0.2",
+    "textlint-rule-preset-japanese": "^5.0.0"
+  },
+  "lint-staged": {
+    "*.md": "textlint"
   },
   "hexo": {
     "version": "5.3.0"

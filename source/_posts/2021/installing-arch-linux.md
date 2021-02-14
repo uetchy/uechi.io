@@ -1,9 +1,9 @@
 ---
-title: Arch Linux Setup Guide
+title: Installing Arch Linux
 date: 2021-02-12
 ---
 
-This note includes all commands I typed when I setup Arch Linux on my new baremetal server.
+This note includes all commands I typed when I set up Arch Linux on my new bare metal server.
 
 # Why I choose Arch Linux
 
@@ -26,7 +26,7 @@ This note includes all commands I typed when I setup Arch Linux on my new bareme
 wipefs -a /dev/sda
 ```
 
-## create parition
+## create partition
 
 ```bash
 parted
@@ -54,7 +54,7 @@ mount /dev/sda2 /mnt
 mount /dev/sda1 /mnt/boot
 ```
 
-## install base & linux kernel
+## install base & Linux kernel
 
 ```bash
 reflector -f 10 --latest 30 --protocol https --sort rate --save /etc/pacman.d/mirrorlist # optimize mirror list
@@ -83,7 +83,7 @@ grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
-## ntp
+## NTP
 
 ```bash
 sed -i -e 's/#NTP=/NTP=0.arch.pool.ntp.org 1.arch.pool.ntp.org 2.arch.pool.ntp.org 3.arch.pool.ntp.org/' -e 's/#Fall/Fall/' /etc/systemd/timesyncd.conf
@@ -252,7 +252,7 @@ reboot
 
 # Additional setup
 
-## gpgpu
+## GPGPU
 
 ```bash
 pacman -S nvidia
@@ -297,7 +297,7 @@ usermod -aG docker user
 docker run --rm -it --gpus all nvidia/cuda:10.2-cudnn7-runtime
 ```
 
-## telegraf
+## Telegraf
 
 ```bash
 yay -S telegraf
@@ -486,7 +486,7 @@ ln -sf /etc/backups/borg.* /etc/systemd/system/
 systemctl enable --now borg
 ```
 
-## kubernetes
+## Kubernetes
 
 ```bash
 pacman -S kubeadm kubelet kubectl
