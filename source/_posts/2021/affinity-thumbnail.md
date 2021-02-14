@@ -39,7 +39,7 @@ Now I can generate a thumbnail image from arbitrary `.afphoto` and `.afdesign` f
 
 # Tweaking Nextcloud
 
-I have a little experience in tweaking Nextcloud source code before, where I implemented thumbnail generator for PDFs, so it should be easier this time, hopefully.
+I have a bit of experience in tweaking Nextcloud source code before, where I implemented thumbnail generator for PDFs, so it should be easier this time, hopefully.
 
 Long story short, I got Nextcloud generates thumbnail images for Affinity files by implementing `ProviderV2` class.
 

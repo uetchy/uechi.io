@@ -55,6 +55,9 @@ body {
   padding: 12px 18px !important;
   line-height: 1.6em !important;
   margin: 0;
+  @media screen and (max-width: $break-small) {
+    font-size: 0.8em;
+  }
 }
 code {
   padding: 0 12px;
@@ -93,76 +96,43 @@ hr {
 .header {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 60px;
+  margin-bottom: 80px;
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  padding: 15px 0;
 
   @media screen and (max-width: $break-small) {
-    margin-top: 0px;
-    justify-content: center;
-    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    // justify-content: center;
   }
 
   .logo {
-    margin: 10px 0 10px;
     @media (prefers-color-scheme: dark) {
       filter: invert(1);
-    }
-  }
-
-  .menu {
-    list-style: none;
-    margin-left: 40px;
-    padding: 8px 0;
-    display: flex;
-    flex-flow: row wrap;
-    text-transform: uppercase;
-    font-weight: bold;
-
-    .menu__item:not(:last-child) {
-      margin-right: 30px;
-
-      @media screen and (max-width: $break-small) {
-        margin-right: 20px;
-      }
     }
 
     @media screen and (max-width: $break-small) {
-      padding: 0;
-      margin: 5px 0;
-    }
-  }
-}
-
-.metro {
-  // text-align: center;
-  display: flex;
-  flex-direction: column;
-  margin: 75px 0 100px;
-
-  .logo {
-    @media (prefers-color-scheme: dark) {
-      filter: invert(1);
+      padding-left: 5px;
     }
   }
 
   .menu {
-    margin: 15px 0 0 0;
-    padding: 0;
-    text-transform: uppercase;
-    font-size: 16px;
-    font-weight: bold;
+    display: flex;
+    flex-direction: column;
     list-style: none;
-    .menu__item:not(:last-child) {
-      margin-bottom: 12px;
-    }
-  }
+    text-transform: lowercase;
+    font-weight: bold;
+    border-left: 1px solid var(--tone);
+    // font-family: Rockwell;
 
-  @media screen and (max-width: $break-small) {
-    margin: 40px 0 40px;
-    .menu {
-      font-size: 15px;
+    padding: 0;
+    margin: 0 0 0 30px;
+    padding: 0 0 0 30px;
+
+    .menu__item {
+      margin: 5px 0;
     }
   }
 }
