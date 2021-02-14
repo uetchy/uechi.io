@@ -77,8 +77,8 @@ a.article-list__item__button {
 }
 
 .article__title {
-  font-size: 55px;
-  letter-spacing: -0.5px;
+  font-size: 4rem;
+  letter-spacing: -0.2px;
 
   @media screen and (max-width: $break-small) {
     font-size: 40px;
@@ -106,7 +106,7 @@ a.article-list__item__button {
   p {
     font-size: 20px;
     font-weight: normal;
-    line-height: 1.666em;
+    line-height: 1.5em;
     margin: 25px 0;
 
     @media screen and (max-width: $break-small) {
@@ -129,7 +129,7 @@ a.article-list__item__button {
 
   h1 {
     margin: 70px 0 0px;
-    font-size: 2.5em;
+    font-size: 2.8em;
 
     @media screen and (max-width: $break-small) {
       margin: 30px 0 15px;
@@ -141,7 +141,7 @@ a.article-list__item__button {
     margin: 35px 0 15px;
     font-family: sans-serif;
     font-weight: bold;
-    font-size: 1.7em;
+    font-size: 2em;
 
     @media screen and (max-width: $break-small) {
       margin: 20px 0 15px;
@@ -186,6 +186,13 @@ a.article-list__item__button {
     border-left: 5px solid var(--accent);
     padding-left: 20px;
     margin: 0;
+  }
+
+  pre .caption {
+    padding: 10px 0;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.5);
+    font-style: italic;
   }
 }
 
