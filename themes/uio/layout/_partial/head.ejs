@@ -51,5 +51,13 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
   />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/highlight.js@9.18.1/styles/night-owl.css"
+  />
   <%- css('css/index') %>
+
+  <!-- Feed -->
+  <link rel="alternate" type="application/atom+xml" title="<%= config.title %>" href="<%= full_url_for(`/feed.xml`) %>" />
+  <link rel="alternate" type="application/json" title="<%= config.title %>" href="<%= full_url_for(`/feed.json`) %>" />
 </head>

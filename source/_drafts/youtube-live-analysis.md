@@ -2,24 +2,24 @@
 title: Toxicity Analysis in YouTube Live Chat
 ---
 
-A little exploration and experiment on toxic activities.
+A little analysis and experiment on a flock of toxic people.
 
 # Why
 
-The motivation is quite simple; I just feel sad when they sound suffered from toxic chats. The goal is also simple: design an automated system to spot toxic chat and quarantine them.
+The motivation is straightforward; I just feel sad when they sound suffered from toxic chats. The goal is also straightforward: design an automated system to spot toxic chat and quarantine them.
 
 # Data, Data, Data
 
 > I can't make bricks without clay.  
 > — Sherlock Holmes
 
-I need a myriad of live chat comments and moderation events for analysis and future use.
+I need a myriad of live chat comments and moderation events for this.
 
-Unfortunately, YouTube API does not offer a way to retrieve these kinds of events in real time. Which is so crucial because live streams are only place we can observe moderators' activities through API response. Once it gets archived, these events are no longer available.
+Unfortunately, YouTube API does not offer a way to retrieve these kinds of events in real time. Which is crucial because live streams are only place we can observe moderators' actions (deletion and BAN). Once it gets archived, these activities are no longer observable.
 
 ## Collecting Crusts
 
-So, I ended up developing a library to accumulate events from a YouTube live stream, plus a fancy CLI app mimics live chat. It accepts YouTube video id and save live chats in [JSON Lines](https://jsonlines.org/) format:
+So, I ended up developing a library to accumulate events from a YouTube live stream, with a fancy CLI app mimics live chat. It accepts YouTube video id and save live chats in [JSON Lines](https://jsonlines.org/) format:
 
 ```bash
 collector <videoId>
@@ -27,11 +27,11 @@ collector <videoId>
 
 ![](realtime-chat.gif)
 
-A line with white text is a normal chat, with red text is a ban event, with yellow text is a deletion event.
-
-## Make a Bread Rise
+A line with white text is a normal chat, red text is a ban event, and yellow text is a deletion event.
 
 I know, that's not scalable at all. A new live stream comes in, I copy and paste video id into the terminal and run the script. How sophisticated.
+
+## Make Bread Rise
 
 Thankfully, there's a great web service around Hololive community: [Holotools](https://hololive.jetri.co). They operate an API that gives us an index of past, ongoing, and upcoming live streams from Hololive talents.
 
@@ -39,13 +39,13 @@ Here I divided my system into two components: Scheduler and workers. Scheduler p
 
 ![](scalability.png)
 
-I run the cluster for a while and by far it hoards approximately 1 million comments per day. Now I could reliably run my own bakery.
+I run the cluster for a while and by far it hoards approximately one million comments per day. Now I could reliably run my own bakery.
 
 # Look Before You Leap
 
-Okay take a close look at the data before actually starting to build a model.
+Okay now there are five million chats sitting on MongoDB store. Let's take a close look at these before actually starting to build a model.
 
-## Overview
+## Troll's Behavior
 
 ## By talent
 

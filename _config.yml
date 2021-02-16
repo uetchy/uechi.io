@@ -129,7 +129,20 @@ ignore:
 theme: uio
 
 # Feed
+# feed:
+#   type: atom
+#   path: feed.xml
+#   autodiscovery: true
 feed:
-  type: atom
-  path: feed.xml
-  autodiscovery: true
+  limit: 20
+  order_by: "-date"
+  tag_dir: "tag"
+  category_dir: "category"
+  rss:
+    enable: false
+  atom:
+    enable: true
+    output: "feed.xml"
+  jsonFeed:
+    enable: true
+    output: "feed.json"

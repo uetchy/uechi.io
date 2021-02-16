@@ -9,7 +9,7 @@ Nextcloud does not have support for generating thumbnails from Affinity Photo an
 
 Glancing at `.afphoto` and `.afdesign` in Finder, I noticed that it has a QuickLook support and an ability to show the thumbnail image. So these files should have thumbnail image somewhere inside its binary.
 
-I wrote a simple script to seek for thumbnail image inside a binary and save it as a PNG file.
+I wrote a simple script to seek for [PNG signature](https://www.w3.org/TR/PNG/) inside a binary and save it as a PNG file.
 
 ```js
 const fs = require("fs");
@@ -114,7 +114,7 @@ class Affinity extends ProviderV2 {
 
 ![](afphoto.png)
 
-It works!
+Easy-peasy!
 
 # Bonus: PDF thumbnail generator
 
