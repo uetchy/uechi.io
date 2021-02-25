@@ -27,8 +27,7 @@ title: Pay
     <h1>Revolut</h1>
     <p><span class="monospace">yasuakpnqg</span> 宛にお送りください。</p>
     <a class="button" href="https://pay.revolut.com/profile/yasuakpnqg"
-      >Revolutを開く</a
-    >
+      >Revolutを開く</a>
   </section>
   <section>
     <h1>Amazon ギフトカード</h1>
@@ -36,15 +35,14 @@ title: Pay
       メッセージアプリ経由で、または
       <span class="monospace">y@uechi.io</span> 宛にお送りください。
     </p>
-    <a class="button" href="https://www.amazon.co.jp/gp/product/B004N3APGO/"
-      >Amazonを開く</a
-    >
+    <a class="button" href="https://www.amazon.co.jp/gp/product/B004N3APGO/">Amazonを開く</a>
   </section>
   <section>
     <h1>PayPay</h1>
     <p>QRコードをスキャンして送金してください。</p>
     <img src="/images/payment/paypay.png" width="200" height="200" />
-    <a class="button" href="https://paypay.ne.jp/">PayPayについて</a> <br />
+    <a class="button" href="https://paypay.ne.jp/">PayPayについて</a>
+    <br />
   </section>
   <section>
     <h1>PayPal</h1>
