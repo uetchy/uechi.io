@@ -14,7 +14,7 @@ img {
 
 # Contact
 
-Reach me at `y@uechi.io` (recommended) or [@uechz](https://twitter.com/uechz) on Twitter. Beware that I'm not a person of quick reply so if you are in urgent need of a lightning response, better bomb my inbox with reminders so I can prioritize your email and reply real quick.
+Reach me at `y@uechi.io` or [\@uechz](https://twitter.com/uechz) on Twitter. Beware that I'm not a person of quick reply. If you need a lightning response, better bomb my inbox with reminders, so I can prioritize your email and reply real quick.
 
 ## GPG Key
 
