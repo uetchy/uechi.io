@@ -19,7 +19,7 @@ date: 2021-02-14T00:00:00
 
 実際にコードを書いて本当に望んでいる結果が得られるのかを検証します。
 
-```js
+```js split-bill.js
 const history = [
   {
     amount: 121,
@@ -122,7 +122,7 @@ for (const [_, { name, consumption }] of data) {
 }
 ```
 
-`history`に支払い履歴を書き込んでから実行すると、「送金表」「履歴」「実質支払総額」が得られます。
+`history`に支払い履歴を書き込んで実行すると、「送金表」「履歴」「実質支払総額」が得られます。
 
 ```md
 # Transaction table

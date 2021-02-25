@@ -1,6 +1,6 @@
 ---
 title: Installing Arch Linux
-date: 2021-02-12
+date: 2021-02-12T00:00:00
 ---
 
 This note includes all commands I typed when I set up Arch Linux on my new bare metal server.
@@ -104,17 +104,17 @@ echo "LANG=en_US.UTF-8" > /etc/locale.conf
 ```bash
 hostnamectl set-hostname polka
 hostnamectl set-chassis server
+```
 
-vim /etc/hosts
-# 127.0.0.1 localhost
-# ::1       localhost
-# 127.0.0.1 polka
+```ini /etc/hosts
+127.0.0.1 localhost
+::1       localhost
+127.0.0.1 polka
 ```
 
 See https://systemd.network/systemd.network.html.
 
-```ini
-# /etc/systemd/network/wired.network
+```ini /etc/systemd/network/wired.network
 [Match]
 Name=enp5s0
 
@@ -127,8 +127,7 @@ DNS=1.1.1.1      # Cloudflare for the fallback DNS server
 MACVLAN=dns-shim # to handle local dns lookup to 10.0.1.100 which is managed by Docker macvlan driver
 ```
 
-```ini
-# /etc/systemd/network/dns-shim.netdev
+```ini /etc/systemd/network/dns-shim.netdev
 # to handle local dns lookup to 10.0.1.100
 [NetDev]
 Name=dns-shim
@@ -138,8 +137,7 @@ Kind=macvlan
 Mode=bridge
 ```
 
-```ini
-# /etc/systemd/network/dns-shim.network
+```ini /etc/systemd/network/dns-shim.network
 # to handle local dns lookup to 10.0.1.100
 [Match]
 Name=dns-shim
@@ -268,10 +266,9 @@ nvidia-smi # test runtime
 ```bash
 pacman -S docker docker-compose
 yay -S nvidia-container-runtime-bin
-vim /etc/docker/daemon.json
 ```
 
-```json
+```json /etc/docker/daemon.json
 {
   "log-driver": "journald",
   "log-opts": {
@@ -304,8 +301,7 @@ yay -S telegraf
 vim /etc/telegraf/telegraf.conf
 ```
 
-```ini
-# File: /etc/sudoers.d/telegraf
+```ini /etc/sudoers.d/telegraf
 Cmnd_Alias FAIL2BAN = /usr/bin/fail2ban-client status, /usr/bin/fail2ban-client status *
 telegraf  ALL=(root) NOEXEC: NOPASSWD: FAIL2BAN
 Defaults!FAIL2BAN !logfile, !syslog, !pam_session
@@ -318,8 +314,7 @@ pacman -S fail2ban
 systemctl enable --now fail2ban
 ```
 
-```ini
-# File: /etc/fail2ban/jail.local
+```ini /etc/fail2ban/jail.local
 [DEFAULT]
 bantime = 60m
 ignoreip = 127.0.0.1/8 10.0.1.0/24
@@ -340,8 +335,7 @@ maxretry = 1
 bantime = 1d
 ```
 
-```ini
-# File: /etc/fail2ban/filter.d/mailu.conf
+```ini /etc/fail2ban/filter.d/mailu.conf
 [INCLUDES]
 before = common.conf
 
@@ -369,13 +363,11 @@ Dynamic DNS for Cloudflare.
 yay -S cfddns
 ```
 
-```yml
-# File: /etc/cfddns/cfddns.yml
+```yml /etc/cfddns/cfddns.yml
 token: <token>
 ```
 
-```ini
-# File: /etc/cfddns/domains
+```ini /etc/cfddns/domains
 uechi.io
 datastore.uechi.io
 ```
@@ -393,8 +385,7 @@ systemctl enable --now smartd
 
 ## backup
 
-```ini
-# File: /etc/backups/borg.service
+```ini /etc/backups/borg.service
 [Unit]
 Description=Borg Daily Backup Service
 
@@ -406,8 +397,7 @@ IOSchedulingPriority=7
 ExecStart=/etc/backups/run.sh
 ```
 
-```ini
-# File: /etc/backups/borg.timer
+```ini /etc/backups/borg.timer
 [Unit]
 Description=Borg Daily Backup Timer
 
@@ -420,19 +410,30 @@ RandomizedDelaySec=10min
 WantedBy=timers.target
 ```
 
-```bash
-# File: /etc/backups/run.sh
+```bash /etc/backups/run.sh
+#!/bin/bash -ue
+
+# The udev rule is not terribly accurate and may trigger our service before
+# the kernel has finished probing partitions. Sleep for a bit to ensure
+# the kernel is done.
+#
+# This can be avoided by using a more precise udev rule, e.g. matching
+# a specific hardware path and partition.
 sleep 5
 
 #
 # Script configuration
 #
-export BORG_PASSPHRASE="<PASSPHRASE>"
+export BORG_PASSPHRASE="<pass>"
 MOUNTPOINT=/mnt/backup
 TARGET=$MOUNTPOINT/borg
 
 # Archive name schema
 DATE=$(date --iso-8601)
+
+#
+# Create backups
+#
 
 # Options for borg create
 BORG_OPTS="--stats --compression lz4 --checkpoint-interval 86400"
@@ -452,26 +453,19 @@ borg create $BORG_OPTS \
   --exclude /root/.cache \
   --exclude /var/cache \
   --exclude /var/lib/docker/devicemapper \
-  --exclude /home \
+  --exclude 'sh:/home/*/.cache' \
+  --exclude 'sh:/home/*/.cargo' \
   --one-file-system \
   $TARGET::'{hostname}-system-{now}' \
   / /boot
 
-echo "# home"
-borg create $BORG_OPTS \
-  --exclude 'sh:/home/*/.cache' \
-  --exclude 'sh:/home/*/.cargo' \
-  $TARGET::'{hostname}-home-{now}' \
-  /home/
-
 echo "# data"
 borg create $BORG_OPTS \
   $TARGET::'{hostname}-data-{now}' \
-  /mnt/data
+  /mnt/data /mnt/ftl
 
 echo "Start pruning"
-BORG_PRUNE_OPTS="--list --stats --keep-daily 7 --keep-weekly 4 --keep-monthly 3"
-borg prune $BORG_PRUNE_OPTS --prefix '{hostname}-home-' $TARGET
+BORG_PRUNE_OPTS="--list --stats --keep-daily 7 --keep-weekly 5 --keep-monthly 3"
 borg prune $BORG_PRUNE_OPTS --prefix '{hostname}-system-' $TARGET
 borg prune $BORG_PRUNE_OPTS --prefix '{hostname}-data-' $TARGET
 
@@ -526,17 +520,18 @@ certbot certonly \
   -d "*.uechi.io"
 openssl x509 -in /etc/letsencrypt/live/uechi.io/fullchain.pem -text
 certbot certificates
+```
 
-cat <<EOD > /etc/systemd/system/certbot.service
+```ini /etc/systemd/system/certbot.service
 [Unit]
 Description=Let's Encrypt renewal
 
 [Service]
 Type=oneshot
 ExecStart=/usr/bin/certbot renew --quiet --agree-tos --deploy-hook "docker exec nginx-proxy-le /app/signal_le_service"
-EOD
+```
 
-cat <<EOD > /etc/systemd/system/certbot.timer
+```ini /etc/systemd/system/certbot.timer
 [Unit]
 Description=Twice daily renewal of Let's Encrypt's certificates
 
@@ -547,7 +542,6 @@ Persistent=true
 
 [Install]
 WantedBy=timers.target
-EOD
 ```
 
 - [Certbot - ArchWiki](https://wiki.archlinux.org/index.php/Certbot)
@@ -559,8 +553,9 @@ EOD
 ```bash
 pacman -S alsa-utils # maybe requires reboot
 arecord -L # list devices
+```
 
-cat <<EOD > /etc/asound.conf
+```conf /etc/asound.conf
 pcm.m96k {
   type hw
   card M96k
@@ -572,12 +567,10 @@ pcm.!default {
   type plug
   slave.pcm "m96k"
 }
-EOD
+```
 
+```
 arecord -vv /dev/null # test mic
-```
-
-```
 alsamixer # gui mixer
 ```
 
