@@ -1,2 +1,3 @@
-# hexo-theme-vanilla
-A minimalist style hexo theme
+# hexo-theme-uio
+
+Theme for uechi.io
