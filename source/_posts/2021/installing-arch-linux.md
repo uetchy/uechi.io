@@ -381,6 +381,9 @@ systemctl enable --now cfddns
 ```bash
 pacman -S smartmontools
 systemctl enable --now smartd
+
+smartctl -t short /dev/sdc
+smartctl -l selftest /dev/sdc
 ```
 
 ## backup
@@ -455,12 +458,17 @@ borg create $BORG_OPTS \
   --exclude /var/lib/docker/devicemapper \
   --exclude 'sh:/home/*/.cache' \
   --exclude 'sh:/home/*/.cargo' \
+  --exclude 'sh:/home/*/.pyenv' \
+  --exclude 'sh:/home/*/.vscode-server' \
+  --exclude 'sh:/home/*/.local/share/TabNine' \
   --one-file-system \
   $TARGET::'{hostname}-system-{now}' \
   / /boot
 
 echo "# data"
 borg create $BORG_OPTS \
+  --exclude 'sh:/mnt/data/nextcloud/appdata_*/preview' \
+  --exclude 'sh:/mnt/data/nextcloud/appdata_*/dav-photocache' \
   $TARGET::'{hostname}-data-{now}' \
   /mnt/data /mnt/ftl
 

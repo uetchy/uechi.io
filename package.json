@@ -9,10 +9,10 @@
     "test": "lint-staged"
   },
   "dependencies": {
-    "hexo": "^5.0.0",
+    "hexo": "^5.4.0",
     "hexo-excerpt": "^1.1.6",
     "hexo-feed": "^1.1.0",
-    "hexo-filter-mathjax": "^0.6.3",
+    "hexo-filter-mathjax": "^0.7.0",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-category": "^1.0.0",
     "hexo-generator-index": "^2.0.0",
@@ -26,17 +26,17 @@
   },
   "devDependencies": {
     "lint-staged": "^10.5.4",
-    "textlint": "^11.8.2",
+    "textlint": "^11.9.0",
     "textlint-filter-rule-whitelist": "^2.0.0",
     "textlint-rule-common-misspellings": "^1.0.1",
     "textlint-rule-no-start-duplicated-conjunction": "^2.0.2",
-    "textlint-rule-preset-japanese": "^5.0.0"
+    "textlint-rule-preset-japanese": "^6.0.1"
   },
   "lint-staged": {
     "*.md": "textlint"
   },
   "hexo": {
-    "version": "5.3.0"
+    "version": "5.4.0"
   },
   "private": true
 }

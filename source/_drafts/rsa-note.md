@@ -20,21 +20,25 @@ exponent2: 3417 (0xd59)
 coefficient: 17568 (0x44a0)
 ```
 
-$$\text{modulus} = \text{prime1} \cdot \text{prime2}$$
+$$\text{modulus} = (\text{prime1} - 1) \cdot (\text{prime2} - 1)$$
 
-publicExponent は $(\text{prime1} - 1)(\text{prime2} - 1)$ とお互いに素な数から選ぶ。65537 で固定、なぜなら二進数で 10000000000000001 となり、ビットがあまり立っておらず計算が早いため。
+publicExponent は modulus とお互いに素な数から選ぶ。65537 で固定、なぜなら二進数で 10000000000000001 となり、ビットがあまり立っておらず計算が早いため。
 
-privateExponent は $\text{publicExponent}^{-1} \text{mod} (\text{prime1} - 1)(\text{prime2} - 1)$
+privateExponent は $\text{publicExponent}^{-1}\ \text{mod}\ \text{modulus}$
 
 ## 中国の余剰定理
 
 [定理の詳細](https://ja.wikipedia.org/wiki/中国の剰余定理)
 
-$$\text{exponent1} = \text{privateExponent} \pmod{\text{prime1} - 1}$$
+$$
+\text{exponent1} = \text{privateExponent} \pmod{\text{prime1} - 1}
+$$
 
-$\text{exponent2} = \text{privateExponent} \pmod{\text{prime2} - 1} $
+$$
+\text{exponent2} = \text{privateExponent} \pmod{\text{prime2} - 1}
+$$
 
-$ \text{coefficient} = \text{prime2}^{-1} \pmod{\text{prime1}} $
+$$ \text{coefficient} = \text{prime2}^{-1} \pmod{\text{prime1}} $$
 
 これらは復号の簡単化のために用意された係数である。
 

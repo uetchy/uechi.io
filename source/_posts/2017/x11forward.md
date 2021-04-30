@@ -6,7 +6,17 @@ redirect_from: "/blog/2017/06/16/x11forward"
 
 ![x11-plot.png](/uploads/x11-plot.png)
 
-## Ubuntu 16.04
+# Installation
+
+## Remote
+
+### Arch Linux
+
+```bash
+pacman -S xorg-xauth xorg-fonts-100dpi xorg-xeyes
+```
+
+### Ubuntu 16.04
 
 Make sure you have installed SSH, X11 and xAuth on a remote server.
 
@@ -16,12 +26,12 @@ sudo sed -i '/ForwardX11/s/.*/ForwardX11 yes/' /etc/ssh/sshd_config
 sudo service ssh restart
 ```
 
-## macOS Sierra
+## Client (macOS Big Sur)
 
 You also need to have X11 on your local machine.
 
 ```
-brew cask install xquartz # install X11
+brew install xquartz # install X11
 ssh -X <remote>
 $ xeyes # verify you have X11
 ```
