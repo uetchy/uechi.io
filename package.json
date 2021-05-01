@@ -12,7 +12,7 @@
     "hexo": "^5.0.0",
     "hexo-excerpt": "^1.1.6",
     "hexo-feed": "^1.1.0",
-    "hexo-filter-mathjax": "^0.6.3",
+    "hexo-filter-mathjax": "^0.7.0",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-category": "^1.0.0",
     "hexo-generator-index": "^2.0.0",
