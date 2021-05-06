@@ -263,9 +263,11 @@ nvidia-smi # test runtime
 
 ## docker
 
+https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/arch-overview.html
+
 ```bash
 pacman -S docker docker-compose
-yay -S nvidia-container-runtime-bin
+yay -S nvidia-container-runtime
 ```
 
 ```json /etc/docker/daemon.json
@@ -427,7 +429,7 @@ sleep 5
 #
 # Script configuration
 #
-export BORG_PASSPHRASE="<pass>"
+export BORG_PASSPHRASE="<secret>"
 MOUNTPOINT=/mnt/backup
 TARGET=$MOUNTPOINT/borg
 
@@ -473,7 +475,7 @@ borg create $BORG_OPTS \
   /mnt/data /mnt/ftl
 
 echo "Start pruning"
-BORG_PRUNE_OPTS="--list --stats --keep-daily 7 --keep-weekly 5 --keep-monthly 3"
+BORG_PRUNE_OPTS="--list --stats --keep-daily 7 --keep-weekly 3 --keep-monthly 3"
 borg prune $BORG_PRUNE_OPTS --prefix '{hostname}-system-' $TARGET
 borg prune $BORG_PRUNE_OPTS --prefix '{hostname}-data-' $TARGET
 
