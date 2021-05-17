@@ -36,7 +36,7 @@ title: Pay
       メッセージアプリ経由で、または
       <span class="monospace">y@uechi.io</span> 宛にお送りください。
     </p>
-    <a class="button" href="https://www.amazon.co.jp/gp/product/B004N3APGO/">Amazonを開く</a>
+    <a class="button" href="https://www.amazon.co.jp/gp/product/B004N3APGO/">ギフトカード購入画面を開く</a>
   </section>
   <section>
     <h1>PayPal</h1>
@@ -49,8 +49,8 @@ title: Pay
   </section>
   <section>
     <h1>Revolut</h1>
-    <p><span class="monospace">yasuakpnqg</span> 宛にお送りください。</p>
-    <a class="button" href="https://pay.revolut.com/profile/yasuakpnqg"
+    <p><span class="monospace">uechi</span> 宛にお送りください。</p>
+    <a class="button" href="https://pay.revolut.com/profile/uechi"
       >Revolutを開く</a>
   </section>
 </div>
