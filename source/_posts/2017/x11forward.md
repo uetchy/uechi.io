@@ -4,7 +4,7 @@ date: 2017-06-16 00:00:00 +09:00
 redirect_from: "/blog/2017/06/16/x11forward"
 ---
 
-![x11-plot.png](/uploads/x11-plot.png)
+![](/uploads/x11-plot.png)
 
 # Installation
 

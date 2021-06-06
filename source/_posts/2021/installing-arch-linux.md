@@ -11,14 +11,7 @@ This note includes all commands I typed when I set up Arch Linux on my new bare 
 - Outstanding community efforts to maintaining package registry
 - Well organized wiki resources
 
-# Useful links
-
-- [General recommendations](https://wiki.archlinux.org/index.php/General_recommendations#Users_and_groups)
-- [System maintenance](https://wiki.archlinux.org/index.php/System_maintenance)
-- [Improving performance](https://wiki.archlinux.org/index.php/Improving_performance#Know_your_system)
-- [Benchmarking - ArchWiki](https://wiki.archlinux.org/index.php/Benchmarking)
-
-# Provisioning
+# Setup
 
 ## wipe whole disk
 
@@ -59,7 +52,8 @@ mount /dev/sda1 /mnt/boot
 ```bash
 reflector -f 10 --latest 30 --protocol https --sort rate --save /etc/pacman.d/mirrorlist # optimize mirror list
 
-pacstrap /mnt base linux linux-firmware vim man-db man-pages git informant
+# choose between 'linux' or 'linux-lts'
+pacstrap /mnt base linux linux-firmware
 # base-devel need to be included as well?
 genfstab -U /mnt >> /mnt/etc/fstab
 arch-chroot /mnt
@@ -70,6 +64,8 @@ pacman -Syu # upgrade
 pacman -Qe # list explicitly installed pkgs
 pacman -Rs # remove pkg and its deps
 pacman -Qtd # list orphans
+
+pacman -S man-db man-pages git informant
 ```
 
 ## bootloader
@@ -80,8 +76,14 @@ pacman -S \
   efibootmgr \
   amd-ucode # AMD microcode
 grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
+
+vim /etc/default/grub
+# GRUB_TIMEOUT=3
+# GRUB_DISABLE_SUBMENU=y
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
+
+- [GRUB/Tips and tricks - ArchWiki](https://wiki.archlinux.org/title/GRUB/Tips_and_tricks)
 
 ## NTP
 
@@ -214,8 +216,9 @@ passwd uetchy # change local user password
 userdbctl # verify users
 
 pacman -S sudo
-echo "%sudo ALL=(ALL) NOPASSWD:/usr/bin/pacman" > /etc/sudoers.d/pacman # allow pacman without password
+echo "%sudo ALL=(ALL) NOPASSWD:/usr/bin/pacman" > /etc/sudoers.d/pacman # allow users in sudo group to run pacman without password (optional)
 usermod -aG sudo uetchy # add local user to sudo group
+visudo -c
 ```
 
 ## ssh
@@ -250,13 +253,11 @@ reboot
 
 # Additional setup
 
-## GPGPU
+## nvidia
 
 ```bash
-pacman -S nvidia
+pacman -S nvidia # 'nvidia-lts' for linux-lts
 cat /var/lib/modprobe.d/nvidia.conf # ensure having 'blacklist nouveau'
-
-yay -S cuda-10.2 cudnn7-cuda10.2 # match the version number
 
 nvidia-smi # test runtime
 ```
@@ -272,9 +273,10 @@ yay -S nvidia-container-runtime
 
 ```json /etc/docker/daemon.json
 {
-  "log-driver": "journald",
+  "log-driver": "json-file",
   "log-opts": {
-    "tag": "{{.ImageName}}/{{.Name}}/{{.ID}}"
+    "max-size": "10m", // default: -1 (unlimited)
+    "max-file": "3" // default: 1
   },
   "exec-opts": ["native.cgroupdriver=systemd"], // for kubernetes
   "runtimes": {
@@ -293,8 +295,23 @@ systemctl enable --now docker
 groupadd docker
 usermod -aG docker user
 
-docker run --rm -it --gpus all nvidia/cuda:10.2-cudnn7-runtime
+GPU_OPTS=(--gpus all --device /dev/nvidia0 --device /dev/nvidiactl --device /dev/nvidia-modeset --device /dev/nvidia-uvm --device /dev/nvidia-uvm-tools)
+docker run --rm -it ${GPU_OPTS} nvidia/cuda:10.2-cudnn7-runtime nvidia-smi
+docker run --rm -it ${GPU_OPTS} tensorflow/tensorflow:1.14.0-gpu-py3 bash
 ```
+
+### Use `journald` log driver in Docker Compose
+
+```yaml
+services:
+  web:
+    logging:
+      driver: "journald"
+      options:
+        tag: "{{.ImageName}}/{{.Name}}/{{.ID}}" # default: "{{.ID}}"
+```
+
+- [Configure logging drivers | Docker Documentation](https://docs.docker.com/config/containers/logging/configure/)
 
 ## Telegraf
 
@@ -307,6 +324,10 @@ vim /etc/telegraf/telegraf.conf
 Cmnd_Alias FAIL2BAN = /usr/bin/fail2ban-client status, /usr/bin/fail2ban-client status *
 telegraf  ALL=(root) NOEXEC: NOPASSWD: FAIL2BAN
 Defaults!FAIL2BAN !logfile, !syslog, !pam_session
+```
+
+```bash
+chmod 440 /etc/sudoers.d/telegraf
 ```
 
 ## fail2ban
@@ -390,6 +411,10 @@ smartctl -l selftest /dev/sdc
 
 ## backup
 
+```bash
+pacman -S borg
+```
+
 ```ini /etc/backups/borg.service
 [Unit]
 Description=Borg Daily Backup Service
@@ -455,9 +480,12 @@ echo "Starting backup for $DATE"
 
 echo "# system"
 borg create $BORG_OPTS \
-  --exclude /root/.cache \
   --exclude /var/cache \
   --exclude /var/lib/docker/devicemapper \
+  --exclude /root/.cache \
+  --exclude /root/.pyenv \
+  --exclude /root/.vscode-server \
+  --exclude /root/.local/share/TabNine \
   --exclude 'sh:/home/*/.cache' \
   --exclude 'sh:/home/*/.cargo' \
   --exclude 'sh:/home/*/.pyenv' \
@@ -472,12 +500,25 @@ borg create $BORG_OPTS \
   --exclude 'sh:/mnt/data/nextcloud/appdata_*/preview' \
   --exclude 'sh:/mnt/data/nextcloud/appdata_*/dav-photocache' \
   $TARGET::'{hostname}-data-{now}' \
-  /mnt/data /mnt/ftl
+  /mnt/data
+
+echo "# archive"
+borg create $BORG_OPTS \
+  $TARGET::'{hostname}-archive-{now}' \
+  /mnt/archive
+
+echo "# ftl"
+borg create $BORG_OPTS \
+  $TARGET::'{hostname}-ftl-{now}' \
+  /mnt/ftl
 
 echo "Start pruning"
-BORG_PRUNE_OPTS="--list --stats --keep-daily 7 --keep-weekly 3 --keep-monthly 3"
-borg prune $BORG_PRUNE_OPTS --prefix '{hostname}-system-' $TARGET
-borg prune $BORG_PRUNE_OPTS --prefix '{hostname}-data-' $TARGET
+BORG_PRUNE_OPTS_NORMAL="--list --stats --keep-daily 7 --keep-weekly 3 --keep-monthly 2"
+BORG_PRUNE_OPTS_LESS="--list --stats --keep-daily 3 --keep-weekly 1 --keep-monthly 1"
+borg prune $BORG_PRUNE_OPTS_NORMAL --prefix '{hostname}-system-' $TARGET
+borg prune $BORG_PRUNE_OPTS_NORMAL --prefix '{hostname}-archive-' $TARGET
+borg prune $BORG_PRUNE_OPTS_LESS   --prefix '{hostname}-data-' $TARGET
+borg prune $BORG_PRUNE_OPTS_LESS   --prefix '{hostname}-ftl-' $TARGET
 
 echo "Completed backup for $DATE"
 
@@ -512,9 +553,8 @@ kubectl get pods -A
 kubectl get cm -n kube-system kubeadm-config -o yaml
 ```
 
-[Kubernetes - ArchWiki](https://wiki.archlinux.org/index.php/Kubernetes)
-
-[Kubernetes Ingress Controller with NGINX Reverse Proxy and Wildcard SSL from Let's Encrypt - Shogan.tech](https://www.shogan.co.uk/kubernetes/kubernetes-ingress-controller-with-nginx-reverse-proxy-and-wildcard-ssl-from-lets-encrypt/)
+- [Kubernetes - ArchWiki](https://wiki.archlinux.org/index.php/Kubernetes)
+- [Kubernetes Ingress Controller with NGINX Reverse Proxy and Wildcard SSL from Let's Encrypt - Shogan.tech](https://www.shogan.co.uk/kubernetes/kubernetes-ingress-controller-with-nginx-reverse-proxy-and-wildcard-ssl-from-lets-encrypt/)
 
 ## certs
 
@@ -562,42 +602,152 @@ WantedBy=timers.target
 
 ```bash
 pacman -S alsa-utils # maybe requires reboot
-arecord -L # list devices
+usermod -aG audio uetchy
+
+# list devices as root
+aplay -l
+arecord -L
+cat /proc/asound/cards
+
+# test speaker
+speaker-test -c2
+
+# test mic
+arecord -vv -Dhw:2,0 -fS32_LE mic.wav
+aplay mic.wav
+
+# gui mixer
+alsamixer
+
+# for Mycroft.ai
+pacman -S pulseaudio pulsemixer
+pulseaudio --start
+pacmd list-cards
+```
+
+```conf /etc/pulse/default.pa
+# INPUT/RECORD
+load-module module-alsa-source device="default" tsched=1
+# OUTPUT/PLAYBACK
+load-module module-alsa-sink device="default" tsched=1
+# Accept clients -- very important
+load-module module-native-protocol-unix
+load-module module-native-protocol-tcp
 ```
 
 ```conf /etc/asound.conf
-pcm.m96k {
+pcm.mic {
   type hw
   card M96k
   rate 44100
   format S32_LE
 }
 
-pcm.!default {
+pcm.speaker {
   type plug
-  slave.pcm "m96k"
+  slave {
+    pcm "hw:1,0"
+  }
 }
+
+pcm.!default {
+  type asym
+  capture.pcm "mic"
+  playback.pcm "speaker"
+}
+
+#defaults.pcm.card 1
+#defaults.ctl.card 1
 ```
 
-```
-arecord -vv /dev/null # test mic
-alsamixer # gui mixer
-```
-
+- [PulseAudio as a minimal unintrusive dumb pipe to ALSA](https://wiki.archlinux.org/title/PulseAudio/Examples#PulseAudio_as_a_minimal_unintrusive_dumb_pipe_to_ALSA)
 - [SoundcardTesting - AlsaProject](https://www.alsa-project.org/main/index.php/SoundcardTesting)
 - [Advanced Linux Sound Architecture/Troubleshooting - ArchWiki](https://wiki.archlinux.org/index.php/Advanced_Linux_Sound_Architecture/Troubleshooting#Microphone)
 - [ALSA project - the C library reference: PCM (digital audio) plugins](https://www.alsa-project.org/alsa-doc/alsa-lib/pcm_plugins.html)
+- [Asoundrc - AlsaProject](https://www.alsa-project.org/wiki/Asoundrc)
 
 # Maintenance
 
+## system healthcheck
+
 ```bash
-systemctl --failed
-free -h
-htop
-lsblk -f
-nvidia-smi
-iotop
-sensors
-journalctl -p err
-networkctl status
+systemctl --failed # show failed units
+free -h # show memory usage
+lsblk -f # show disk usage
+networkctl status # show network status
+userdbctl # show users
+nvidia-smi # verify nvidia cards
+htop # show task overview
+neofetch # show system info
 ```
+
+## analyzing logs
+
+```bash
+journalctl -p err -b-1 -r # show error logs from previous boot in reverse order
+journalctl CONTAINER_NAME=service_web_1 # show error from docker container named 'service_web_1'
+journalctl -u docker -f # tail docker logs
+```
+
+# Common Issues
+
+## Longer SSH login (D-bus glitch)
+
+```bash
+systemctl restart systemd-logind
+systemctl restart polkit
+```
+
+- [A comprehensive guide to fixing slow SSH logins – JRS Systems: the blog](https://jrs-s.net/2017/07/01/slow-ssh-logins/)
+
+## Annoying `systemd-homed is not available` log messages
+
+Move `pam_unix` before `pam_systemd_home`.
+
+```ini /etc/pam.d/system-auth
+#%PAM-1.0
+
+auth       required                    pam_faillock.so      preauth
+# Optionally use requisite above if you do not want to prompt for the password
+# on locked accounts.
+auth       [success=2 default=ignore]  pam_unix.so          try_first_pass nullok
+-auth      [success=1 default=ignore]  pam_systemd_home.so
+auth       [default=die]               pam_faillock.so      authfail
+auth       optional                    pam_permit.so
+auth       required                    pam_env.so
+auth       required                    pam_faillock.so      authsucc
+# If you drop the above call to pam_faillock.so the lock will be done also
+# on non-consecutive authentication failures.
+
+account    [success=1 default=ignore]  pam_unix.so
+-account   required                    pam_systemd_home.so
+account    optional                    pam_permit.so
+account    required                    pam_time.so
+
+password   [success=1 default=ignore]  pam_unix.so          try_first_pass nullok shadow
+-password  required                    pam_systemd_home.so
+password   optional                    pam_permit.so
+
+session    required                    pam_limits.so
+session    required                    pam_unix.so
+session    optional                    pam_permit.so
+```
+
+- [[solved] pam fails to find unit dbus-org.freedesktop.home1.service / Newbie Corner / Arch Linux Forums](https://bbs.archlinux.org/viewtopic.php?id=258297)
+
+## Annoying systemd-journald-audit log
+
+```ini /etc/systemd/journald.conf
+Audit=no
+```
+
+## Missing `/dev/nvidia-{uvm*,modeset}`
+
+This occurs after updating linux kernel. Simply reinstall `nvidia-container-toolkit`.
+
+# Useful links
+
+- [General recommendations](https://wiki.archlinux.org/index.php/General_recommendations#Users_and_groups)
+- [System maintenance](https://wiki.archlinux.org/index.php/System_maintenance)
+- [Improving performance](https://wiki.archlinux.org/index.php/Improving_performance#Know_your_system)
+- [Benchmarking - ArchWiki](https://wiki.archlinux.org/index.php/Benchmarking)

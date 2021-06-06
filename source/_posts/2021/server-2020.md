@@ -40,17 +40,18 @@ Arch Linux のセットアップは[個別に記事](https://uechi.io/blog/insta
 
 # パーツ選定時のポイント
 
-- パーツ購入前に [Linux Hardware Database](https://linux-hardware.org/) を見て、インストールする予定の Linux ディストリと相性が良いかチェックする
+- [PCPartPicker](https://jp.pcpartpicker.com/)でパーツのコスト計算をする
 - [Bottleneck Calculator](https://pc-builds.com/calculator/)で CPU と GPU の組み合わせを選び、そのうちどちらが性能のボトルネックになるか調べる
 - [UserBenchmark](https://www.userbenchmark.com/)でユーザーが投稿したベンチマーク結果を眺める
+- パーツ購入前に [Linux Hardware Database](https://linux-hardware.org/) を見て、インストールする予定の Linux ディストリと相性が良いかチェックする
 - CPU クーラーは大口径の方が静か
 - メモリはデュアルチャンネルによる高速化を目指し 2 枚構成にする
 - PSU は Seasonic が評判良い
 - 東芝 D01 が HGST の系譜
-- [B550](https://www.amd.com/en/chipsets/b550) は長期運用に向いている
+- [B550](https://www.amd.com/en/chipsets/b550) は長期運用に向いている（らしい）
   - B520 は廉価版
 - TSUKUMO eX. の自作 PC コーナーのスタッフはガチ勢なので信頼できる
-  - 不明な部分があれば根掘り葉掘り聞きましょう
+  - 不明な部分があれば根掘り葉掘り聞く
 
 # 組立ての勘所
 
@@ -58,10 +59,10 @@ Arch Linux のセットアップは[個別に記事](https://uechi.io/blog/insta
   - [MemTest86](https://www.memtest86.com/)でメモリの動作テスト
   - USB ブートで OS の起動確認
 - Ethernet が死んでいる場合は USB-Ethernet アダプターでまずネットを確保する
-  - マザボまたはアダプターメーカーからアップデートを探す
-  - ほとんどの場合 Linux カーネルのバージョンを上げると直る
+  - ほとんどの場合 Linux カーネルのバージョンを上げると（デバイスドライバーも新しくなり）直る
+    - Arch Linux の場合: `linux-lts`が駄目なら`linux`に切り替えて試す
     - Ubuntu の場合: [kernel.ubuntu.com](https://kernel.ubuntu.com/~kernel-ppa/mainline/?C=N;O=D) から探してアップデートする（[https://itsfoss.com/upgrade-linux-kernel-ubuntu/](https://itsfoss.com/upgrade-linux-kernel-ubuntu/)）
-    - Arch Linux の場合: 常に最新なので問題無い
+  - 駄目ならマザボまたはアダプターメーカーからアップデートを探す
 - 安い筐体のネジは柔いことがあるため、強く押し込みながら少しずつ回す
   - 山が潰れてきたらゴムシートを挟む
-- すべて動いたら、[Probe を送信](https://linux-hardware.org/index.php?view=howto)してデータベースに貢献しましょう
+- すべて動いたら、[Probe を送信](https://linux-hardware.org/index.php?view=howto)してデータベースに貢献
