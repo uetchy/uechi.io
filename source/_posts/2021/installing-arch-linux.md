@@ -68,6 +68,22 @@ pacman -Qtd # list orphans
 pacman -S man-db man-pages git informant
 ```
 
+## add fstab entries
+
+```ini /etc/fstab
+# backup
+UUID=<UUID> /mnt/backup ext4 defaults 0 2
+
+# archive (do not prevent boot even if fsck fails)
+UUID=<UUID> /mnt/archive ext4 defaults,nofail,x-systemd.device-timeout=4 0 2
+```
+
+Find `<UUID>` from the output of `lsblk -f`.
+
+```bash
+findmnt --verify --verbose # verify fstab
+```
+
 ## bootloader
 
 ```bash
