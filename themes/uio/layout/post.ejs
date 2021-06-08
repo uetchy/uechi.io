@@ -1,11 +1,15 @@
 <section>
   <article class="article">
     <hgroup class="article__metadata">
-      <% if (page.date) { %>
-      <h3 class="article__pubdate">
-        <time pubdate><%- date(page.date, "YYYY-MM-DD") %></time>
-      </h3>
-      <% } %>
+        <% if (page.updated) { %>
+        <h3 class="article__pubdate">
+          <time pubdate><%- date(page.updated, "YYYY / <b>MM</b>") %></time>
+        </h3>
+        <% } else if (page.date) { %>
+        <h3 class="article__pubdate">
+          <time pubdate><%- date(page.date, "YYYY / <b>MM</b>") %></time>
+        </h3>
+        <% } %>
       <h2 class="article__title"><%- page.title %></h2>
     </hgroup>
     <div class="article__content"><%- page.content %></div>

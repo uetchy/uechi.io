@@ -5,6 +5,7 @@
 ## Build
 
 ```
+n 15
 yarn build
 ```
 

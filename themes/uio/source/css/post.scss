@@ -89,13 +89,16 @@ a.article-list__item__button {
 
 .article__pubdate {
   color: var(--tone);
-  font-size: 14px;
-  font-weight: lighter;
-  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 300;
   margin-bottom: 10px;
   border: 1px solid var(--tone);
   display: inline-block;
   padding: 5px 20px;
+
+  b {
+    font-weight: 700;
+  }
 
   @media screen and (max-width: $break-small) {
     margin-bottom: 15px;

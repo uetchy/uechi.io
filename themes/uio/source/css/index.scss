@@ -9,6 +9,7 @@ $break-large: 840px;
   --accent: #4f33e8;
   --highlight: #f6f6f6;
   --tone: #989898;
+  --dim: rgb(203, 203, 203);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,6 +19,7 @@ $break-large: 840px;
     --accent: #7033e8;
     --highlight: #140d25;
     --tone: #989898;
+    --dim: rgb(90, 83, 101);
   }
 }
 
@@ -33,7 +35,7 @@ body {
   font-family: "PT Sans", "Hiragino Sans", "Hiragino Mincho ProN", sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  font-feature-settings: "kern", "palt", "pwid";
+  font-feature-settings: "kern", "pwid";
   -webkit-font-feature-settings: "kern", "palt", "pwid";
   -moz-font-feature-settings: "kern", "palt", "pwid";
   -moz-font-feature-settings: "kern=1", "palt", "pwid";
