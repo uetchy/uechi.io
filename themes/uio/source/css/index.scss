@@ -35,10 +35,7 @@ body {
   font-family: "PT Sans", "Hiragino Sans", "Hiragino Mincho ProN", sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  font-feature-settings: "kern", "pwid";
-  -webkit-font-feature-settings: "kern", "palt", "pwid";
-  -moz-font-feature-settings: "kern", "palt", "pwid";
-  -moz-font-feature-settings: "kern=1", "palt", "pwid";
+  font-feature-settings: "kern";
   background: var(--background);
   color: var(--text);
 
