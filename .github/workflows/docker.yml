@@ -35,3 +35,7 @@ jobs:
           
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
+      
+      - name: Trigger Watchtower Update
+        run: |
+          curl -X POST -H "Authorization: Bearer ${{ secrets.WATCHTOWER_TOKEN }}" https://watchtower.uechi.dev/v1/update
