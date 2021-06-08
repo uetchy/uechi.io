@@ -26,7 +26,7 @@
   },
   "devDependencies": {
     "lint-staged": "^10.5.4",
-    "textlint": "^11.9.0",
+    "textlint": "^12.0.0",
     "textlint-filter-rule-whitelist": "^2.0.0",
     "textlint-rule-common-misspellings": "^1.0.1",
     "textlint-rule-no-start-duplicated-conjunction": "^2.0.2",
