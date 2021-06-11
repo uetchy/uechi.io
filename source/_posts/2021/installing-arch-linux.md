@@ -23,12 +23,14 @@ wipefs -a /dev/sda
 
 ```bash
 parted
+```
 
+```bash
 select /dev/sda
 mktable gpt
 mkpart EFI fat32 0 512MB # EFI
 mkpart Arch ext4 512MB 100% # Arch
-set 1 esp on # flag part1 as ESP
+set 1 esp on # flag partition 1 as ESP
 quit
 ```
 
@@ -50,7 +52,7 @@ mount /dev/sda1 /mnt/boot
 ## install base & Linux kernel
 
 ```bash
-reflector -f 10 --latest 30 --protocol https --sort rate --save /etc/pacman.d/mirrorlist # optimize mirror list
+reflector --protocol https --latest 30 --sort rate --save /etc/pacman.d/mirrorlist --verbose # optimize mirror list
 
 # choose between 'linux' or 'linux-lts'
 pacstrap /mnt base linux linux-firmware
@@ -350,48 +352,49 @@ chmod 440 /etc/sudoers.d/telegraf
 
 ```
 pacman -S fail2ban
-systemctl enable --now fail2ban
+```
+
+```ini /etc/fail2ban/filter.d/bad-auth.conf
+[INCLUDES]
+before = common.conf
+
+[Definition]
+failregex = .* client login failed: .+ client:\ <HOST>
+ignoreregex =
 ```
 
 ```ini /etc/fail2ban/jail.local
 [DEFAULT]
-bantime = 60m
+bantime = 120m
 ignoreip = 127.0.0.1/8 10.0.1.0/24
 
 [sshd]
 enabled = true
 port = 22,10122
+maxretry = 3
+mode = aggressive
 
+# https://github.com/Mailu/Mailu/blob/master/docs/faq.rst#do-you-support-fail2ban
 [mailu]
 enabled = true
 backend = systemd
-journalmatch = CONTAINER_NAME=mailu_front_1
-port = smtp,submission
+journalmatch = CONTAINER_NAME=mail_front_1
+filter = bad-auth
+findtime = 1h
+maxretry = 3
+bantime = 3d
+banaction = iptables-allports
 chain = DOCKER-USER
-filter = mailu
-findtime = 600
-maxretry = 1
-bantime = 1d
 ```
 
-```ini /etc/fail2ban/filter.d/mailu.conf
-[INCLUDES]
-before = common.conf
-
-[Definition]
-failregex = ^%(__prefix_line)s\d+\/\d+\/\d+ \d+:\d+:\d+ \[info\] \d+#\d+: \*\d+ client login failed: "Authentication credentials invalid" while in http auth state, client: <HOST>, server: \S+, login: "<F-USER>\S+</F-USER>"$
-ignoreregex =
+```patch /etc/systemd/system/fail2ban.service
+- After=network.target iptables.service firewalld.service ip6tables.service ipset.service nftables.service
++ After=network.target iptables.service firewalld.service ip6tables.service ipset.service nftables.service docker.service
 ```
-
-```
-fail2ban-client reload
-fail2ban-client status mailu
-```
-
-## sendmail
 
 ```bash
-yay -S sendmail
+systemctl enable --now fail2ban
+fail2ban-client status mailu
 ```
 
 ## cfddns
@@ -399,7 +402,7 @@ yay -S sendmail
 Dynamic DNS for Cloudflare.
 
 ```
-yay -S cfddns
+yay -S cfddns sendmail
 ```
 
 ```yml /etc/cfddns/cfddns.yml
@@ -543,7 +546,7 @@ sync
 ```
 
 ```bash
-ln -sf /etc/backups/borg.* /etc/systemd/system/
+ln -sf /etc/backups/borg.{service,timer} /etc/systemd/system/
 systemctl enable --now borg
 ```
 
@@ -572,7 +575,7 @@ kubectl get cm -n kube-system kubeadm-config -o yaml
 - [Kubernetes - ArchWiki](https://wiki.archlinux.org/index.php/Kubernetes)
 - [Kubernetes Ingress Controller with NGINX Reverse Proxy and Wildcard SSL from Let's Encrypt - Shogan.tech](https://www.shogan.co.uk/kubernetes/kubernetes-ingress-controller-with-nginx-reverse-proxy-and-wildcard-ssl-from-lets-encrypt/)
 
-## certs
+## wildcard certs
 
 ```bash
 pacman -S certbot certbot-dns-cloudflare
@@ -759,7 +762,10 @@ Audit=no
 
 ## Missing `/dev/nvidia-{uvm*,modeset}`
 
-This occurs after updating linux kernel. Simply reinstall `nvidia-container-toolkit`.
+This occurs after updating linux kernel.
+
+1. Reinstall `nvidia-container-runtime`.
+2. Run `docker --rm --gpus all --device /dev/nvidia0 --device /dev/nvidiactl --device /dev/nvidia-modeset --device /dev/nvidia-uvm --device /dev/nvidia-uvm-tools -it nvidia/cuda:10.2-cudnn7-runtime nvidia-smi` once.
 
 # Useful links
 
