@@ -42,6 +42,22 @@ jobs:
           tags: ghcr.io/uetchy/uechi.io:latest
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache-new
+
+      - name: Cache deps stage
+        uses: docker/build-push-action@v2
+        with:
+          target: deps
+          tags: deps_stage
+          cache-from: type=local,src=/tmp/.buildx-cache
+          cache-to: type=local,dest=/tmp/.buildx-cache-new
+
+      - name: Cache build stage
+        uses: docker/build-push-action@v2
+        with:
+          target: build
+          tags: build_stage
+          cache-from: type=local,src=/tmp/.buildx-cache
+          cache-to: type=local,dest=/tmp/.buildx-cache-new
           
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}

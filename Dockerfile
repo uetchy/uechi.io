@@ -1,4 +1,4 @@
-FROM node:15 as build
+FROM node:15 as deps
 
 # https://github.com/jgm/pandoc/releases
 RUN curl -LO https://github.com/jgm/pandoc/releases/download/2.14.0.1/pandoc-2.14.0.1-1-amd64.deb
@@ -7,6 +7,9 @@ RUN dpkg -i pandoc-2.14.0.1-1-amd64.deb
 WORKDIR /app
 COPY package.json /app
 RUN yarn install
+
+FROM deps as build
+
 COPY themes /app/themes
 COPY source /app/source
 COPY _config.yml /app/
